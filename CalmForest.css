@@ -1,0 +1,1167 @@
+/*
+	CSS by pluto (#52831). This code was made for personal use ONLY or for those who I allow.
+	Do NOT copy and paste or resell this code. I cannot make it clear enough that I don't allow this.
+	If I find that you have copy pasted my code, I will report you to the mods without warning.
+
+	Ater (#206739) helped me figure out some of the code and I took a note from him when it came to organizing. He wrote the Firefox-friendly logo replacement, and also helped with the CSS credit.
+
+	If you feel as though I need to credit someone else, just message me! A lot of this was done by looking at various guides and LD's code, as well as w3schools and stack exchange.
+
+	This code was created in Atom.
+*/
+
+/* --- FONTS --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap'); /* font-family: 'Allura', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap'); /* font-family: 'Bad Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap'); /* font-family: 'Patrick Hand', cursive; */
+
+@font-face {
+	font-family: 'Anaheim';
+	src: url('https://dl.dropbox.com/s/tb4nvzqdjqy3hyd/Anaheim.woff2') format('woff2'),
+	url('https://dl.dropbox.com/s/s3h706ea3ft7huy/Anaheim.woff') format('woff'),
+	url('https://dl.dropbox.com/s/68q3oxnqtmm2e2o/Anaheim.ttf') format('truetype'),
+	url('https://dl.dropbox.com/s/qefrj4sy7dvt1er/Anaheim.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* --- COLORS --- */
+
+:root {
+	--blackforest: 37, 47, 35; /* #252F23 */
+	--asparagus: 100, 157, 83; /* #649D53 */
+	--olivine: 145, 195, 117; /* #91c375 */
+	--celadon: 188, 227, 166; /* #bce3a6 */
+	--teagreen: 203, 242, 179; /* #cbf2b3 */
+	--caper:  213, 240, 197; /* #d5f0c5 */
+	--cranberry: 198, 88, 120; /* #de527b */
+	--wine: 94, 34, 52; /* #5e2234 */
+	--blossom: 222, 169, 184; /* #dea9b8 */
+}
+
+/* CURSORS */
+
+body:hover{cursor: url(LINKHERE), auto !important;}
+
+/* Pointer */
+
+a:hover{cursor: url(LINKHERE), auto !important;}
+select:hover{cursor: url(LINKHERE), auto !important;}
+button:hover{cursor: url(LINKHERE), auto !important;}
+div.slider.round:hover{cursor: url(LINKHERE), auto !important;}
+input:hover{cursor: url(LINKHERE), auto !important;}
+input[type="text"]:hover{cursor: url(LINKHERE), auto !important;}
+input[type="password"]:hover{cursor: url(LINKHERE), auto !important;}
+textarea:hover{cursor: url(LINKHERE), auto !important;}
+::-webkit-scrollbar-thumb:hover{cursor: url(LINKHERE), auto !important;}
+
+/* SCROLLBARS*/
+
+/* Chrome */
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(var(--celadon));
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(var(--cranberry));
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #ad4e6a !important;
+}
+
+/* Firefox */
+
+:root {
+	scrollbar-color: rgba(var(--cranberry)) rgba(var(--celadon)) !important;
+	scrollbar-width: thin !important;
+}
+
+.s-chat-sidebar #chatMessageList {
+	scrollbar-color: rgba(var(--cranberry)) rgba(var(--celadon)) white !important;
+	scrollbar-width: thin !important;
+}
+
+/* Credits */
+.topbar .welcomeback::after {
+	content: "▶ CSS by pluto [#52831 / #58766]";
+	font-size: 10px;
+	padding-left: 7px;
+}
+
+/* ---------------- BACKGROUND/BOXES/TABLES ---------------- */
+
+body {
+	background: rgba(65, 113, 52) url('https://www.ghibli.jp/gallery/marnie037.jpg') center bottom fixed no-repeat;
+	background-size: cover;
+	font-family: 'Bad Script', cursive;;
+	color: rgba(var(--blackforest));
+}
+
+/* --- MAIN COLUMN --- */
+
+.col-md-9 {
+	background: none;
+}
+
+div.container.main {
+	background: rgba(var(--olivine));
+	box-shadow: none;
+	border: 1px solid rgba(var(--asparagus)) !important;
+}
+
+/* --- SIDEBAR --- */
+
+/* Headers */
+
+.sidebar h3 {
+	font-family: 'Allura', cursive;
+	color: rgba(var(--wine));
+}
+
+/* Panels */
+
+.col-md-3 .panel {
+	background: rgba(var(--celadon));
+	border: 1px solid rgba(var(--asparagus));
+	border-radius: 0px;
+	box-shadow: none;
+}
+
+/* Panel Backgrounds */
+
+div.col-md-12.col-xs-6 .panel:nth-child(1) {
+	background: rgba(var(--celadon)) url('//static.lioden.com/images/decors/female/jolly/over/fairybell.png') center 70% no-repeat;
+	background-size: cover;
+}
+
+div.col-md-12.col-xs-6 .panel:nth-child(2) {
+	background: rgba(var(--celadon)) url('//static.lioden.com/images/decors/teenfemale/below/plantofindia.png') 0% 0%;
+	background-size: cover;
+}
+
+div.col-md-12.col-xs-6 .panel:nth-child(4) {
+	background: rgba(var(--celadon)) url('//static.lioden.com/images/decors/female/jolly/over/sweetheartvine.png') 100% 35% no-repeat;
+	background-size: cover;
+}
+
+div.col-md-12.col-xs-5 .panel:nth-child(2) {
+	background: rgba(var(--celadon)) url('//static.lioden.com/images/decors/cubnewborn/female/below/rosebushb.png') 25%;
+}
+
+div.col-md-12.col-xs-5 .panel:nth-child(4) {
+	background: rgba(var(--celadon)) url('//static.lioden.com/images/decors/cubnewborn/female/over/lilyofthenile.png') 100% 15% no-repeat;
+	background-size: cover;
+}
+
+/* --- TABLES --- */
+/* This CSS was made by pluto (#52831). */
+
+.table {
+	border: 1px solid rgba(var(--asparagus));
+	background-color: rgba(var(--celadon)) !important;
+	border-collapse: separate;
+}
+
+/* Custom Table Backgrounds */
+
+.table#player {
+	background: url('//static.lioden.com/images/decors/female/over/deertushnobleswallowtail.png') -20% 90% no-repeat, url('//static.lioden.com/images/decors/female/kind/below/rosebush.png') 135% -20% no-repeat, url('//static.lioden.com/images/decors/female/jolly/below/umbz.png') left 30% no-repeat !important;
+	background-color: rgba(var(--celadon)) !important;
+}
+
+.table#allies {
+	background: url('//static.lioden.com/images/decors/cubyoung/female/below/floweringvine.png') -15% 40% no-repeat, url('//static.lioden.com/images/decors/female/over/janettaforester.png') -20% 115% no-repeat !important;
+	background-color: rgba(var(--celadon)) !important;
+}
+
+.table#clans {
+	background: url('//static.lioden.com/images/decors/cubnewborn/female/over/africanflowermantis.png') 30% 100% no-repeat, url('//static.lioden.com/images/decors/female/over/RainforestShrubsR.png') 100% 100% no-repeat, url('//static.lioden.com/images/decors/female/over/RainforestShrubsL.png') 0% 100% no-repeat !important;
+	background-color: rgba(var(--celadon)) !important;
+}
+
+/* Table Row Separations */
+
+.table#allies .left, .table#clans .left {
+	background: transparent;
+}
+
+/* Headers and Footers */
+
+th, .top {
+	background: rgba(var(--asparagus)) !important;
+	border-bottom: 2px solid rgba(var(--cranberry)) !important;
+	font-size: 20px !important;
+	font-family: 'Allura', cursive;
+	color: rgba(var(--wine)) !important;
+}
+
+.bottom {
+	background: rgba(var(--asparagus)) !important;
+	border-top: 2px solid rgba(var(--cranberry)) !important;
+	font-size: 20px !important;
+	font-family: 'Allura', cursive;
+}
+
+.top .xlarge {
+	font-size: 20px !important;
+}
+
+/* Inner Tables */
+
+/* For no space between stats:
+.inner-table {
+	border-spacing: 0px;
+}
+*/
+
+.inner-table .right {
+	border: none !important;
+	background: rgba(var(--olivine)) !important;
+}
+
+.inner-table .left {
+	border: none !important;
+	background: rgba(var(--olivine)) !important;
+	border-radius: 5px 0px 0px 5px !important;
+}
+
+/* Images */
+
+div#lion_image {
+	clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+	overflow: hidden;
+}
+
+/* --- CAVE/MOUND GRID */
+
+.cave-grid, .mound-grid, div .left {
+	background: rgba(var(--celadon));
+	border-radius: 0px !important;
+	border: 1px solid rgba(var(--asparagus));
+}
+
+/* --- EDITING PANEL AND OPTIONS --- */
+
+textarea, textarea:focus,
+input[type="text"], input[type="text"]:focus,
+input[type="password"], input[type="password"]:focus {
+	background: white;
+	border: 1px solid black;
+	color: black;
+	font-family: 'Patrick Hand', cursive;
+}
+
+#editdetailspanel .table .left, #accountoptionspanel .table .left, #changepasswordpanel .table .left {
+	background: rgba(var(--olivine), 0.7);;
+	color: rgba(var(--blackforest));
+}
+
+select {
+	font-family: 'Patrick Hand', cursive;
+}
+
+.table .bottom select {
+	font-size: 14px;
+}
+
+/* Account Options */
+
+.item {
+	background: rgba(var(--olivine));
+	border-radius: 0px;
+	border: 1px solid rgba(var(--asparagus));
+}
+
+.item-header {
+	background: rgba(var(--asparagus));
+	border-radius: 0px;
+	color: rgba(var(--wine));
+}
+
+.item-footer {
+	color: rgba(var(--blackforest));
+	background: rgba(124, 189, 105);
+}
+
+/* Sliders */
+
+.slider {
+	background: rgba(var(--celadon));
+}
+
+input:checked + .slider {
+	background-color: rgba(var(--cranberry))!important;
+}
+
+/* ---------------- BARS ---------------- */
+
+/* --- TOPBAR --- */
+
+.topbar {
+	background: rgba(var(--asparagus));
+	border: none;
+	border-top: none !important;
+	color: rgba(var(--wine));
+	border-radius: 0px;
+}
+
+/* --- NAVBAR --- */
+
+.navbar {
+	background: rgba(var(--asparagus));
+	border-bottom: 2px solid rgba(var(--cranberry));
+	overflow: visible;
+	color: rgba(var(--wine));
+	margin: auto;
+}
+
+.navbar li a {
+	color: rgba(var(--wine)) !important;
+	transition: 0.5s;
+	margin: auto;
+}
+
+.navbar li a:hover {
+	background: none !important;
+	color: rgba(var(--celadon)) !important;
+}
+
+/* --- BREADCRUMB --- */
+
+.breadcrumb {
+	background: rgba(var(--celadon));
+	border: 1px solid rgba(var(--asparagus));
+	border-radius: 0px;
+}
+
+.breadcrumb > .active {
+	color: rgba(var(--asparagus));
+}
+
+.breadcrumb > li + li::before {
+	color: rgba(var(--asparagus));
+}
+
+/* --- PROGRESS BARS --- */
+
+.progress {
+	color: rgba(var(--blackforest));
+	background-color: rgba(var(--olivine));
+}
+
+.progress-bar {
+	background: rgba(var(--cranberry));
+}
+
+/* Account Standing */
+
+th .progress {
+	font-family: 'Bad Script', cursive;
+}
+
+/* ---------------- EVENT BOXES/SPECIAL BOXES ---------------- */
+
+/* --- EVENT FEATURES AND FAPA --- */
+div .feature {
+	background: rgba(var(--celadon));
+	border: 1px solid rgba(var(--asparagus));
+	border-radius: 0px;
+}
+
+/* December Gifting Table */
+
+.table .table {
+	background: rgba(var(--asparagus), 0.2) !important;
+	border: 1px solid rgba(var(--asparagus));
+}
+
+/* February Thoughts- */
+
+.center.b {
+	color: rgba(var(--cranberry)) !important;
+}
+
+
+/* ---------------- TEXT ---------------- */
+
+a:link, a:visited {
+	color: rgba(var(--wine));
+	transition: 0.5s;
+}
+
+a:hover, a:focus, a:active {
+	color: rgba(var(--cranberry));
+}
+
+/* --- HEADERS --- */
+
+h1 {
+	text-align: center;
+	font-family: 'Anaheim';
+	color: rgba(var(--wine));
+	font-size: 60px;
+}
+
+h3 {
+	font-family: 'Allura', cursive;
+	color: rgba(var(--wine));
+}
+
+/* --- LINKS --- */
+
+/* Topbar Links */
+
+.topbar a:link, .topbar a:visited {
+	color: rgba(var(--wine));
+	transition: 0.5s;
+}
+
+.topbar a:hover, .topbar a:focus, .topbar a:active {
+	color: rgba(var(--celadon));
+}
+
+/* Table Header and Footer Links */
+
+.table .top a:link, .table .top a:visited {
+	color: rgba(var(--wine)) !important;
+	transition: 0.5;
+}
+
+.table .top a:hover, .table .top a:focus, .table .top a:active {
+	color: rgba(var(--celadon)) !important;
+}
+
+.table .bottom a:link, .table .bottom a:visited {
+	color: rgba(var(--wine));
+	transition: 0.5s;
+}
+
+.table .bottom a:hover, .table .bottom a:focus, .table .bottom a:active {
+	text-decoration: underline;
+	color: rgba(var(--celadon));
+}
+
+/* ---------------- CHATBOX ---------------- */
+
+#chatMessageContainer {
+	border: 1px solid rgba(var(--asparagus));
+	border-radius: 0px;
+	color: rgba(var(--blackforest));
+	background: rgba(var(--celadon));
+}
+
+.s-chat-sidebar #chatMessageList {
+	font-family: 'Patrick Hand', cursive !important;
+	font-size: 14px;
+}
+
+/* --- CHAT INPUT --- */
+
+#fra_chatContainer #txtChatInput {
+	border: 1px solid rgba(var(--asparagus));
+	background: rgba(var(--caper));
+	border-radius: 0px;
+	color: rgba(var(--blackforest));
+	font-family: 'Patrick Hand', cursive;
+}
+
+/* --- DISCONNECTED --- */
+
+.s-chat-error_screen {
+	background: url('//static.lioden.com/images/decors/female/jolly/over/MossyRocks.png'), url('//static.lioden.com/images/decors/female/jolly/over/fallingwater.png') 70% 100%, url('//static.lioden.com/images/decors/female/jolly/over/blueskimmer3.png') 0%;
+	background-color: rgba(var(--celadon));
+	background-size: cover;
+	color: rgba(var(--blackforest));
+}
+
+/* --- PINNED MESSAGE --- */
+
+#chatMessagePinned.s-chat-message__pinned {
+	background: rgba(var(--celadon)) url(//static.lioden.com/images/layout/sticky.png) no-repeat 10px 6px;
+	border-bottom-color: rgba(var(--cranberry)) !important;
+	color: rgba(var(--blackforest));
+}
+
+/* --- MESSAGES --- */
+
+.s-chat-message:nth-child(even) {
+	background: rgba(var(--teagreen));
+}
+
+.s-chat-message:nth-child(odd) {
+	background: rgba(var(--caper));
+}
+
+/* Pings */
+
+.s-chat-message.hasContext {
+	border-left-color: rgba(var(--asparagus)) !important;
+	background-color: rgba(var(--asparagus), 0.3) !important;
+}
+
+.s-chat-message_mention {
+	background-color: rgba(var(--blossom), 0.6) !important;
+	border-left: 6px solid rgba(var(--cranberry), 0.6) !important;
+}
+
+/* Timestamp */
+
+.s-chat-message_timestamp {
+	color: rgba(var(--blackforest));
+	opacity: 0.4;
+}
+
+/* --- CHARACTER COUNTER --- */
+
+#txtChatContainer #lblCharacterCounter {
+	color: rgba(var(--blackforest));
+}
+
+/* --- CHAT MENUS --- */
+
+/* Channel Switcher */
+
+.s-chat-sidebar #label_currentChannel {
+	background: rgba(var(--caper));
+	border: rgba(var(--asparagus));
+	border-radius: 0px;
+	color: rgba(var(--blackforest));
+}
+
+.s-chat-sidebar #fraChatChannelMenu {
+	border: 1px solid rgba(var(--asparagus));
+	border-radius: 0px;
+	box-shadow: 1px 1px 2px rgba(var(--blackforest));
+	background: rgba(var(--caper));
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher {
+	color: rgba(var(--blackforest));
+	border-radius: 0px;
+	transition: 0.5s;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: rgba(var(--blackforest));
+	color: rgba(var(--caper));
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher:hover {
+	background: rgba(var(--cranberry));
+	color: rgba(var(--wine));
+}
+
+/* Settings Menu */
+
+#fraChatSettingsMenu {
+	background: rgba(var(--caper));
+	border: 1px solid rgba(var(--asparagus));
+	border-radius: 0px;
+	box-shadow: 1px 1px 2px rgba(var(--blackforest));
+}
+
+.s-chat-tooltip-icon {
+	border-color: rgba(var(--blackforest));
+	color: rgba(var(--blackforest));
+}
+
+#context-chatMenu .chatMenu-option, #fraChatSettingsMenu .chatMenu-option {
+	background: rgba(var(--caper));
+	color: rgba(var(--asparagus));
+	transition: 0.5s;
+}
+
+hr {
+	border-top: 1px solid rgba(var(--olivine));
+}
+
+#context-chatMenu {
+	background: rgba(var(--caper));
+	border: 1px solid rgba(var(--asparagus));
+	border-radius: 0px;
+	box-shadow: 1px 1px 2px rgba(var(--blackforest));
+}
+
+	#context-chatMenu .chatMenu-option:hover {
+		background: rgba(var(--olivine), 0.4);
+		border-radius: 0px;
+	}
+
+/* Emote Menu */
+
+.emoteList {
+	background: rgba(var(--caper));
+	border: 1px solid rgba(var(--asparagus));
+	border-radius: 0px;
+	box-shadow: 0 2px 4px rgba(var(--blackforest));
+}
+
+/* Bubble Indicators */
+
+div#fraChatSettingsMenu::before {
+	border-bottom-color: rgba(var(--asparagus)) !important;
+}
+
+div#fraChatSettingsMenu:after {
+	border-bottom-color: rgba(var(--caper)) !important;
+}
+
+div#context-chatMenu::before {
+	border-left-color: rgba(var(--asparagus));
+}
+
+div#context-chatMenu::after {
+	border-left-color: rgba(var(--caper));
+}
+
+div.emoteList.active::before {
+	border-top-color: rgba(var(--asparagus));
+}
+
+div.emoteList.active::after {
+	border-top-color: rgba(var(--caper));
+}
+
+/* ---------------- ALERTS ---------------- */
+
+.alert-success {
+	background: rgba(var(--celadon));
+	color: rgba(var(--asparagus));
+	border: 1px solid rgba(var(--asparagus));
+	border-radius: 0px;
+}
+
+.alert-danger {
+	background: rgba(var(--blossom));
+	color: rgba(var(--cranberry));
+	border: 1px solid rgba(var(--cranberry));
+	border-radius: 0px;
+}
+
+/* Alert Links */
+
+.alert-success a:link, .alert-success a:visited {
+	color: rgba(var(--blackforest));
+	transition: 0.5s;
+}
+
+.alert-success a:hover, .alert-success a:focus, .alert-success a:active {
+	color: rgba(var(--asparagus));
+}
+
+.alert-danger a:link, .alert-danger a:visited {
+	color: rgba(var(--wine));
+	transition: 0.5s;
+}
+
+.alert-danger a:hover, .alert-danger a:focus, .alert-danger a:active {
+	color: rgba(var(--cranberry));
+}
+
+
+/* ---------------- BUTTONS ---------------- */
+
+.select-control, button.button, input[type="button"], input[type="submit"], input[type="reset"] {
+	background: rgba(var(--cranberry)) !important;
+	color: rgba(var(--wine)) !important;
+	border-radius: 0px;
+	border: 1px solid rgba(var(--wine)) !important;
+	text-align: center !important;
+	text-shadow: none !important;
+	box-shadow: none !important;
+	transition: 0.5s;
+}
+
+.select-control:hover, .select-control:focus, .select-control:active,
+button.button:hover, button.button:focus, button.button:active,
+input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active,
+input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active,
+input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:active {
+	background: rgba(var(--blossom)) !important;
+	color: rgba(var(--cranberry)) !important;
+	border: 1px solid rgba(var(--cranberry)) !important;
+	border-radius: 0px;
+}
+
+/* ---------------- CAVE/MOUND ---------------- */
+
+/* Header */
+
+h1 small {
+	color: rgba(var(--wine));
+}
+
+/* Lower Table */
+
+.table .left {
+	background: none;
+}
+
+/* --- CAVES --- */
+
+/* Pride Table */
+.table#pride .left {
+	background: rgba(var(--celadon));
+}
+
+.table#pride .right_odd {
+	background: rgba(var(--caper));
+}
+
+.table#pride .right {
+	background: rgba(var(--teagreen));
+}
+
+.table#pride .right_cub {
+	background: rgba(var(--teagreen));
+}
+
+.badge {
+	background: rgba(var(--cranberry));
+	color: white;
+}
+
+/* Pride Table Links */
+
+.table th a:link, .table th a:visited, .featured-lion a:link, .featured-lion a:visited {
+	color: rgba(var(--wine)) !important;
+}
+
+.table th a:hover, .table th a:active, .table th a:focus, .featured-lion a:hover, .featured-lion a:active, .featured-lion a:focus {
+	color: rgba(var(--celadon)) !important;
+}
+
+/* Featured Lion Box */
+
+.featured-lion {
+	border: 1px solid rgba(var(--asparagus));
+	overflow: hidden;
+}
+
+.featured-lion p.center.b {
+	margin-bottom: 0px;
+	padding: 5px;
+	background: rgba(var(--asparagus));
+}
+
+/* --- MOUNDS --- */
+
+/* Mound Topbar */
+
+.sub_menu {
+	background: rgba(var(--celadon))!important;
+	border-radius: 0px;
+	border: 1px solid rgba(var(--asparagus));
+}
+
+.sub_menu_item_selected {
+	background: rgba(var(--asparagus), 0.3);
+}
+
+/* Mound Table */
+
+.table#beetles .left {
+	background: rgba(var(--celadon));
+}
+
+.table#beetles .right_odd {
+	background: rgba(var(--caper));
+}
+
+.table#beetles .right {
+	background: rgba(var(--teagreen));
+}
+
+/* ---------------- IMAGE REPLACEMENTS ---------------- */
+
+/* --- GIFT BOX --- */
+
+table#player img.floatleft {
+	padding-left: 60px;
+	width: 60px;
+	height: 60px;
+	background: url('') center no-repeat;
+	margin-right: -10px;
+}
+
+/* --- LOGO --- */
+
+div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+	visibility: hidden;
+	position: relative;
+}
+
+div.container.main > div:nth-child(1) > nav > div.navbar-header > a::after {
+	content: url('');
+	position: absolute;
+	margin-left: -165px;
+	margin-top: -45px;
+}
+
+/* --- FEATURED LION BACKGROUND REPLACEMENT --- */
+
+.lionImage img:first-child {
+	visibility: hidden;
+}
+
+.lionImage {
+	background: rgba(var(--asparagus)) url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png') no-repeat;
+}
+
+/* --- CAVE GRID IMAGES --- */
+
+/* Unsorted, Pregnant, and Overview */
+
+div.cave-grid > img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+	background: url('https://static.lioden.com/images/dynamic/backgrounds/FloweringFields.png') 50% 30% no-repeat !important;
+	background-size: cover !important;
+	padding-left: 100%;
+	height: 60px;
+}
+
+div.cave-grid > img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+	background: url('https://static.lioden.com/images/dynamic/backgrounds/tanglcliff.png') 50% 20% no-repeat !important;
+	background-size: cover !important;
+	padding-left: 100%;
+	height: 60px;
+}
+
+div.cave-grid > img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+	background: url('https://static.lioden.com/images/dynamic/backgrounds/capefloralkingdom.png') 50% 24% no-repeat !important;
+	padding-left: 100%;
+	height: 60px;
+}
+
+/* Other Caves */
+
+a[href$="156295"] > div.cave-grid > img {
+	background: url('https://static.lioden.com/images/dynamic/backgrounds/namaquabg.png') 50% 0% repeat !important;
+	background-size: cover !important;
+	padding-left: 100%;
+	height: 120px;
+}
+
+a[href$="156348"] > div.cave-grid > img {
+	background: url('https://static.lioden.com/images/dynamic/backgrounds/FloweringPond.png') 50% 0% repeat !important;
+	background-size: cover !important;
+	padding-left: 100%;
+	height: 120px;
+}
+
+a[href$="12792"] > div.cave-grid > img {
+	background: url('https://static.lioden.com/images/dynamic/backgrounds/southafricanmeadows.png') 50% 0% repeat !important;
+	background-size: cover !important;
+	padding-left: 100%;
+	height: 120px;
+}
+
+a[href$="152877"] > div.cave-grid > img {
+	background: url('https://static.lioden.com/images/dynamic/backgrounds/NamibianMeadows_Day.png') 50% 20% repeat !important;
+	background-size: cover !important;
+	padding-left: 100%;
+	height: 120px;
+}
+
+a[href$="153414"] > div.cave-grid > img {
+	background: url('https://static.lioden.com/images/dynamic/backgrounds/kwazulunatal.png') 50% 20% repeat !important;
+	background-size: cover !important;
+	padding-left: 100%;
+	height: 120px;
+}
+
+a[href$="161328"] > div.cave-grid > img {
+	background: url('https://static.lioden.com/images/dynamic/backgrounds/floweringfynbos.png') 50% 0% repeat !important;
+	background-size: cover !important;
+	padding-left: 100%;
+	height: 120px;
+}
+
+/* --- BEETLE MOUND IMAGES --- */
+
+div.mound-grid > img[src$="//static.lioden.com/images/layout/beetleunsorted.png"] {
+	background: url('//static.lioden.com/images/decors/cubnewborn/female/over/sacredlotus.png') 32% 76% no-repeat !important;
+	background-size: auto !important;
+	width: 130px;
+	height: 80px;
+	padding-left: 100%;
+}
+
+
+div.mound-grid > img[src$="//static.lioden.com/images/layout/beetlemound.png"] {
+	background: url('https://static.lioden.com/images/decors/cub/female/over/impalalilybranch.png') 55% 100% no-repeat !important;
+	background-size: 350px !important;
+	width: 130px;
+	height: 80px;
+	padding-left: 100%;
+}
+
+
+a[href$="create-mound.php"] > div.mound-grid > img {
+	background: url('//static.lioden.com/images/decors/cubnewborn/female/over/sacredlotus.png') 32% 76% no-repeat !important;
+	background-size: auto !important;
+	width: 130px;
+	height: 80px;
+	padding-left: 100%;
+	filter: grayscale(100%);
+}
+
+/* --- CAVE ARROWS --- */
+
+div.floatleft > img[src$="//static.lioden.com/images/layout/arrowgrayleft.png"] {
+	background: url('https://dl.dropbox.com/s/xi74mctspe26yxc/image%282%29.png') center center no-repeat !important;
+	padding-left: 100%;
+	height: 30px;
+	width: 50px;
+	filter: grayscale(100%);
+	background-size: 60px !important;
+}
+
+div.floatleft > a > img[src$="//static.lioden.com/images/layout/arrowleft.png"] {
+	background: url('https://dl.dropbox.com/s/xi74mctspe26yxc/image%282%29.png') center center no-repeat !important;
+	padding-left: 100%;
+	height: 30px;
+	width: 50px;
+	background-size: 60px !important;
+}
+
+div.floatright > a > img[src$="//static.lioden.com/images/layout/arrow.png"] {
+	background: url('https://dl.dropbox.com/s/ngf74p4ty1svhaf/image%281%29.png') center center no-repeat !important;
+	padding-left: 100%;
+	height: 30px;
+	width: 50px;
+	background-size: 60px !important;
+}
+
+div.floatleft > img[src$="//static.lioden.com/images/layout/arrowgrayright.png"] {
+	background: url('https://dl.dropbox.com/s/ngf74p4ty1svhaf/image%281%29.png') center center no-repeat !important;
+	padding-left: 100%;
+	height: 30px;
+	width: 50px;
+	filter: grayscale(100%);
+	background-size: 60px !important;
+}
+
+/* --- CLAN IMAGES ---
+
+table#clans td.right:nth-of-type(CHANGE AS NEEDED) img {
+	padding-left: 100%;
+	background: url() center no-repeat;
+	background-size: contain;
+	height: 80px;
+	width: 150px;
+} */
+
+/* --- DYNASTY/ACHIEVEMENTS/SHOWCASE --- */
+
+img[src$="//static.lioden.com/images/layout/ancestors.jpg"] {
+	padding-left: 100%;
+	background: url(https://dl.dropbox.com/s/ind97bgmsdf5r7r/icons8-butterfly-33.png) center no-repeat !important;
+	height: 33px;
+	margin-top: -10px;
+}
+
+img[src$="//static.lioden.com/images/layout/ancestorsfem.png"] {
+	padding-left: 100%;
+	background: url(https://dl.dropbox.com/s/lhghg62zgeitgkm/icons8-machaon-butterfly-33.png) center no-repeat !important;
+	height: 33px;
+	margin-top: -10px;
+}
+
+
+img[src$="//static.lioden.com/images/layout/achievements.jpg"] {
+	padding-left: 100%;
+	background: url(https://dl.dropbox.com/s/ijqxxw4zzan2zf6/icons8-monarch-butterfly-33.png) center no-repeat !important;
+	height: 33px;
+	margin-top: -10px;
+}
+
+
+img[src$="//static.lioden.com/images/showcase/banner.png"] {
+	padding-left: 100%;
+	background: url(https://dl.dropbox.com/s/elqmmse4doey95i/icons8-tiger-butterfly-33.png) center no-repeat !important;
+	height: 33px;
+	margin-top: -10px;
+}
+
+/* SOCIAL MEDIA */
+
+img[src$="//static.lioden.com/images/iconTwit.png"] {
+	background: url('https://dl.dropbox.com/s/asnkqyrni8lwohs/icons8-twitter-circled-48.png') center center no-repeat;
+	background-size: contain;
+	width: 48px;
+	height: 48px;
+	padding-left: 48px;
+}
+
+/* CURRENCY ICONS */
+
+a[href$="/spend-history.php?type=sb"] > img.icon {
+	background: url('https://dl.dropbox.com/s/a3ivixfykmogbsr/icons8-honeycombs-20%284%29.png') center no-repeat;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	padding-left: 20px;
+}
+
+a[href$="/spend-history.php?type=gb"] > img.icon {
+	background: url('https://dl.dropbox.com/s/oyk0xw8s099djna/icons8-honeycombs-20%283%29.png') center no-repeat;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	padding-left: 20px;
+}
+
+a[href$="/event.php"] > img {
+	background: url('https://dl.dropbox.com/s/3o74ltvd38180s1/icons8-hive-20.png') center no-repeat;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	padding-left: 20px;
+}
+
+/* DAY AND SEASON ICONS */
+
+img[src$="//static.lioden.com/img/layout/icon-time-night.png"] {
+	width: 20px;
+	height: 20px;
+	padding-left: 20px;
+	background: url('https://dl.dropbox.com/s/32gvppke8n5cdtb/icons8-moon-20.png') center center no-repeat;
+	background-size: contain;
+	filter: brightness(130%);
+}
+
+img[src$="//static.lioden.com/img/layout/icon-time-day.png"] {
+	width: 20px;
+	height: 20px;
+	padding-left: 20px;
+	background: url('https://dl.dropbox.com/s/noh4w3vh6ai44on/icons8-sun-20%282%29.png') center center no-repeat;
+	background-size: contain;
+}
+
+img[src$="//static.lioden.com/img/layout/icon-season-dry.png"] {
+	width: 20px;
+	height: 20px;
+	padding-left: 20px;
+	background: url('https://dl.dropbox.com/s/8mlr10yhhm4gbq5/icons8-fire-20.png') center center no-repeat;
+	background-size: contain;
+}
+
+img[src$="//static.lioden.com/img/layout/icon-season-wet.png"] {
+	width: 20px;
+	height: 20px;
+	padding-left: 20px;
+	background: url('https://dl.dropbox.com/s/9cl9izeh7c6o3d0/icons8-rain-20%282%29.png') center center no-repeat;
+	background-size: contain;
+	filter: brightness(130%);
+}
+
+/* --- CHAT ICONS --- */
+
+/* Gear */
+
+#btnChatSettings {
+	background: url(https://dl.dropbox.com/s/ltsjptpvv2z9i0l/icons8-gear-20.png) center no-repeat;
+}
+
+/* Ping Menu */
+
+.s-chat-message_menu {
+	background: url(https://dl.dropbox.com/s/bfni1el8crs7qpl/icons8-view-more-18.png) center no-repeat;
+	background-size: 18px;
+}
+
+/* Disconnected */
+
+img[src$="//static.lioden.com/images/layout/chat/ico-disconnected.png"] {
+	background: none;
+	background-size: contain;
+	width: 125px;
+	height: 80px;
+	padding-left: 125px;
+}
+
+/* Emote Menu */
+
+button[class="emoteInput"] {
+	background: none !important;
+}
+
+button[class="emoteInput"]:hover {
+	background-image: none !important;
+}
+
+button[class="emoteInput"]::before {
+	content: "";
+	background: url('https://dl.dropbox.com/s/pii8t0nw6fwuar1/icons8-parantica-sita-butterfly-20.png') center no-repeat;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.75s;
+}
+
+/* ---------------- MOBILE NAVBAR ---------------- */
+
+	.navbar-default .navbar-toggle {
+		border: 2px solid rgba(var(--wine));
+		border-radius: 0px;
+		background: rgba(var(--cranberry)) !important;
+	}
+
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background: rgba(var(--blossom)) !important;
+		border-color: rgba(var(--cranberry));
+	}
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: rgba(var(--cranberry));
+	}
+
+	/* ---------------- MOBILE ADJUSTMENTS ---------------- */
+
+@media only screen and (max-width: 767px) {
+
+	.topbar {
+		border-radius: 0px !important;
+	}
+
+	div.container.main {
+		border-radius: 0px !important;
+	}
+
+	.featured-lion {
+		margin-bottom: 10px;
+	}
+
+	.featured-lion p.center.b {
+		margin-top: -56px;
+	}
+
+	/* Custom Table/Panel Backgrounds */
+
+	.table#player {
+		background: url('//static.lioden.com/images/decors/female/over/deertushnobleswallowtail.png') 140% 100% no-repeat, url('//static.lioden.com/images/decors/female/kind/below/rosebush.png') -20% -20% no-repeat, url('//static.lioden.com/images/decors/female/jolly/below/umbz.png') 120% 30% no-repeat !important;
+		background-color: rgba(var(--celadon)) !important;
+	}
+
+	.table#allies {
+		background: url('//static.lioden.com/images/decors/cubyoung/female/below/floweringvine.png') 80% 40% no-repeat, url('//static.lioden.com/images/decors/female/over/janettaforester.png') 20% 130% no-repeat !important;
+		background-color: rgba(var(--celadon)) !important;
+	}
+
+	.table#clans {
+		background: url('//static.lioden.com/images/decors/cubnewborn/female/over/africanflowermantis.png') 210% 100% no-repeat, url('//static.lioden.com/images/decors/female/over/RainforestShrubsR.png') 40% 100% no-repeat, url('//static.lioden.com/images/decors/female/over/RainforestShrubsL.png') 140% 100% no-repeat !important;
+		background-color: rgba(var(--celadon)) !important;
+	}
+
+}

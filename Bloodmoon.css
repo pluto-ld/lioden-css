@@ -1,0 +1,698 @@
+/*
+	CSS by pluto (#52831) for personal use only.
+	I'm a beginner at CSS, but I'm trying my best :) Venture forward into messy code at your own risk.
+	Ater (#206739) helped me figure out some of the code and I took a note from him when it came to organizing. :)
+	If you feel as though I need to credit someone else, just message me! A lot of the rest of this was done by looking at various guides and LD's code.
+
+*/
+
+/* BASICS */
+
+	/*Fonts*/
+	@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+	/* Colors */
+
+	:root {
+		--brightorange: 255, 159, 56; /*hex: #ff9f38*/
+		--orange: 206, 129, 84; /*hex: #ce8154*/
+		--darkorange: 191, 118, 75; /*#bf764b*/
+		--rust: 179, 83, 64; /*hex: #b35340*/
+		--brown: 111, 54, 55; /*#6f3637*/
+		--darkblue: 28, 41, 54; /*hex: #1c2936*/
+		--darkred: 75, 43, 49; /*hex: #4b2b31*/
+		--cream: 255, 244, 237; /*hex: #fff4ed*/
+	}
+
+/* DESCRIPTION DIVS */
+
+	/* About */	
+
+	.head {
+		height: 60px;
+		padding: 20px;
+		background: rgba(var(--rust));
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		font-style: italic;
+		overflow: hidden;
+		text-transform: uppercase;
+		transition: 2s;
+	}
+
+	.abt:hover .head {
+		height: 42px;
+		padding: 14px;
+		overflow: hidden;
+		color: rgba(var(--darkblue));
+		font-size: 14px;
+		transition: 1s;
+	}
+
+
+	.abt {
+		height:60px;
+		width: 35%;
+		overflow: hidden;
+		background: rgba(var(--brown));
+		border-left: 3px double rgba(var(--brightorange));
+		border-right: 3px double rgba(var(--brightorange));
+		transition: 1s;
+	}
+
+	.abtbody {
+		height: 158px;
+		padding: 20px;
+		overflow-y: auto;
+	}
+
+	.abt:hover {
+		height:200px;
+	}
+
+
+	/* Lore Box */
+
+	.lImage {
+		width: 90%;
+		height: 150px;
+		overflow: hidden;
+	}
+
+	.lCont {
+		background: rgba(var(--brown));
+		width: 90%;
+		height: 300px;
+		overflow: hidden;
+		border: transparent;
+	}
+
+	.t1, .t2, .t3, .t4 {
+		width: 100%;
+		height: 25%;
+		position: relative;
+		float: left;
+		transition: 1s;
+		border-left: 3px double rgba(var(--brightorange));
+		border-right: 3px double rgba(var(--brightorange));
+	}
+
+	.lHead {
+		width: 100%;
+		height: 100%;
+		padding: 20px;
+		border-top: 1px solid rgba(var(--darkred));
+		border-bottom: 1px solid rgba(var(--darkred));
+		background: rgba(var(--rust));
+		float: left;
+		font-size: 20px;
+		font-style: italic;
+		overflow: hidden;
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		transition: 1s;
+	}
+
+	.lBody {
+		height: 100%;
+		width: 100%;
+		padding: 20px 50px;
+		float: right;
+		background: rgba(var(--brown));
+		color: transparent;
+		overflow-y: hidden;
+		transition: width 1s 1s, color 1s 2s;
+	}
+
+	.lBody img {
+		opacity: 0;
+		transition: 1s 2s;
+	}
+
+	.lBody h3 {
+		font-family: 'Raleway', sans-serif;
+		color: rgba(var(--cream));
+		float: center;
+		opacity: 0;
+		transition: 1s 2s;
+	}
+
+	.lSideHead {
+		height: 100%;
+		width: 0%;
+		float: left;
+		padding: 16% 0%;
+		background: rgba(var(--darkred));
+		overflow: hidden;
+		color: transparent;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-family: 'Raleway', sans-serif;
+		font-style: italic;
+		transition: 1s 1s;
+	}
+
+	.t1:hover {
+		height: 100%;
+	}
+
+	.t2:hover {
+		height: 100%;
+		margin-top: -75px;
+	}
+
+	.t3:hover {
+		height: 100%;
+		margin-top: -150px;
+	}
+
+	.t4:hover {
+		height: 100%;
+		margin-top: -225px;
+	}
+
+	.t1:hover .lHead, .t2:hover .lHead, .t3:hover .lHead, .t4:hover .lHead {
+		height: 0%;
+		padding: 0%;
+		color: transparent;
+		border: transparent;
+	}
+
+	.t1:hover .lSideHead, .t2:hover .lSideHead, .t3:hover .lSideHead, .t4:hover .lSideHead {
+		color: rgba(var(--cream));
+		width: 20%;
+	}
+
+	.t1:hover .lBody, .t2:hover .lBody, .t3:hover .lBody, .t4:hover .lBody {
+		width: 80%;
+		overflow-y: auto;
+		color: rgba(var(--cream));
+	}
+
+	.t1:hover .lBody img, .t2:hover .lBody img, .t3:hover .lBody img, .t4:hover .lBody img,
+	.t1:hover .lBody h3, .t2:hover .lBody h3, .t3:hover .lBody h3, .t4:hover .lBody h3 {
+		opacity: 1;
+	}
+
+
+	/* Credits */
+
+	.credits:hover .head {
+		height: 42px;
+		padding: 14px;
+		overflow: hidden;
+		color: rgba(var(--darkblue));
+		font-size: 14px;
+		transition: 2s;
+	}
+
+
+	.credits {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		height:60px;
+		width: 250px;
+		margin: 50px;
+		overflow: hidden;
+		background: rgba(var(--brown));
+		border-left: 3px double rgba(var(--brightorange));
+		border-right: 3px double rgba(var(--brightorange));
+		transition: 1s;
+	}
+
+	.credits:hover {
+		height:200px;
+	}
+
+/* GENERAL */
+
+	body {
+		background: url('https://i.imgur.com/YAJxFSm.png') no-repeat center top fixed;
+		background-size: cover;
+		font-family: 'PT Sans', sans-serif;
+		color: rgba(var(--cream));
+	}
+
+	/* Links */
+	
+	a:link, a:visited,
+	.table .top a:link, .table .top a:visited,
+	.topbar a:link, .topbar a:visited {
+		color: rgba(var(--darkred));
+		transition: 1s;	
+	}
+
+	a:hover, a:focus, a:active {
+		color: rgba(var(--cream)) !important;
+	}
+
+	#player a:link, #player a:visited,
+	.sidebar h3 a:link, .sidebar h3 a:visited,
+	#allies a:link, #allies a:visited,
+	#clans a:link, #clans a:visited,
+	#txtChatContainer a:link, #txtChatContainer a:visited,
+	#editdetailspanel a:link, #editdetailspanel a:visited,
+	.abtbody a:link, .abtbody a:visited,
+	.lBody a:link, .lBody a:visited {
+		color: rgba(var(--cream));
+		transition: 1s;
+	}
+
+	#player a:hover, #player a:focus, #player a:active,
+	.sidebar h3 a:hover, .sidebar h3 a:focus, .sidebar h3 a:active,
+	#allies a:hover, #allies a:focus, #allies a:active,
+	#clans a:hover, #clans a:focus, #clans a:active
+	#txtChatContainer a:hover, #txtChatContainer a:focus, #txtChatContainer a:active,
+	#editdetailspanel a:hover, #editdetailspanel a:focus, #editdetailspanel a:active,
+	.abtbody a:hover, .abtbody a:focus, .abtbody a:active,
+	.lBody a:hover, .lBody a:focus, .lBody a:active {
+		color:rgba(var(--brightorange)) !important;
+	}
+
+	.alert-success a:link,
+	.alert-success a:visited {
+		color: rgba(60, 118, 61);
+	}
+
+	.alert-success a:hover,
+	.alert-success a:focus,
+	.alert-success a:active {
+		color: rgba(34, 70, 34) !important;
+	}
+
+	.alert-danger a:link,
+	.alert-danger a:visited {
+		color: rgba(169, 68, 66);
+	}
+
+	.alert-danger a:hover,
+	.alert-danger a:focus,
+	.alert-danger a:active {
+		color: rgba(140, 55, 53) !important;
+	}
+
+/* SCROLLBAR */
+
+	/* Chrome */
+
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: rgba(var(--darkblue));
+		border-radius: 0px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: rgba(var(--rust));
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: rgba(var(--darkorange)) !important;
+	}
+
+	/* Firefox */
+
+	:root {
+		scrollbar-color: rgba(var(--rust)) rgba(var(--darkblue)) !important;
+		scrollbar-width: thin !important;
+	}
+
+	div#chatMessageContainer {
+		scrollbar-color: rgba(var(--rust)) rgba(var(--darkblue)) !important;
+		scrollbar-width: thin !important;
+	}
+
+/* BARS */
+
+	.topbar {
+		background: rgba(var(--rust)) !important;
+		color: rgba(var(--cream)) !important;
+		border-radius: 0px 0px 5px 5px;
+		opacity: 0.8;
+	}
+
+	.breadcrumb {
+		font-family: 'Raleway', sans-serif;
+		background: rgba(var(--rust)) !important;
+		color: rgba(var(--cream)) !important;
+	}
+
+	.breadcrumb>.active {
+		color: rgba (var(--cream));
+	}
+
+	/* Navbar */
+	.navbar {
+		background: rgba(var(--rust)) !important;
+		font-family: 'Raleway', sans-serif;
+		border-radius: 5px 5px 0px 0px;
+	}
+
+	.navbar li a {
+		color: rgba(var(--cream)) !important;
+		transition: 1s;
+		font-size: 19px;
+	}
+
+	.navbar li a:hover {
+		background: rgba(var(--orange)) !important;
+		font-size: 20px;
+	}
+
+	/*Progress Bar*/
+	.progress {
+		overflow: hidden;
+		background-color: rgba(var(--cream));
+	}
+
+	.progress-bar {
+		background: rgba(var(--rust));
+	}
+
+	th .progress-bar {
+		background: rgba(var(--orange));
+	}
+
+/* Headers */
+
+	/* Main Header */
+
+	h1 {
+		text-align: center;
+		color: rgba(var(--brightorange));
+		font-size: 40px;
+		font-family: 'Major Mono Display', monospace;
+		border: 6px double rgba(var(--brightorange));
+		margin: 0% 25%;
+		padding: 20px;
+	}
+
+	/* Small Headers */
+
+	h3, .sidebar h3 {
+		font-family: 'Major Mono Display', monospace;
+		color: rgba(var(--brightorange));
+	}
+
+/* MAIN COLUMN */
+
+	/* Background */
+
+	div.container.main {
+		border-radius: 5px;
+	}
+
+	.col-md-9,
+	.col-md-3 {
+		background: rgba(var(--darkblue)) !important;
+	}
+
+	div.container.main {
+		background: rgba(var(--darkblue)) !important;
+		color: rgba(var(--white)) !important;
+		box-shadow: none;
+		border: none !important;
+		opacity: 0.8;
+	}
+
+/* TABLES */
+
+	/* Background/Border */
+
+	.table {
+		background: rgba(var(--darkred));
+		border: none;
+		border-collapse: separate;
+		border-radius:5px
+	}
+
+	/* Table Headers + Footers */
+
+	th,
+	.top {
+		background: rgba(var(--rust)) !important;
+		text-align: center;
+		border-radius: 5px 5px 0px 0px;
+	}
+
+	.bottom {
+		background: rgba(var(--rust)) !important;
+		text-align: center;
+		border-radius: 0px 0px 5px 5px;
+	}
+
+	.table .left {
+		background: rgba(var(--rust)) !important;
+		border-radius: 0px;
+	}
+
+	/* Inner Table */
+
+	div#lion_image {
+		border-radius: 50% !important;
+		overflow: hidden;
+	}
+
+	.inner-table {
+		border-spacing: 0px;
+	}
+
+	.inner-table .left {
+		background: rgba(var(--rust)) !important;
+		border-radius: 0px;
+	}
+
+	.inner-table .right,
+	.table .right_odd {
+		background: rgba(var(--orange)) !important;
+		border-radius: 0px;
+	}
+
+	/* Grids */
+
+	.cave-grid,
+	.mound-grid,
+	div .left {
+		background: rgba(var(--rust));
+		border: none;
+		color: rgba(var(--darkred));
+		transition: 1s;
+	}
+
+	.cave-grid img,
+	.mound-grid img {
+		width: 100%;
+	}
+
+	.cave-grid:hover, .mound-grid:hover {
+		color: white;
+	}
+
+/* SIDEBAR */
+
+	/* Panels */
+	.col-md-3 .panel {
+		background: rgba(var(--orange));
+		border: none;
+		border-radius: 5px;
+		color: rgba(var(--darkred));
+		box-shadow: none;
+	}
+
+/* CHAT */
+
+	/* Basics */
+	#chatMessageContainer {
+		border: 1px solid rgba(var(--darkred));
+		color: rgba(var(--darkred));
+	}
+
+	#txtChatContainer #lblCharacterCounter {
+		color: rgba(var(--cream));
+	}
+
+	/* Chat Error Screen */
+	.s-chat-error_screen {
+		background: rgba(var(--orange));
+		color: rgba(var(--darkred));
+	}
+
+	/* Links */
+
+	#chatMessageContainer a:link, 
+	#chatMessageContainer a:visited {
+		color: rgba(var(--darkred));		
+	}
+
+	#chatMessageContainer a:hover,
+	#chatMessageContainer a:focus,
+	#chatMessageContainer a:active {
+		color: rgba(var(--brightorange)) !important;
+	}
+
+	/* Channel Dropdown/Options */
+	.s-chat-sidebar #label_currentChannel {
+		background: rgba(var(--darkred));
+		border: 1px solid rgba(var(--rust));
+	}
+
+	.s-chat-sidebar #fraChatChannelMenu {
+		background: rgba(var(--cream));
+		border: 1px solid rgba(var(--rust));
+		opacity: 0.8;
+		box-shadow: none;
+	}
+
+	#fra_chatContainer .channelMenu .channelSwitcher {
+		color: rgba(var(--darkred));
+	}
+
+	#fra_chatContainer .channelMenu .channelSwitcher.active {
+		background: rgba(var(--darkred));
+		color: rgba(var(--cream));
+	}
+
+	#fra_chatContainer .channelMenu .channelSwitcher:hover {
+		background: rgba(var(--rust));
+		color: rgba(var(--cream));
+	}
+
+	#context-chatMenu {
+		background: rgba(var(--cream));
+		opacity: 0.8;
+		box-shadow: none;
+		border: none;
+	}
+
+	#context-chatMenu .chatMenu-option,
+	#fraChatSettingsMenu .chatMenu-option {
+		background: rgba(var(--cream));
+		color: rgba(var(--darkred));
+	}
+
+	/* Pinned Message */
+	#chatMessagePinned.s-chat-message__pinned {
+		background: rgba(var(--brightorange)) url(//static.lioden.com/images/layout/sticky.png) no-repeat 10px 6px;
+		border-bottom-color: rgba(var(--darkred)) !important;
+		color: rgba(var(--darkred));
+	}
+
+	/* Emote List */
+	.emoteList {
+		background: rgba(var(--cream));
+		opacity: 0.8;
+	}
+
+	/* Chat Input */
+	#fra_chatContainer #txtChatInput {
+		border: 1px solid rgba(var(--rust));
+		color: rgba(var(--cream));
+		background: rgba(var(--darkred));
+	}
+
+	/* Messages */
+	.s-chat-message:nth-child(even) {
+		background: rgba(var(--orange));
+	}
+
+	.s-chat-message:nth-child(odd) {
+		background: rgba(var(--darkorange));
+	}
+
+	.s-chat-message_timestamp {
+		color: rgba(var(--darkred));
+		opacity: 0.6;
+		font-style: italic;
+	}
+
+/*BUTTONS/OTHER INPUTS*/
+
+	/* Buttons */
+
+	.select-control,
+	button.button,
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"] {
+		background: rgba(var(--darkred)) !important;
+		color: rgba(var(--orange)) !important;
+		font-family: 'Raleway', sans-serif;
+		border: 1px solid rgba(var(--darkorange)) !important;
+		text-align: center !important;
+		text-shadow: none !important;
+		box-shadow: 2px !important;
+		transition: 1s;
+	}
+
+	.select-control:hover, .select-control:focus, .select-control:active,
+	button.button:hover, button.button:focus, button.button:active,
+	input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active,
+	input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active,
+	input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:active {
+		background: rgba(var(--brown)) !important;
+	}
+
+	h3 input[type="button"],
+	h3 input[type="submit"],
+	h3 input[type="reset"] {
+		margin-left: -6px !important;
+	}
+
+	/* Text Areas */
+
+	textarea, textarea:focus,
+	input[type="text"], input[type="text"]:focus,
+	input[type="password"], input[type="password"]:focus {
+		background: rgba(var(--cream));
+		color: rgba(var(--darkblue));
+	}
+
+	/* Select */
+
+	select, select:focus {
+		background: rgba(var(--cream));
+		color:rgba(var(--darkblue));
+	}
+
+/* EVENT SPECIFICS */
+
+	/* Event Features */
+	div .feature {
+		color: white;
+		background: rgba(var(--rust));
+		border: none;
+		border-radius: 5px;
+	}
+
+	/* December Gifting Table */
+
+	.table .table {
+		background: rgba(var(--darkred));
+	}
+/*IMAGES*/
+
+	/*Gift Box*/
+	table#player img.floatleft {
+    		padding-left: 60px;
+		width: 60px;
+		height: 60px;
+    		background: url(https://tinyurl.com/y6afxfdd) center no-repeat;
+    	}
+
+	/*Logo Replacement*/
+
+	div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+		visibility: hidden;
+		position: relative;
+	}
+
+	div.container.main > div:nth-child(1) > nav > div.navbar-header > a::after {
+		content: url('https://tinyurl.com/y3bzhcya');
+		position: absolute;
+		margin-left: -170px;
+	}
