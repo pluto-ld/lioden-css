@@ -70,18 +70,14 @@ h1 {
 }
 
 .navbar-nav > li > a {
-	color: rgb(230, 175, 59);
-	background: rgb(230, 175, 59);
-	background: linear-gradient(143deg, rgba(239,179,59,1) 55%, rgba(226,207,170,1) 65%, rgba(239,179,59,1) 74%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	background-size: 200% 100%;
-	background-position: 100%;
-	transition: background-position 275ms ease;
+	color: rgb(230, 175, 59) !important;
+	transition: 275ms ease;
 }
 
 .navbar-nav > li > a:hover {
-	background-position: 0 100%;
+	color: rgb(55, 65, 74);
+	text-shadow: 0, 0, 5px rgb(226, 207, 170);
+	background: none;
 }
 
 /* Social: Chatbox/Comment Box */
