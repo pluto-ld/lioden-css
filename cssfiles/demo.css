@@ -22,3 +22,8 @@
 	This code was created in VSCode.
 */
 
+/* Setup will go here; imported fonts/colors. */
+
+body {
+	background: url('https://pluto-ld.github.io/lioden-css/graphics/blackgold_wall.jpg') center center fixed no-repeat;
+	}
