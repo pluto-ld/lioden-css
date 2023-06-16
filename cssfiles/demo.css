@@ -68,7 +68,7 @@ h1 {
 	text-shadow: 0 0 10px rgb(230, 175, 59)
 }
 
-.navbar > li > a {
+.navbar-nav > li > a {
 	color: rgb(230, 175, 59);
 	background: rgb(230, 175, 59);
 	background: linear-gradient(143deg, rgb(239, 179, 59) 63%, rgb(231, 205, 152) 72%, rgb(239, 179, 59) 79%);
@@ -77,7 +77,7 @@ h1 {
 	background-size: 200% 100%;	
 }
 
-.navbar > li > a:hover {
+.navbar-nav > li > a:hover {
 	transition: background-position 0 100%;
 }
 
