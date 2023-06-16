@@ -37,10 +37,11 @@
 
 body {
 	background: url('https://pluto-ld.github.io/lioden-css/graphics/blackgold_wall.jpg') center top fixed no-repeat;
+	color: rgb(230, 175, 59);
 }
 
 .main {
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.85);
 	border: 4px outset rgba(230, 175, 59, 0.5);
 	border-radius: 20px;
 }
@@ -52,11 +53,28 @@ body {
 
 /* Panels: Tables/Panels */
 
+.panel {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
 /* Bars: Breadcrumb/Navbar*/
+
+.breadcrumb {
+	background: none;
+}
 
 .navbar {
 	border-radius: 20px 20px 0px 0px;
 	background: none;
+	margin-left: -50px;
+	min-height: 80px;
+	margin-top: 20px;
+}
+
+.navbar-header {
+	visibility: hidden;
 }
 
 /* Text: Headers/Text Decoration/etc */
@@ -67,6 +85,7 @@ h1 {
 	font-size: 70px;
 	text-shadow: 0 0 10px rgb(230, 175, 59);
 	color: rgb(230, 175, 59);
+	margin-top: -100px;
 }
 
 .navbar-nav > li > a {
