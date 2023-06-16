@@ -26,4 +26,8 @@
 
 body {
 	background: url('https://pluto-ld.github.io/lioden-css/graphics/blackgold_wall.jpg') center center fixed no-repeat;
-	}
+}
+
+.main {
+	background: black;
+}
