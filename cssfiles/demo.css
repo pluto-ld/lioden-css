@@ -75,8 +75,8 @@ h1 {
 }
 
 .navbar-nav > li > a:hover {
-	color: rgb(55, 65, 74);
-	text-shadow: 0, 0, 5px rgb(226, 207, 170);
+	color: rgb(255, 202, 99) !important;
+	text-shadow: 0 0 5px rgb(255, 202, 99);
 	background: none;
 }
 
