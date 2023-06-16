@@ -65,7 +65,8 @@ h1 {
 	font-family: "Daizen Script", Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 	text-align: center;
 	font-size: 70px;
-	text-shadow: 0 0 10px rgb(230, 175, 59)
+	text-shadow: 0 0 10px rgb(230, 175, 59);
+	color: rgb(230, 175, 59);
 }
 
 .navbar-nav > li > a {
