@@ -108,5 +108,11 @@ h1 {
 /* Mobile Changes */
 
 @media (max-width: 768px) {
+	.navbar-header {
+		visibility: visible;
+	}
 	
+	.navbar {
+		margin-left: 0;
+	}
 }
