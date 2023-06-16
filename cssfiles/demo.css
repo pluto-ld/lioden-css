@@ -22,10 +22,14 @@
 	This code was created in VSCode.
 */
 
-/* Setup will go here; imported fonts/colors. */
+/* Setup: Fonts/Colors */
+
+
+
+/* General: Body/Main/Topbar */
 
 body {
-	background: url('https://pluto-ld.github.io/lioden-css/graphics/blackgold_wall.jpg') center center fixed no-repeat;
+	background: url('https://pluto-ld.github.io/lioden-css/graphics/blackgold_wall.jpg') center top fixed no-repeat;
 }
 
 .main {
