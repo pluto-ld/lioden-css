@@ -26,10 +26,10 @@
 
 @font-face {
 	font-family: "Daizen Script";
-	src: url('ttps://pluto-ld.github.io/lioden-css/graphics/fonts/Daizen.otf') format("opentype"),
-		url('ttps://pluto-ld.github.io/lioden-css/graphics/fonts/Daizen.ttf') format("truetype"),
-		url('ttps://pluto-ld.github.io/lioden-css/graphics/fonts/Daizen.woff') format("woff"),
-		url('ttps://pluto-ld.github.io/lioden-css/graphics/fonts/Daizen.woff2') format("woff2");
+	src: url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Daizen.otf') format("opentype"),
+		url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Daizen.ttf') format("truetype"),
+		url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Daizen.woff') format("woff"),
+		url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Daizen.woff2') format("woff2");
 	
 }
 
