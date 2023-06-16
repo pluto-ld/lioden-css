@@ -35,6 +35,10 @@
 
 /* General: Body/Main/Topbar */
 
+.topbar {
+	background: rgba(117, 85, 19, 0.85);
+}
+
 body {
 	background: url('https://pluto-ld.github.io/lioden-css/graphics/blackgold_wall.jpg') center top fixed no-repeat;
 	color: rgb(230, 175, 59);
@@ -53,7 +57,7 @@ body {
 
 /* Panels: Tables/Panels */
 
-.panel {
+.col-md-3 .panel {
 	background: none;
 	border: none;
 	box-shadow: none;
