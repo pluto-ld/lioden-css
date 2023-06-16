@@ -56,6 +56,7 @@ body {
 
 .navbar {
 	border-radius: 20px 20px 0px 0px;
+	background: none;
 }
 
 /* Text: Headers/Text Decoration/etc */
@@ -64,4 +65,26 @@ h1 {
 	font-family: "Daizen Script", Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 	text-align: center;
 	font-size: 70px;
+	text-shadow: 0 0 10px rgb(230, 175, 59)
+}
+
+.navbar > li > a {
+	color: rgb(230, 175, 59);
+	background: rgb(230, 175, 59);
+	background: linear-gradient(143deg, rgb(239, 179, 59) 63%, rgb(231, 205, 152) 72%, rgb(239, 179, 59) 79%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	background-size: 200% 100%;	
+}
+
+.navbar > li > a:hover {
+	transition: background-position 0 100%;
+}
+
+/* Social: Chatbox/Comment Box */
+
+/* Mobile Changes */
+
+@media (max-width: 768px) {
+	
 }
