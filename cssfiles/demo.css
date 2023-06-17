@@ -148,16 +148,17 @@ body {
 }
 
 .progress-bar {
-	background: rgb(230, 175, 59);
+	background: linear-gradient(rgb(230, 175, 59), rgb(242, 210, 139),rgb(230, 175, 59), rgb(230, 175, 59));
 	box-shadow: 0 0 20px rgb(230, 175, 59), inset 0 3px 5px rgba(219, 131, 35, 0.96);
 	position: relative !important;
 }
 
 .progress {
-	background-color: rgb(138, 111, 47);
+	background: linear-gradient(rgba(168, 162, 149, 0.44), rgba(255, 255, 255, 0.39), rgba(168, 162, 149, 0.44), rgba(168, 162, 149, 0.44));
 	border-radius: 20px 0px 0px 20px;
-	box-shadow: inset 0 7px 7px rgba(85, 55, 16, 0.38);
-	border-right: 10px solid #b0a89d;
+	border: 2px solid rgba(168, 155, 127, 0.24);
+	border-right: 20px solid rgb(168, 123, 76) !important;
+	height: 20px;
 }
 
 .progress-bar::after {
