@@ -75,6 +75,8 @@ body {
 .table#about .bottom {
 	background: none;
 	text-align: right;
+	font-style: italic;
+	font-size: 12px;
 }
 
 .table#player .top {
@@ -83,6 +85,30 @@ body {
 
 .table#player .right > .center.xlarge:first-child::after {
 	content: "#58766";
+}
+
+.inner-table {
+	border-spacing: 0;
+}
+
+.inner-table .left {
+	background: none;
+	padding: 2px 8px;
+	text-align: right;
+}
+
+.inner-table .right {
+	background: none;
+	padding: 2px 8px;
+}
+
+.table .inner-table, .table .top, .table#player .right > .center.xlarge:first-child {
+	letter-spacing: 2px;
+}
+
+.table .inner-table, .table#player .right > .center.xlarge:first-child {
+	font-size: 20px;
+	text-transform: uppercase;
 }
 
 /* Bars: Breadcrumb/Navbar*/
@@ -133,6 +159,11 @@ h1 {
 	color: rgb(255, 202, 99) !important;
 	text-shadow: 0 0 5px rgb(255, 202, 99);
 	background: none !important;
+}
+
+.table#player .inner-table td[width="3"]::after {
+	content: "✖";
+	padding-left: 10px;
 }
 
 /* Social: Chatbox/Comment Box */
@@ -197,7 +228,7 @@ h1 {
 /* Graphics: Lion PFP/Icons/Caves/etc */
 
 #lion_image{
-	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
 }
 
 /* Centering lion PFP code below; made by ryouta#276513 */
