@@ -103,6 +103,14 @@ body {
 	visibility: hidden;
 }
 
+.alert {
+	color: rgb(72, 48, 2) !important;
+	background: rgb(255, 212, 127) !important;
+	box-shadow: 0 0 10px rgb(255, 212, 127);
+	border-radius: 20px;
+	border: none !important;
+}
+
 /* Text: Headers/Text Decoration/etc */
 
 h1 {
