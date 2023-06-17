@@ -105,6 +105,32 @@ h1 {
 
 /* Social: Chatbox/Comment Box */
 
+#commentBox {
+	width: 60%;
+	float: left;
+	padding: 5px;
+	border-radius: 10px;
+	border: none;
+	background: rgb(255, 202, 99, 0.3);
+}
+
+#commentBox:after {
+	content: "testing, testing...";
+	position: absolute;
+	right: 0;
+}
+
+#makeComment {
+	width: 60%;
+	float: left;
+	margin-bottom: 5px;
+}
+
+#commentErrors {
+	width: 60%;
+	float: left;
+}
+
 /* Mobile Changes */
 
 @media (max-width: 768px) {
