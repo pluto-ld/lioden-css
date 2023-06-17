@@ -160,11 +160,13 @@ body {
 }
 
 .progress div::after {
-  	content: "hi";
-	position: absolute;
-	height: 40px;
+  	content: "";
+	display: inline-block;
+	position: relative;
+	height: 100%;
 	width: 80px;
 	border-bottom-left-radius: 50%;
+	box-shadow: 0 20px 0 0 rgb(230, 175, 59);
 }
 
 /* Text: Headers/Text Decoration/etc */
