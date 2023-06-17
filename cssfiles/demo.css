@@ -84,12 +84,17 @@ body {
 	display: none;
 }
 
+.table#player {
+	margin: 50px 0px;
+}
+
 .table#player .right > .center.xlarge:first-child::after {
 	content: "#58766";
 }
 
 .inner-table {
 	border-spacing: 0;
+	color: rgb(138, 111, 47);
 }
 
 .inner-table .left {
@@ -165,6 +170,16 @@ h1 {
 
 .table#player .inner-table td[width="3"]::after {
 	content: "✖";
+}
+
+a:link, a:visited, a:active {
+	color: rgb(166, 98, 35);
+	transition: 275ms;
+}
+
+a:hover {
+	color: rgba(255, 202, 99);
+	text-shadow: 0 0 10px rgba(255, 202, 99);
 }
 
 /* Social: Chatbox/Comment Box */
