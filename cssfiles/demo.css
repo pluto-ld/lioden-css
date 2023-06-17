@@ -159,7 +159,7 @@ body {
 	border-right: 10px solid #b0a89d;
 }
 
-.progress div::after {
+.progress-bar::after {
   	content: "";
 	display: inline-block;
 	position: relative;
