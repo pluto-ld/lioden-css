@@ -285,6 +285,6 @@ a:hover {
 	}
 	
 	.inner-table .left {
-		text-align: left;
+		text-align: left !important;
 	}
 }
