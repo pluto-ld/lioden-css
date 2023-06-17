@@ -67,21 +67,21 @@ body {
 	border: none;
 }
 
-.table#about > .top {
+.table#about .top {
 	background: none;
 	text-align: left !important;
 }
 
-.table#about > .bottom {
+.table#about .bottom {
 	background: none;
 	text-align: right;
 }
 
-.table#player > .top {
+.table#player .top {
 	display: none;
 }
 
-.table#player .right .center.xlarge::after {
+.table#player .right > .center.xlarge:first-child::after {
 	content: "#58766";
 }
 
