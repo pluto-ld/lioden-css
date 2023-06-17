@@ -36,12 +36,14 @@
 /* General: Body/Main/Topbar */
 
 .topbar {
+	border-radius: 0px 0px 20px 20px;
 	background: rgba(117, 85, 19, 0.85);
+	color: rgb(230, 175, 59);
 }
 
 body {
-	background: url('https://pluto-ld.github.io/lioden-css/graphics/blackgold_wall.jpg') center top fixed no-repeat;
-	color: rgb(230, 175, 59);
+	background: url('https://pluto-ld.github.io/lioden-css/graphics/blackgold_wall.jpg') center top fixed no-repeat, black;
+	color: rgb(138, 111, 47);
 	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
@@ -97,7 +99,6 @@ body {
 
 .inner-table {
 	border-spacing: 0;
-	color: rgb(138, 111, 47);
 }
 
 .inner-table .left {
@@ -222,8 +223,8 @@ a:hover {
 .table#about .top a:link, .table#about .top a:active, .table#about .top a:visited {
 	color: rgb(230, 175, 59);
 	font-family: "Daizen Script", Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-	text-shadow: 0 0 10 rgb(230, 175, 59);
 	text-transform: capitalize;
+	font-size: 30px;
 }
 
 .table#about .top a:hover {
@@ -240,6 +241,14 @@ a:hover {
 	text-shadow: 0 0 10px rgba(255, 202, 99);
 }
 
+.topbar a:link, .topbar a:visited, .topbar a:active {
+	color: rgb(255, 203, 0);
+}
+
+.topbar a:hover {
+	color: rgb(238, 202, 63);
+}
+
 /* Social: Chatbox/Comment Box */
 
 #commentBox {
@@ -249,6 +258,7 @@ a:hover {
 	border-radius: 10px !important;
 	border: none !important;
 	background: rgb(255, 202, 99, 0.4);
+	color: rgb(230, 175, 59);
 }
 
 #commentBox::before {
