@@ -122,6 +122,18 @@ body {
 	letter-spacing: 3px;
 }
 
+.cave-grid {
+	border: none !important;
+	border-radius: 20px;
+	background: rgb(230, 175, 59, 0.4);
+}
+
+.mound-grid {
+	border: none !important;
+	border-radius: 20px;
+	background: rgb(230, 175, 59, 0.4);
+}
+
 /* Bars: Breadcrumb/Navbar*/
 
 .breadcrumb {
@@ -170,7 +182,7 @@ body {
 	height: 100%;
 	width: 10px;
 	border-bottom-left-radius: 10px;
-	border-top-left-radius: 5p;
+	border-top-left-radius: 5px;
 	box-shadow: -2px 5px 0 0px rgb(230, 175, 59), 0px -5px 0 0px rgba(219, 131, 35, 0.96);
 }
 
@@ -189,9 +201,10 @@ h1 {
 
 .sidebar h3 {
 	color: rgb(230, 175, 59);
+	transition: 275ms;
 }
 
-.sidebar h3:hover {
+.sidebar h3 a:hover {
 	color: rgb(255, 202, 99);
 }
 
@@ -218,6 +231,10 @@ a:link, a:visited, a:active {
 a:hover {
 	color: rgba(255, 202, 99);
 	text-shadow: 0 0 10px rgba(255, 202, 99);
+}
+
+.table#player .right > .center.xlarge:first-child {
+	color: rgb(230, 175, 59);
 }
 
 .table#about .top a:link, .table#about .top a:active, .table#about .top a:visited {
@@ -247,6 +264,14 @@ a:hover {
 
 .topbar a:hover {
 	color: rgb(238, 202, 63);
+}
+
+.breadcrumb {
+	color: rgba(138, 111, 47, 0.6);
+}
+
+.breadcrumb > li + li::before {
+	color: rgb(138, 111, 47);
 }
 
 /* Social: Chatbox/Comment Box */
