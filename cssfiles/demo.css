@@ -114,10 +114,14 @@ h1 {
 	background: rgb(255, 202, 99, 0.3);
 }
 
-#commentBox:after {
-	content: "testing, testing...";
+#commentBox::before {
+	content: "";
+	height: 300px;
+	width: 40%;
 	position: absolute;
 	right: 0;
+	background: url('https://media.discordapp.net/attachments/821974198540566578/1119439096998264832/Ultio_LD59701.png') center center no-repeat;
+	background-size: contain;
 }
 
 #makeComment {
