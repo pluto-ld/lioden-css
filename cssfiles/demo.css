@@ -42,6 +42,7 @@
 body {
 	background: url('https://pluto-ld.github.io/lioden-css/graphics/blackgold_wall.jpg') center top fixed no-repeat;
 	color: rgb(230, 175, 59);
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
 .main {
