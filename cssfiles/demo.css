@@ -106,9 +106,10 @@ body {
 	letter-spacing: 2px;
 }
 
-.table .inner-table, .table#player .right > .center.xlarge:first-child {
+.table#player .right > .center.xlarge:first-child, .table#about .top {
 	font-size: 20px;
 	text-transform: uppercase;
+	letter-spacing: 3px;
 }
 
 /* Bars: Breadcrumb/Navbar*/
