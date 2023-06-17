@@ -108,10 +108,10 @@ h1 {
 #commentBox {
 	width: 60%;
 	float: left;
-	padding: 5px;
-	border-radius: 10px;
-	border: none;
-	background: rgb(255, 202, 99, 0.3);
+	padding: 5px !important;
+	border-radius: 10px !important;
+	border: none !important;
+	background: rgb(255, 202, 99, 0.4);
 }
 
 #commentBox::before {
@@ -133,6 +133,33 @@ h1 {
 #commentErrors {
 	width: 60%;
 	float: left;
+}
+
+/* Inputs: Buttons/Text Inputs/Switches */
+
+#comment {
+	background: rgba(255, 202, 99, 0.35);
+	border-radius: 20px !important;
+	border: none !important;
+	padding-left: 5px !important;
+}
+
+.select-control, button.button, input[type="button"], input[type="submit"], input[type="reset"] {
+	background: rgb(230, 175, 59);
+	color: black;
+	border: none;
+	text-shadow: none;
+	border-radius: 20px;
+	transition: 275ms;
+}
+
+.select-control:hover, button.button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+	background: rgba(255, 202, 99);
+	color: rgb(72, 48, 2);
+	border: none;
+	text-shadow: none;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgb(255, 202, 99);
 }
 
 /* Mobile Changes */
