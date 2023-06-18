@@ -95,7 +95,21 @@ body {
 }
 
 .table {
-	border: none;
+	border: 2px solid rgb(230, 175, 59, 0.4);
+}
+
+.table th, .table .bottom {
+	background: rgb(230, 175, 59, 0.4);
+	text-align: center;
+	color: rgb(230, 175, 59);
+}
+
+.table .left {
+	background: none;
+}
+
+.table#about {
+	border: none !important;
 }
 
 .table#about .top {
@@ -119,6 +133,7 @@ body {
 	margin: 50px 0px;
 	max-width: 100%;
 	overflow: hidden;
+	border: none !important;
 }
 
 .table#player .right > .center.xlarge:first-child::after {
@@ -160,6 +175,20 @@ body {
 	border: none !important;
 	border-radius: 20px;
 	background: rgb(230, 175, 59, 0.4);
+}
+
+.mound-grid img, div .left img, .cave-grid img {
+	border-radius: 20px;
+	filter: sepia(100%) brightness(90%)
+}
+
+.mound-grid img {
+	margin-top: 5px;
+}
+
+div .left {
+	background: rgba(230, 175, 59, 0.4);
+	border-radius: 20px;
 }
 
 /* Bars: Breadcrumb/Navbar*/
@@ -227,7 +256,7 @@ h1 {
 	left: 30%;
 }
 
-.sidebar h3 {
+.sidebar h3, h3 {
 	color: rgb(230, 175, 59);
 	transition: 275ms;
 }
@@ -259,6 +288,14 @@ a:link, a:visited, a:active {
 a:hover {
 	color: rgba(255, 202, 99);
 	text-shadow: 0 0 10px rgba(255, 202, 99);
+}
+
+#chatMessageContainer a:link, #chatMessageContainer a:visited, #chatMessageContainer a:active, .table .bottom a:link, .table .bottom a:visited, .table .bottom a:active {
+	color: rgb(215, 125, 9);
+}
+
+#chatMessageContainer a:hover, .table .bottom a:hover {
+	color: rgba(255, 202, 99);
 }
 
 .table#player .right > .center.xlarge:first-child {
@@ -354,14 +391,6 @@ a:hover {
 
 .s-chat-message:nth-child(2n) {
 	background: rgba(0, 0, 0, 0.1);
-}
-
-#chatMessageContainer a:link, #chatMessageContainer a:visited, #chatMessageContainer a:active {
-	color: rgb(215, 125, 9) !important;
-}
-
-#chatMessageContainer a:hover {
-	color: rgba(255, 202, 99);
 }
 
 .s-chat-message_timestamp {
