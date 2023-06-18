@@ -332,6 +332,10 @@ a:hover {
 	color: rgb(215, 125, 9) !important;
 }
 
+#chatMessageContainer a:hover {
+	color: rgb(230, 175, 59);
+}
+
 .s-chat-message_timestamp {
 	color: rgba(230, 175, 59, 0.45);
 }
