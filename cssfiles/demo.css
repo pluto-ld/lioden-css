@@ -53,7 +53,12 @@ body {
 	border-radius: 20px;
 }
 
-:root, .s-chat-sidebar #chatMessageList {
+:root {
+	scrollbar-color: rgb(230, 175, 59) rgb(138, 111, 47) white !important;
+	scrollbar-width: thin !important;
+}
+
+.s-chat-sidebar #chatMessageList {
 	scrollbar-color: rgb(230, 175, 59) rgb(138, 111, 47) white !important;
 	scrollbar-width: thin !important;
 }
@@ -353,10 +358,6 @@ a:hover, #chatMessageContainer a:hover {
 
 #chatMessageContainer a:link, #chatMessageContainer a:visited, #chatMessageContainer a:active {
 	color: rgb(215, 125, 9) !important;
-}
-
-#chatMessageContainer a:hover {
-	color: rgb(230, 175, 59);
 }
 
 .s-chat-message_timestamp {
