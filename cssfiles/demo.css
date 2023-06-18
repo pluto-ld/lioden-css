@@ -266,12 +266,12 @@ a:hover {
 	color: rgb(238, 202, 63);
 }
 
-.breadcrumb {
+.breadcrumb > .active {
 	color: rgba(138, 111, 47, 0.6);
 }
 
 .breadcrumb > li + li::before {
-	color: rgb(138, 111, 47);
+	color: rgb(138, 111, 47) !important;
 }
 
 /* Social: Chatbox/Comment Box */
@@ -307,13 +307,42 @@ a:hover {
 	float: left;
 }
 
+#chatMessageContainer {
+	border-radius: 20px;
+	background: rgba(255, 202, 99, 0.4);
+	color: rgb(255, 202, 99);
+}
+
+#chatMessagePinned.s-chat-message__pinned {
+	background: rgb(230, 175, 59) url(//static.lioden.com/images/layout/sticky.png) no-repeat 10px 6px;
+	border-bottom-color: rgb(138, 111, 47) !important;
+	color: black;
+}
+
+.s-chat-message:nth-child(2n+1) {
+	background: none;
+}
+
+.s-chat-message:nth-child(2n) {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+#chatMessageContainer a:linked, #chatMessageContainer a:visited, #chatMessageContainer a:active {
+	color: rgb(215, 125, 9);
+}
+
+.s-chat-message_timestamp {
+	color: rgba(230, 175, 59, 0.45);
+}
+
 /* Inputs: Buttons/Text Inputs/Switches */
 
-#comment {
+#comment, #fra_chatContainer #txtChatInput {
 	background: rgba(255, 202, 99, 0.35);
 	border-radius: 20px !important;
 	border: none !important;
 	padding-left: 5px !important;
+	color: rgb(230, 175, 59);
 }
 
 .select-control, button.button, input[type="button"], input[type="submit"], input[type="reset"] {
@@ -332,6 +361,13 @@ a:hover {
 	text-shadow: none;
 	border-radius: 20px;
 	box-shadow: 0 0 10px rgb(255, 202, 99);
+}
+
+.s-chat-sidebar #label_currentChannel {
+	background: rgba(255, 202, 99, 0.35);
+	border-radius: 20px;
+	border: none;
+	color: rgb(230, 175, 59);
 }
 
 /* Graphics: Lion PFP/Icons/Caves/etc */
