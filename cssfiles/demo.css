@@ -101,7 +101,7 @@ body {
 	border-collapse: separate;
 }
 
-.table th, .table .top, .table .bottom {
+.table .top, .table .bottom {
 	background: rgb(230, 175, 59, 0.4);
 	text-align: center;
 	color: rgb(230, 175, 59);
@@ -111,7 +111,7 @@ body {
 	background: none;
 }
 
-.table .top {
+.table .top, .table th {
 	background: none;
 	text-align: left !important;
 	color: rgb(183, 138, 43);
@@ -336,6 +336,10 @@ a:hover {
 
 .breadcrumb > li + li::before {
 	color: rgb(138, 111, 47) !important;
+}
+
+.alert a:hover {
+	color: black;
 }
 
 /* Social: Chatbox/Comment Box */
