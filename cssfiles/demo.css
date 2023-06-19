@@ -95,7 +95,7 @@ body {
 }
 
 .table {
-	border: 2px solid rgb(230, 175, 59, 0.4);
+	border: none;
 	overflow: hidden;
 	border-radius: 20px;
 	border-collapse: separate;
@@ -111,17 +111,13 @@ body {
 	background: none;
 }
 
-.table#about {
-	border: none !important;
-}
-
-.table#about .top {
+.table# .top {
 	background: none;
 	text-align: left !important;
 	color: rgb(183, 138, 43);
 }
 
-.table#about .bottom {
+.table .bottom {
 	background: none;
 	text-align: right;
 	font-style: italic;
@@ -162,7 +158,7 @@ body {
 	letter-spacing: 2px;
 }
 
-.table#player .right > .center.xlarge:first-child, .table#about .top {
+.table#player .right > .center.xlarge:first-child, .table .top {
 	font-size: 20px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
