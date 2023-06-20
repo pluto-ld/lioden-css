@@ -139,6 +139,15 @@ body {
 	content: "#58766";
 }
 
+.table#attack {
+	background: rgb(255, 202, 99, 0.4);
+	padding: 0px 10px;
+}
+
+.table#clans .top, .table#allies .top {
+	border-bottom: 2px solid;
+}
+
 .inner-table {
 	border-spacing: 0;
 }
