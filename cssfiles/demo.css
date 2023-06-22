@@ -182,7 +182,7 @@ body {
 .mound-grid {
 	border: none !important;
 	border-radius: 20px;
-	background: rgb(230, 175, 59, 0.4);
+	background: none;
 }
 
 div .left img {
