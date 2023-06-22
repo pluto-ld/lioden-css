@@ -185,13 +185,12 @@ body {
 	background: rgb(230, 175, 59, 0.4);
 }
 
-.mound-grid img, div .left img, .cave-grid img {
+div .left img {
 	border-radius: 20px;
-	filter: sepia(100%) brightness(90%)
 }
 
 .mound-grid img {
-	margin-top: 5px;
+	margin-bottom: -20px;
 }
 
 div .left {
@@ -470,6 +469,30 @@ div.cave-grid > img[src$="//static.lioden.com/images/layout/prideoverviewbanner.
 	height: 60px;
 }
 
+
+div.cave-grid > img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
+	background: url('https://static.lioden.com/images/dynamic/backgrounds/pathofsinners.png') center center no-repeat !important;
+	background-size: cover !important;
+	padding-left: 100%;
+	height: 120px;
+}
+
+div.mound-grid > img[src$="//static.lioden.com/images/layout/beetleunsorted.png"] {
+	background: url('https://static.lioden.com/images/beetles/scarabaeusaureus/male/left/glowing.png') center center no-repeat !important;
+	background-size: contain !important;
+	width: 130px;
+	height: 80px;
+	padding-left: 100%;
+}
+
+
+div.mound-grid > img[src$="//static.lioden.com/images/layout/beetlemound.png"] {
+	background: url('https://static.lioden.com/images/beetles/scarabaeusaureus/male/left/glowing.png') center center no-repeat !important;
+	background-size: contain !important;
+	width: 130px;
+	height: 80px;
+	padding-left: 100%;
+}
 
 /* Centering lion PFP code below; made by ryouta#276513 */
 #about tr.right {
