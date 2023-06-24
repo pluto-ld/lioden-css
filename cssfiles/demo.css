@@ -130,7 +130,6 @@ body {
 }
 
 .table .top, .table .bottom {
-	background: rgb(230, 175, 59, 0.4);
 	text-align: center;
 	color: rgb(230, 175, 59);
 }
@@ -145,7 +144,7 @@ body {
 	color: rgb(183, 138, 43);
 }
 
-.table .bottom {
+.table#about .bottom, .table#clans .bottom, .table#allies .bottom {
 	background: none;
 	text-align: right;
 	font-style: italic;
