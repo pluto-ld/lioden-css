@@ -144,6 +144,7 @@ body {
 	border: none;
 	color: rgb(230, 175, 59);
 	padding: 0px 10px;
+	border-radius: 20px;
 }
 
 .table#clans .top, .table#allies .top {
@@ -461,6 +462,7 @@ input, button, select, textarea {
 
 .item-header {
 	color: rgb(230, 175, 59);
+	background: none;
 }
 
 .slider {
