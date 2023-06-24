@@ -94,6 +94,11 @@ body {
 	scrollbar-width: thin !important;
 }
 
+.mainbox {
+	scrollbar-color: rgb(230, 175, 59) rgb(138, 111, 47) !important;
+	scrollbar-width: thin !important;
+}
+
 ::-webkit-scrollbar {
 	width: 5px;
 }
