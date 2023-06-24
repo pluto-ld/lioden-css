@@ -40,21 +40,23 @@
 	height: 200px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	padding: 0 10%;
+	margin: 30px 0;
 }
 
 .side {
-	flex-grow: 1;
+	width: 20%;
 	text-align: right;
 	padding: 10px;
 	border-right: 2px solid rgb(138, 111, 47);
 }
 
 .mainbox {
-	flex-grow: 4;
 	text-align: left;
 	padding: 10px;
 	max-height: 100%;
+	width: 60%;
 	overflow-y: auto;
 	background: rgb(255, 202, 99, 0.4);
 	color: rgb(230, 175, 59);
@@ -133,6 +135,7 @@ body {
 .table .top, .table .bottom {
 	text-align: center;
 	color: rgb(230, 175, 59);
+	background: none;
 }
 
 .table .left {
