@@ -547,7 +547,7 @@ input, button, select, textarea {
 	color: rgb(100, 60, 9);
 }
 
-.chatMenu-container {
+.chatMenu-container:not(#fraChatSettingsMenu) {
 	overflow: hidden;
 	border-radius: 20px;
 }
