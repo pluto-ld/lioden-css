@@ -514,7 +514,7 @@ input, button, select, textarea {
 	color: rgb(230, 175, 59);
 }
 
-.s-chat-sidebar #fraChatChannelMenu {
+.s-chat-sidebar #fraChatChannelMenu, #context-chatMenu {
 	overflow: hidden;
 	background: rgba(230, 175, 59, 0.9);
 	border-radius: 20px;
@@ -523,7 +523,7 @@ input, button, select, textarea {
 	padding: 0px;
 }
 
-#fra_chatContainer .channelMenu .channelSwitcher {
+#fra_chatContainer .channelMenu .channelSwitcher, #context-chatMenu .chatMenu-option, #fraChatSettingsMenu .chatMenu-option {
 	border-radius: 0px;
 	color: black;
 	transition: 275ms;
@@ -534,7 +534,7 @@ input, button, select, textarea {
 	color: rgba(255, 202, 99);
 }
 
-#fra_chatContainer .channelMenu .channelSwitcher:hover {
+#fra_chatContainer .channelMenu .channelSwitcher:hover, #context-chatMenu .chatMenu-option:hover, #fraChatSettingsMenu .chatMenu-option:hover {
 	background: rgba(215, 125, 9, 0.5);
 	color: rgb(100, 60, 9);
 }
