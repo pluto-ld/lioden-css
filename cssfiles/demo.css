@@ -514,8 +514,7 @@ input, button, select, textarea {
 	color: rgb(230, 175, 59);
 }
 
-.s-chat-sidebar #fraChatChannelMenu, #context-chatMenu {
-	overflow: hidden;
+.s-chat-sidebar #fraChatChannelMenu, #context-chatMenu, #fraChatSettingsMenu {
 	background: rgba(230, 175, 59, 0.9);
 	border-radius: 20px;
 	border: 1px solid rgb(230, 175, 59);
@@ -523,8 +522,17 @@ input, button, select, textarea {
 	padding: 0px;
 }
 
+.s-chat-sidebar #fraChatChannelMenu {
+	overflow: hidden;
+}
+
+.s-chat-sidebar #fraChatChannelMenu {
+	padding: 2px;
+}
+
 #fra_chatContainer .channelMenu .channelSwitcher, #context-chatMenu .chatMenu-option, #fraChatSettingsMenu .chatMenu-option {
 	border-radius: 0px;
+	background: none;
 	color: black;
 	transition: 275ms;
 }
@@ -537,6 +545,30 @@ input, button, select, textarea {
 #fra_chatContainer .channelMenu .channelSwitcher:hover, #context-chatMenu .chatMenu-option:hover, #fraChatSettingsMenu .chatMenu-option:hover {
 	background: rgba(215, 125, 9, 0.5);
 	color: rgb(100, 60, 9);
+}
+
+.chatMenu-container {
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+#btnPopoutChat {
+	border-radius: 20px;
+}
+ #context-chatMenu::before {
+	border-left-color: rgb(230, 175, 59);
+}
+
+#fraChatSettingsMenu::before {
+	border-bottom-color: rgb(230, 175, 59);
+}
+
+#context-chatMenu::after {
+	border-left-color: rgba(230, 175, 59, 0.9);
+}
+
+#fraChatSettingsMenu::after {
+	border-bottom-color: rgba(230, 175, 59, 0.9);
 }
 
 .item {
