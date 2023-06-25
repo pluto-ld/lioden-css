@@ -455,6 +455,46 @@ hr {
 	color: rgba(230, 175, 59, 0.45);
 }
 
+#fra_chatContainer .modMessage, .s-chat-message__mod {
+	background: rgba(230, 175, 59, 0.6) !important;
+	border-top-color: rgb(230, 175, 59) !important;
+	border-bottom-color: rgb(230, 175, 59) !important;
+	color: black;
+}
+
+#fra_chatContainer .modMessage .s-chat-message_timestamp, .s-chat-message__mod .s-chat-message_timestamp {
+	color: rgba(0, 0, 0, 0.45);
+}
+
+.s-chat-message.hasContext, #chatMessageList[data-pings="enabled"] .s-chat-message_mention {
+	border-left-color: rgb(230, 175, 59) !important;
+	background-color: rgba(215, 125, 9, 0.5) !important;
+}
+
+.s-chat-sidebar #fraChatChannelMenu {
+	background: rgba(230, 175, 59, 0.9);
+	border-radius: 20px;
+	border: 1px solid rgb(230, 175, 59);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+	padding: 0px;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher {
+	border-radius: 0px;
+	color: black;
+	transition: 275ms;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: rgb(138, 111, 47);
+	color: rgba(255, 202, 99);
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher:hover {
+	background: rgba(215, 125, 9, 0.5);
+	color: rgb(100, 60, 9);
+}
+
 /* Inputs: Buttons/Text Inputs/Switches */
 
 input, button, select, textarea {
