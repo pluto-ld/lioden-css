@@ -471,28 +471,8 @@ hr {
 	background-color: rgba(215, 125, 9, 0.5) !important;
 }
 
-.s-chat-sidebar #fraChatChannelMenu {
-	background: rgba(230, 175, 59, 0.9);
-	border-radius: 20px;
-	border: 1px solid rgb(230, 175, 59);
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-	padding: 0px;
-}
-
-#fra_chatContainer .channelMenu .channelSwitcher {
-	border-radius: 0px;
-	color: black;
-	transition: 275ms;
-}
-
-#fra_chatContainer .channelMenu .channelSwitcher.active {
-	background: rgb(138, 111, 47);
-	color: rgba(255, 202, 99);
-}
-
-#fra_chatContainer .channelMenu .channelSwitcher:hover {
-	background: rgba(215, 125, 9, 0.5);
-	color: rgb(100, 60, 9);
+#txtChatContainer #lblCharacterCounter {
+	color: rgb(138, 111, 47);
 }
 
 /* Inputs: Buttons/Text Inputs/Switches */
@@ -532,6 +512,31 @@ input, button, select, textarea {
 	border-radius: 20px;
 	border: none;
 	color: rgb(230, 175, 59);
+}
+
+.s-chat-sidebar #fraChatChannelMenu {
+	overflow: hidden;
+	background: rgba(230, 175, 59, 0.9);
+	border-radius: 20px;
+	border: 1px solid rgb(230, 175, 59);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+	padding: 0px;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher {
+	border-radius: 0px;
+	color: black;
+	transition: 275ms;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: rgb(138, 111, 47);
+	color: rgba(255, 202, 99);
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher:hover {
+	background: rgba(215, 125, 9, 0.5);
+	color: rgb(100, 60, 9);
 }
 
 .item {
