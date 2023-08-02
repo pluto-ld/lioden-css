@@ -24,3 +24,460 @@
 	This code was created using VSCode and hosted on Github.
 */
 
+/* Setup: Fonts/Colors */
+
+/* @font-face {
+	
+} */
+
+/* Boxes: Custom Boxes */
+
+/* General: Body/Main/Topbar/Scroll */
+
+.topbar {
+
+}
+
+body {
+	background: url('') center center fixed no-repeat;
+	color: ;
+}
+
+.main {
+	background: ;
+	border: ;
+	border-radius: ;
+}
+
+:root {
+	scrollbar-color: /* 2 colors */ !important;
+	scrollbar-width: thin !important;
+}
+
+.s-chat-sidebar #chatMessageList {
+	scrollbar-color: /* 2 colors */ !important;
+	scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: ;
+}
+
+::-webkit-scrollbar-thumb {
+	background: ;
+	border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: !important;
+}
+
+
+/* For one solid color, background: none here. */
+.col-md-9 {
+	background: none;
+}
+
+/* Panels: Tables/Panels */
+
+.col-md-3 .panel {
+	background: ;
+	border: ;
+	box-shadow: ;
+}
+
+.table {
+	border: ;
+	overflow: hidden;
+	border-radius: ;
+	border-collapse: separate;
+}
+
+.table .top, .table .bottom {
+	text-align: ;
+	color: ;
+	background: ;
+}
+
+.table .left {
+	background: ;
+}
+
+.table .top, .table th {
+	background: ;
+	text-align: !important;
+	color: ;
+}
+
+
+.inner-table {
+	border-spacing: 0;
+}
+
+.inner-table .left {
+	background: ;
+	padding: ;
+	text-align: ;
+}
+
+.inner-table .right {
+	background: ;
+	padding: ;
+}
+
+.cave-grid {
+	border: !important;
+	border-radius: ;
+	background: ;
+}
+
+.mound-grid {
+	border: !important;
+	border-radius: ;
+	background: ;
+}
+
+.mound-grid img {
+	margin-bottom: ;
+}
+
+/* Bars: Breadcrumb/Navbar*/
+
+.breadcrumb {
+	background: none;
+}
+
+.navbar {
+	border-radius: ;
+	background: none;
+	margin-left: ;
+	min-height: ;
+	margin-top: ;
+}
+
+.alert {
+	color:  !important;
+	background:  !important;
+	border-radius: ;
+	border: !important;
+}
+
+.progress-bar {
+	background: ;
+}
+
+.progress {
+	background: ;
+	border-radius:;
+	border: ;
+}
+
+/* Text: Headers/Text Decoration/etc */
+
+h1 {
+	font-family: ;
+	text-align: center;
+	font-size: ;
+	color: ;
+}
+
+.sidebar h3, h3 {
+	color: ;
+	transition: ;
+}
+
+.sidebar h3 a:hover {
+	color: ;
+}
+
+.navbar-nav > li > a {
+	color: !important;
+	transition: ;
+}
+
+.navbar-nav > li > a:hover {
+	color: !important;
+	background: none !important;
+}
+
+a:link, a:visited, a:active {
+	color: ;
+	transition: ;
+}
+
+a:hover {
+	color: ;
+}
+
+#chatMessageContainer a:link, #chatMessageContainer a:visited, #chatMessageContainer a:active, .table .bottom a:link, .table .bottom a:visited, .table .bottom a:active {
+	color: ;
+}
+
+#chatMessageContainer a:hover, .table .bottom a:hover {
+	color: ;
+}
+
+.topbar a:link, .topbar a:visited, .topbar a:active {
+	color: ;
+}
+
+.topbar a:hover {
+	color: ;
+}
+
+.breadcrumb > .active {
+	color: ;
+}
+
+.breadcrumb > li + li::before {
+	color: !important;
+}
+
+.alert a:hover {
+	color: black;
+}
+
+hr {
+	border-top-color: ;
+}
+
+/* Social: Chatbox/Comment Box */
+
+#commentBox {
+	padding: 5px !important;
+	border-radius: !important;
+	border: !important;
+	background: ;
+	color: ;
+}
+
+#makeComment {
+	margin-bottom: ;
+}
+
+#chatMessageContainer {
+	border-radius: ;
+	background: ;
+	color: ;
+	border: ;
+}
+
+#chatMessagePinned.s-chat-message__pinned {
+	background: /*color*/ url(//static.lioden.com/images/layout/sticky.png) no-repeat 10px 6px;
+	border-bottom-color: !important;
+	color: ;
+}
+
+.s-chat-message:nth-child(2n+1) {
+	background: ;
+}
+
+.s-chat-message:nth-child(2n) {
+	background: ;
+}
+
+.s-chat-message_timestamp, .text-muted {
+	color: ;
+}
+
+#fra_chatContainer .modMessage, .s-chat-message__mod {
+	background: !important;
+	border-top-color: !important;
+	border-bottom-color: !important;
+	color: ;
+}
+
+#fra_chatContainer .modMessage .s-chat-message_timestamp, .s-chat-message__mod .s-chat-message_timestamp {
+	color: ;
+}
+
+.s-chat-message.hasContext, #chatMessageList[data-pings="enabled"] .s-chat-message_mention {
+	border-left-color: !important;
+	background-color: !important;
+}
+
+#txtChatContainer #lblCharacterCounter {
+	color: ;
+}
+
+/* Inputs: Buttons/Text Inputs/Switches */
+
+input, button, select, textarea {
+	color: ;
+}
+
+#comment, #fra_chatContainer #txtChatInput {
+	background: ;
+	border-radius:  !important;
+	border: !important;
+	padding-left: 5px !important;
+	color: ;
+}
+
+.select-control, button.button, input[type="button"], input[type="submit"], input[type="reset"] {
+	background: ;
+	color: ;
+	border: ;
+	text-shadow: ;
+	border-radius: ;
+	transition: 275ms;
+}
+
+.select-control:hover, button.button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+	background: ;
+	color: ;
+	border: ;
+	text-shadow: ;
+	border-radius: ;
+}
+
+.s-chat-sidebar #label_currentChannel {
+	background: ;
+	border-radius: ;
+	border: ;
+	color: ;
+}
+
+.s-chat-sidebar #fraChatChannelMenu, #context-chatMenu, #fraChatSettingsMenu {
+	background: ;
+	border-radius: ;
+	border: ;
+	box-shadow: ;
+	padding: ;
+}
+
+.s-chat-sidebar #fraChatChannelMenu {
+	overflow: hidden;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher, #context-chatMenu .chatMenu-option, #fraChatSettingsMenu .chatMenu-option {
+	border-radius: ;
+	background: ;
+	color: ;
+	transition: 275ms;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: ;
+	color: ;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher:hover, #context-chatMenu .chatMenu-option:hover, #fraChatSettingsMenu .chatMenu-option:hover {
+	background: ;
+	color: ;
+}
+
+.chatMenu-container:not(#fraChatSettingsMenu) {
+	overflow: hidden;
+	border-radius: ;
+}
+
+#btnPopoutChat {
+	border-radius: ;
+}
+ #context-chatMenu::before {
+	border-left-color: ;
+}
+
+#fraChatSettingsMenu::before {
+	border-bottom-color: ;
+}
+
+#context-chatMenu::after {
+	border-left-color: ;
+}
+
+#fraChatSettingsMenu::after {
+	border-bottom-color: ;
+}
+
+.item {
+	background: ;
+	border: ;
+	border-radius: ;
+}
+
+.item-header {
+	color: ;
+	background: ;
+}
+
+.slider {
+	background: ;
+}
+
+input:checked + .slider {
+	background: ;
+}
+
+/* Graphics: Lion PFP/Icons/Caves/etc */
+
+#lion_image{
+	/* clip path or border-radius */
+}
+
+div.cave-grid > img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+	background: url('') center center no-repeat !important;
+	background-size: cover !important;
+	padding-left: 100%;
+	height: 60px;
+}
+
+div.cave-grid > img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+	background: url('') center center no-repeat !important;
+	background-size: cover !important;
+	padding-left: 100%;
+	height: 60px;
+}
+
+div.cave-grid > img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+	background: url('') center center no-repeat !important;
+	padding-left: 100%;
+	height: 60px;
+}
+
+
+div.cave-grid > img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
+	background: url('') center center no-repeat !important;
+	background-size: cover !important;
+	padding-left: 100%;
+	height: 120px;
+}
+
+div.mound-grid > img[src$="//static.lioden.com/images/layout/beetleunsorted.png"] {
+	background: url('') center center no-repeat !important;
+	background-size: contain !important;
+	width: 130px;
+	height: 80px;
+	padding-left: 100%;
+}
+
+
+div.mound-grid > img[src$="//static.lioden.com/images/layout/beetlemound.png"] {
+	background: url('g') center center no-repeat !important;
+	background-size: contain !important;
+	width: 130px;
+	height: 80px;
+	padding-left: 100%;
+}
+
+/* Centering lion PFP code below; made by ryouta#276513 */
+#about tr.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#about tr.right td:not(.right):not([width="3"]) {
+  width: unset !important;
+}
+
+/* Mobile Changes */
+
+@media (max-width: 768px) {
+	
+}
