@@ -26,11 +26,11 @@
 
 /* Setup: Fonts/Colors */
 	:root {
-		--gold: #f2a860;
-		--pink: #fe99b9;
-		--red: #b6032b;
-		--green: #57886C;
-		--black: #221D23;
+		--gold: 242, 168, 96;
+		--pink: 254, 153, 185;
+		--red: 182, 3, 43;
+		--green: 87, 136, 108;
+		--black: 34, 29, 35;
 	}
 
 /* @font-face {
@@ -46,13 +46,13 @@
 }
 
 body {
-	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/Honeybee.jpeg') center center fixed no-repeat, var(--red);
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/Honeybee.jpeg') center center fixed no-repeat, var(rgba(--red));
 	color: var(--black);
 }
 
 .main {
-	background: var(--pink);
-	border: ;
+	background: var(rgba(--pink), 0.8);
+	border: 2px solid var(rgba(--red));
 	border-radius: ;
 }
 
