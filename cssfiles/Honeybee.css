@@ -424,7 +424,7 @@ input:checked + .slider {
 /* Graphics: Lion PFP/Icons/Caves/etc */
 
 #lion_image{
-	/* clip path or border-radius */
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 div.cave-grid > img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
