@@ -51,9 +51,10 @@ body {
 }
 
 .main {
-	background: rgba(var(--pink), 0.8);
-	border: 2px solid rgba(var(--red));
-	border-radius: ;
+	background: rgba(var(--pink), 0.85);
+	border: none;
+	box-shadow: 0px 0px 5px rgba(var(--pink));
+	border-radius: 10px;
 }
 
 :root {
@@ -92,48 +93,45 @@ body {
 /* Panels: Tables/Panels */
 
 .col-md-3 .panel {
-	background: ;
-	border: ;
-	box-shadow: ;
+	background: rgba(var(--red), 0.2);
+	border: none;
+	border-radius: 15px;
+	box-shadow: 2px 2px 0px rgba(var(--green));
+	position: relative;
 }
 
+/* note: add leaves and such to :afters of panels! */
+
 .table {
-	border: ;
+	border: none;
 	overflow: hidden;
-	border-radius: ;
+	border-radius: 15px;
 	border-collapse: separate;
+	background: rgba(var(--red), 0.2);
 }
 
 .table .top, .table .bottom {
-	text-align: ;
 	color: ;
-	background: ;
+	background: rgba(var(--red), 0.1);
 }
 
 .table .left {
-	background: ;
+	background: none;
 }
-
-.table .top, .table th {
-	background: ;
-	text-align: !important;
-	color: ;
-}
-
 
 .inner-table {
 	border-spacing: 0;
+	background: rgba(var(--gold), 0.25);
+	box-shadow: 0px 0px 40px rgba(var(--gold), 0.5);
+	border-radius: 15px;
 }
 
 .inner-table .left {
-	background: ;
-	padding: ;
-	text-align: ;
+	background: none;
 }
 
 .inner-table .right {
-	background: ;
-	padding: ;
+	background: none;
 }
 
 .cave-grid {
@@ -255,15 +253,22 @@ hr {
 /* Social: Chatbox/Comment Box */
 
 #commentBox {
-	padding: 5px !important;
-	border-radius: !important;
-	border: !important;
-	background: ;
+	border: none !important;
+	border-radius: 15px !important;
+	background: rgba(var(--red), 0.2));
 	color: ;
+}
+
+.comment {
+	padding: 5px 10px;
 }
 
 #makeComment {
 	margin-bottom: ;
+}
+
+.comment:nth-child(2n) {
+	background: rgba(var(--red), 0.1));
 }
 
 #chatMessageContainer {
@@ -424,7 +429,9 @@ input:checked + .slider {
 /* Graphics: Lion PFP/Icons/Caves/etc */
 
 #lion_image{
-	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: -3px 3px rgba(var(--green));
 }
 
 div.cave-grid > img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
