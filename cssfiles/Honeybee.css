@@ -48,7 +48,7 @@
 }
 
 body {
-	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/Honeybee.jpeg') center center fixed no-repeat, rgba(var(--red));
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/Honeybee.jpeg') center center fixed no-repeat, rgb(208, 81, 109);
 	color: rgba(var(--black));
 }
 
@@ -156,7 +156,7 @@ body {
 /* Bars: Breadcrumb/Navbar*/
 
 .breadcrumb {
-	background: none;
+	background: rgba(var(--red), 0.2);
 }
 
 .navbar {
