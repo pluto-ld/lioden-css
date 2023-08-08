@@ -42,7 +42,9 @@
 /* General: Body/Main/Topbar/Scroll */
 
 .topbar {
-
+	background: rgba(var(--red), 0.85);
+	box-shadow: 0px 0px 5px rgba(var(--red));
+	border-radius: 0px 0px 15px 15px;
 }
 
 body {
@@ -255,7 +257,7 @@ hr {
 #commentBox {
 	border: none !important;
 	border-radius: 15px !important;
-	background: rgba(var(--red), 0.2)) !important;
+	background: rgba(var(--red), 0.2) !important;
 	color: ;
 }
 
@@ -268,7 +270,7 @@ hr {
 }
 
 .comment:nth-child(2n) {
-	background: rgba(var(--red), 0.1)) !important;
+	background: rgba(var(--red), 0.1) !important;
 }
 
 #chatMessageContainer {
@@ -288,31 +290,30 @@ hr {
 }
 
 .s-chat-message:nth-child(2n) {
-	background: none;;
+	background: none;
 }
 
 .s-chat-message_timestamp, .text-muted {
-	color: ;
+	color: rgba(var(--red), 0.5);
 }
 
 #fra_chatContainer .modMessage, .s-chat-message__mod {
-	background: !important;
-	border-top-color: !important;
-	border-bottom-color: !important;
-	color: ;
+	background: rgba(var(--green), 0.4) !important;
+	border-top-color: rgba(var(--green)) !important;
+	border-bottom-color: rgba(var(--green)) !important;
 }
 
 #fra_chatContainer .modMessage .s-chat-message_timestamp, .s-chat-message__mod .s-chat-message_timestamp {
-	color: ;
+	color: rgba(var(--black), 0.3);
 }
 
 .s-chat-message.hasContext, #chatMessageList[data-pings="enabled"] .s-chat-message_mention {
-	border-left-color: !important;
-	background-color: !important;
+	border-left-color: rgba(var(--gold)) !important;
+	background-color: rgba(var(--gold), 0.4) !important;
 }
 
 #txtChatContainer #lblCharacterCounter {
-	color: ;
+	color: rgba(var(--green));
 }
 
 /* Inputs: Buttons/Text Inputs/Switches */
