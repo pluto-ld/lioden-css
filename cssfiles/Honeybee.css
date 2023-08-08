@@ -54,6 +54,7 @@ body {
 
 .main {
 	background: rgba(var(--pink), 0.85);
+	background: linear-gradient(-45deg, rgba(254,153,185,0.85) 0%, rgba(242,168,96,0.8) 21%, rgba(249,160,144,1) 44%, rgba(254,153,185,0.85) 100%);
 	border: none;
 	box-shadow: 0px 0px 5px rgba(var(--pink));
 	border-radius: 10px;
