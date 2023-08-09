@@ -100,7 +100,7 @@ body {
 	background: rgba(var(--red), 0.2);
 	border: none;
 	border-radius: 15px;
-	box-shadow: 2px 2px 0px rgba(var(--green));
+	box-shadow: none;
 	position: relative;
 }
 
@@ -114,8 +114,8 @@ body {
 	background: rgba(var(--red), 0.2);
 }
 
-.table .top, .table .bottom {
-	color: ;
+.table .top, .table th, .table .bottom {
+	color: rgba(var(--white));
 	background: rgba(var(--red), 0.1);
 }
 
@@ -138,16 +138,21 @@ body {
 	background: none;
 }
 
+.table .right_odd {
+	background: rgba(var(--gold), 0.);
+	box-shadow: 0px 0px 40px rgba(var(--gold), 0.5);
+}
+
 .cave-grid {
-	border: !important;
-	border-radius: ;
-	background: ;
+	border: none !important;
+	border-radius: 15px;
+	background: rgba(var(--red),0.2);
 }
 
 .mound-grid {
-	border: !important;
+	border: none !important;
 	border-radius: ;
-	background: ;
+	background: none;
 }
 
 .mound-grid img {
@@ -167,6 +172,7 @@ body {
 	margin-left: ;
 	min-height: ;
 	margin-top: ;
+	border-bottom: 2px solid rgba(var(--red));
 }
 
 .alert {
@@ -433,7 +439,7 @@ input:checked + .slider {
 #lion_image{
 	border-radius: 50%;
 	overflow: hidden;
-	box-shadow: -3px 3px rgba(var(--green));
+	box-shadow: -3px 3px 4px rgba(var(--gold), 0.5);
 }
 
 div.cave-grid > img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
