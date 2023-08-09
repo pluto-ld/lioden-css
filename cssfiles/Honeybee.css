@@ -209,8 +209,8 @@ div .left > img {
 h1 {
 	font-family: "Loving Rose";
 	text-align: center;
-	font-size: ;
-	color: rgba(var(--red));
+	font-size: 100px;
+	color: rgba(var(--red), 0.7);
 }
 
 .sidebar h3, h3 {
