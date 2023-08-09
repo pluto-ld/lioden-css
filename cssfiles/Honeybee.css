@@ -333,6 +333,10 @@ hr {
 	color: rgba(var(--green));
 }
 
+.badge {
+	background: rgba(var(--gold));
+}
+
 /* Inputs: Buttons/Text Inputs/Switches */
 
 input, button, select, textarea {
