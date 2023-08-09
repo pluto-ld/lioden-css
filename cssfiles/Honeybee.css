@@ -25,19 +25,23 @@
 */
 
 /* Setup: Fonts/Colors */
-	:root {
-		--gold: 242, 168, 96;
-		--pink: 254, 153, 185;
-		--red: 182, 3, 43;
-		--green: 87, 136, 108;
-		--black: 34, 29, 35;
-		--white: 253,251,252;
-	}
+:root {
+	--gold: 242, 168, 96;
+	--pink: 254, 153, 185;
+	--red: 182, 3, 43;
+	--green: 87, 136, 108;
+	--black: 34, 29, 35;
+	--white: 253,251,252;
+}
 
-/* @font-face {
+@font-face {
+	font-family: "Loving Rose";
+	src: url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Loving Rose Solid.otf') format("opentype"),
+		url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Loving Rose Solid.ttf') format("truetype"),
+		url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Loving Rose Solid.woff') format("woff"),
+		url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Loving Rose Solid.woff2') format("woff2");
 	
-} */
-
+}
 /* Boxes: Custom Boxes */
 
 /* General: Body/Main/Topbar/Scroll */
@@ -203,10 +207,10 @@ div .left > img {
 /* Text: Headers/Text Decoration/etc */
 
 h1 {
-	font-family: ;
+	font-family: "Loving Rose";
 	text-align: center;
 	font-size: ;
-	color: ;
+	color: rgba(var(--red));
 }
 
 .sidebar h3, h3 {
