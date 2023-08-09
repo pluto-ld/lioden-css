@@ -37,8 +37,8 @@
 @font-face {
 	font-family: "Loving Rose";
 	src: url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Loving Rose Solid.otf') format("opentype"),
-		url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Loving Rose Solid.ttf') format("truetype"),
-		url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Loving Rose Solid.woff') format("woff"),
+		url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Loving-Rose-Solid.ttf') format("truetype"),
+		url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Loving-Rose-Solid.woff') format("woff"),
 		url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Loving Rose Solid.woff2') format("woff2");
 	
 }
