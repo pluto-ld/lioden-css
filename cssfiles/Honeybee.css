@@ -43,7 +43,8 @@
 	
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Ysabeau+Infant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap');
 /* Fonts:
 font-family: 'Freehand', cursive;
 font-family: 'Ysabeau Infant', sans-serif;
@@ -463,6 +464,18 @@ input:checked + .slider {
 	border-radius: 50%;
 	overflow: hidden;
 	box-shadow: -3px 3px 4px rgba(var(--gold), 0.5);
+}
+
+div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+	visibility: hidden;
+	position: relative;
+}
+
+div.container.main > div:nth-child(1) > nav > div.navbar-header > a::after {
+	content: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/HoneybeeLogo.png');
+	position: absolute;
+	margin-left: -212px;
+	margin-top: 0px;
 }
 
 div.cave-grid > img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
