@@ -25,15 +25,13 @@
 */
 
 /* Setup: Fonts/Colors */
-:root {
-	--gold: 242, 168, 96;
-	--pink: 254, 153, 185;
-	--red: 182, 3, 43;
-	--green: 87, 136, 108;
-	--black: 34, 29, 35;
-	--white: 253,251,252;
-}
-
+/* Fonts:
+font-family: 'Freehand', cursive;
+font-family: 'Ysabeau Infant', sans-serif;
+font-family: "Loving Rose", cursive;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap');
 @font-face {
 	font-family: "Loving Rose";
 	src: url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Loving Rose Solid.otf') format("opentype"),
@@ -43,13 +41,16 @@
 	
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap');
-/* Fonts:
-font-family: 'Freehand', cursive;
-font-family: 'Ysabeau Infant', sans-serif;
-font-family: "Loving Rose", cursive;
-*/
+
+
+:root {
+	--gold: 242, 168, 96;
+	--pink: 254, 153, 185;
+	--red: 182, 3, 43;
+	--green: 87, 136, 108;
+	--black: 34, 29, 35;
+	--white: 253,251,252;
+}
 
 /* Boxes: Custom Boxes */
 
