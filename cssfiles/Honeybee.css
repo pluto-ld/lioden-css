@@ -42,6 +42,14 @@
 		url('https://pluto-ld.github.io/lioden-css/graphics/fonts/Loving Rose Solid.woff2') format("woff2");
 	
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Ysabeau+Infant&display=swap');
+/* Fonts:
+font-family: 'Freehand', cursive;
+font-family: 'Ysabeau Infant', sans-serif;
+font-family: "Loving Rose", cursive;
+*/
+
 /* Boxes: Custom Boxes */
 
 /* General: Body/Main/Topbar/Scroll */
@@ -55,6 +63,7 @@
 body {
 	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/Honeybee.jpeg') center center fixed no-repeat, rgb(208, 81, 109);
 	color: rgba(var(--black));
+	font-family: 'Ysabeau Infant', sans-serif;
 }
 
 .main {
@@ -186,6 +195,7 @@ div .left > img {
 	min-height: ;
 	margin-top: ;
 	border-bottom: 2px solid rgba(var(--red));
+	font-family: 'Freehand', cursive;
 }
 
 .alert {
@@ -223,8 +233,8 @@ h1 {
 }
 
 .navbar-nav > li > a {
-	color: !important;
-	transition: ;
+	color: rgba(var(--red)) !important;
+	transition: 275ms;
 }
 
 .navbar-nav > li > a:hover {
