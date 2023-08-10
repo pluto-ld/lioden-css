@@ -192,6 +192,7 @@ div .left > img {
 
 .navbar {
 	border-bottom: 2px solid rgba(var(--red));
+	background: none;
 	font-family: 'Freehand', cursive;
 }
 
