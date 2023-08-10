@@ -191,11 +191,6 @@ div .left > img {
 }
 
 .navbar {
-	border-radius: ;
-	background: none;
-	margin-left: ;
-	min-height: ;
-	margin-top: ;
 	border-bottom: 2px solid rgba(var(--red));
 	font-family: 'Freehand', cursive;
 }
@@ -226,55 +221,70 @@ h1 {
 }
 
 .sidebar h3, h3 {
-	color: ;
-	transition: ;
+	color: rgba(var(--red));
+	transition: 275ms;
 }
 
 .sidebar h3 a:hover {
-	color: ;
+	color: rgba(var(--red), 0.7);
 }
 
 .navbar-nav > li > a {
-	color: rgba(var(--red)) !important;
+	color: rgba(var(--red), 0.6) !important;
+	font-size: 22px;
 	transition: 275ms;
 }
 
 .navbar-nav > li > a:hover {
-	color: !important;
+	color: rgba(var(--red), 0.8) !important;
 	background: none !important;
+	text-shadow: 0px 0px 20px rgba(var(--gold));
 }
 
 a:link, a:visited, a:active {
-	color: ;
-	transition: ;
+	color: rgba(var(--red));
+	transition: 275ms;
 }
 
 a:hover {
-	color: ;
+	color: rgba(var(--red), 0.7);
+	text-shadow: 0px 0px 2px rgba(var(--gold));
 }
 
-#chatMessageContainer a:link, #chatMessageContainer a:visited, #chatMessageContainer a:active, .table .bottom a:link, .table .bottom a:visited, .table .bottom a:active {
-	color: ;
+.table .top a:link, .table .top a:visited {
+	color: rgba(var(--red)) !important;
 }
 
-#chatMessageContainer a:hover, .table .bottom a:hover {
-	color: ;
+.table .top a:hover, .table .top a:focus, .table .top a:active {
+	color: rgba(var(--red), 0.7) !important;
+	text-shadow: 0px 0px 2px rgba(var(--gold));
+}
+
+.table .bottom a:link, .table .bottom a:visited {
+	color: rgba(var(--red));
+}
+
+.table .bottom a:hover, .table .bottom a:focus, .table .bottom a:active {
+	text-decoration: underline;
+	color: rgba(var(--red), 0.7) !important;
+	text-shadow: 0px 0px 2px rgba(var(--gold));
 }
 
 .topbar a:link, .topbar a:visited, .topbar a:active {
-	color: ;
+	color: rgba(var(--pink));
 }
 
 .topbar a:hover {
-	color: ;
+	color: rgba(var(--gold));
+	text-shadow: 0px 0px 2px rgba(var(--pink));
 }
 
 .breadcrumb > .active {
-	color: ;
+	color: rgba(var(--red), 0.5);
 }
 
 .breadcrumb > li + li::before {
-	color: !important;
+	color: rgba(var(--red), 0.7) !important;
 }
 
 .alert a:hover {
@@ -282,7 +292,7 @@ a:hover {
 }
 
 hr {
-	border-top-color: ;
+	border-top-color: rgba(var(--gold));
 }
 
 /* Social: Chatbox/Comment Box */
