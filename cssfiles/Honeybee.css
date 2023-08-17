@@ -291,8 +291,13 @@ a:hover {
 	color: rgba(var(--red), 0.7) !important;
 }
 
+.alert-success a {
+	color: rgba(var(--green));
+}
+
 .alert a:hover {
 	color: black;
+	text-shadow: none;
 }
 
 hr {
