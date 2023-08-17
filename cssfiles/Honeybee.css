@@ -77,12 +77,12 @@ body {
 }
 
 :root {
-	scrollbar-color: rgba(var(--white)) rgba(var(--red)) !important;
+	scrollbar-color: rgba(var(--red)) rgba(var(--white)) !important;
 	scrollbar-width: thin !important;
 }
 
 .s-chat-sidebar #chatMessageList {
-	scrollbar-color: rgba(var(--white)) rgba(var(--red)) !important;
+	scrollbar-color: rgba(var(--red)) rgba(var(--white)) !important;
 	scrollbar-width: thin !important;
 }
 
@@ -183,7 +183,7 @@ div .left > img {
 }
 
  div .feature {
-	 background: rgba(var(--red));
+	 background: rgba(var(--red), 0.2);
 	 border: none;
 	 border-radius: 15px;
  }
