@@ -505,7 +505,7 @@ div.cave-grid > img[src$="//static.lioden.com/images/layout/prideoverviewbanner.
 
 
 div.cave-grid > img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
-	background: url('') center center no-repeat !important;
+	background: url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png') center center no-repeat !important;
 	background-size: cover !important;
 	padding-left: 100%;
 	height: 120px;
@@ -521,7 +521,7 @@ div.mound-grid > img[src$="//static.lioden.com/images/layout/beetleunsorted.png"
 
 
 div.mound-grid > img[src$="//static.lioden.com/images/layout/beetlemound.png"] {
-	background: url('g') center center no-repeat !important;
+	background: url('') center center no-repeat !important;
 	background-size: contain !important;
 	width: 130px;
 	height: 80px;
