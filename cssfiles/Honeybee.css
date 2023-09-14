@@ -57,7 +57,7 @@ font-family: "Loving Rose", cursive;
 .cont {
 	display: flex;
 	width: 100%;
-	height: 200px;
+	height: 250px;
 	justify-content: space-evenly;
 	align-items: center;
 	gap: 10px;
@@ -65,7 +65,7 @@ font-family: "Loving Rose", cursive;
 
 .box {
 	background: rgba(var(--red), 0.2);
-	height: 60px;
+	height: 80px;
 	border-radius: 10px;
 	padding: 10px;
 	flex-grow: 1;
@@ -76,6 +76,11 @@ font-family: "Loving Rose", cursive;
 .box:hover {
 	height: 100%;
 	overflow-y: auto;
+}
+
+.box h1 {
+	font-size: 60px;
+	margin: 0;
 }
 
 /* General: Body/Main/Topbar/Scroll */
@@ -106,6 +111,11 @@ body {
 }
 
 .s-chat-sidebar #chatMessageList {
+	scrollbar-color: rgba(var(--red)) rgba(var(--white)) !important;
+	scrollbar-width: thin !important;
+}
+
+.box {
 	scrollbar-color: rgba(var(--red)) rgba(var(--white)) !important;
 	scrollbar-width: thin !important;
 }
