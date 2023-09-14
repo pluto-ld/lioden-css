@@ -255,7 +255,7 @@ a:hover {
 	text-shadow: 0px 0px 2px rgba(var(--gold));
 }
 
-.table .top a:link, .table .top a:visited {
+.table .top a:link, .table .top a:visited, .table th a:link, .table th a:visited {
 	color: rgba(var(--red)) !important;
 }
 
@@ -483,35 +483,35 @@ div.container.main > div:nth-child(1) > nav > div.navbar-header > a::after {
 	margin-top: 0px;
 }
 
-div.cave-grid > img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
-	background: url('') center center no-repeat !important;
+div.cave-grid > img[src$="/unsortedlionsbanner.png"] {
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/HoneybeeUnsorted.png') center center no-repeat !important;
 	background-size: cover !important;
 	padding-left: 100%;
 	height: 60px;
 }
 
-div.cave-grid > img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
-	background: url('') center center no-repeat !important;
+div.cave-grid > img[src$="/nestingbanner.png"] {
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/HoneybeeNesting.png') center center no-repeat !important;
 	background-size: cover !important;
 	padding-left: 100%;
 	height: 60px;
 }
 
-div.cave-grid > img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
-	background: url('') center center no-repeat !important;
+div.cave-grid > img[src$="/prideoverviewbanner.png"] {
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/HoneybeePrideOverview.png') center center no-repeat !important;
 	padding-left: 100%;
 	height: 60px;
 }
 
 
-div.cave-grid > img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
+div.cave-grid > img[src$="/cavedefault.jpg"] {
 	background: url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png') center center no-repeat !important;
 	background-size: cover !important;
 	padding-left: 100%;
 	height: 120px;
 }
 
-div.mound-grid > img[src$="//static.lioden.com/images/layout/beetleunsorted.png"] {
+div.mound-grid > img[src$="/beetleunsorted.png"] {
 	background: url('') center center no-repeat !important;
 	background-size: contain !important;
 	width: 130px;
@@ -520,7 +520,7 @@ div.mound-grid > img[src$="//static.lioden.com/images/layout/beetleunsorted.png"
 }
 
 
-div.mound-grid > img[src$="//static.lioden.com/images/layout/beetlemound.png"] {
+div.mound-grid > img[src$="/layout/beetlemound.png"] {
 	background: url('') center center no-repeat !important;
 	background-size: contain !important;
 	width: 130px;
@@ -528,7 +528,11 @@ div.mound-grid > img[src$="//static.lioden.com/images/layout/beetlemound.png"] {
 	padding-left: 100%;
 }
 
-/* Centering lion PFP code below; made by ryouta#276513 */
+div.mound-grid > img[src$="/addbeetlemound.png"] {
+	border-radius: 10px;
+}
+
+/* Centering lion PFP code below; made by ryouta (#276513)! */
 #about tr.right {
   display: flex;
   align-items: center;
