@@ -157,7 +157,6 @@ body {
 
 .table {
 	border: none;
-	overflow: hidden;
 	border-radius: 15px;
 	border-collapse: separate;
 	background: rgba(var(--red), 0.2);
@@ -166,6 +165,14 @@ body {
 .table .top, .table th, .table .bottom {
 	color: rgba(var(--white));
 	background: rgba(var(--red), 0.1);
+}
+
+.table .top {
+	border-radius: 15px 15px 0px 0px; /* This and bottom are so that the :after on lion_image can overflow */
+}
+
+.table .bottom {
+	border-radius: 0px 0px 15px 15px;
 }
 
 .table .left {
@@ -210,10 +217,6 @@ div .left > img {
 .mound-grid {
 	border: none !important;
 	background: none;
-}
-
-.mound-grid img {
-	margin-bottom: ;
 }
 
  div .feature {
@@ -403,10 +406,6 @@ hr {
 
 /* Inputs: Buttons/Text Inputs/Switches */
 
-input, button, select, textarea {
-	color: ;
-}
-
 #comment, #fra_chatContainer #txtChatInput {
 	background: rgba(var(--white));
 	border-radius: 15px !important;
@@ -473,15 +472,10 @@ input[type="button"].bad {
 
 .chatMenu-container:not(#fraChatSettingsMenu) {
 	overflow: hidden;
-	border-radius: ;
-}
-
-#btnPopoutChat {
-	border-radius: ;
 }
 
  #context-chatMenu::before, #fraChatSettingsMenu::before, #context-chatMenu::after, #fraChatSettingsMenu::after {
-	border-left-color: transparent;
+	border-left-color: rgba(var(--white));
 }
 
 .item {
