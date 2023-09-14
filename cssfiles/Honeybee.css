@@ -54,6 +54,20 @@ font-family: "Loving Rose", cursive;
 
 /* Boxes: Custom Boxes */
 
+.cont {
+	display: flex;
+	width: 100%;
+	height: 60px;
+	padding: 10px;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.child {
+	background: rgba(var(--red));
+	width: ;
+}
+
 /* General: Body/Main/Topbar/Scroll */
 
 .topbar {
@@ -481,6 +495,10 @@ input:checked + .slider {
 	content: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/20.png');
 	height: 50px;
 	width: 50px;
+	display: flex;
+	position: absolute;
+	bottom: 1em;
+	left: -1em;
 }
 
 div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
