@@ -68,7 +68,6 @@ font-family: "Loving Rose", cursive;
 	background: rgba(var(--red), 0.2);
 	height: 80px;
 	border-radius: 10px;
-	padding: 10px;
 	flex-grow: 1;
 	transition: 1.5s;
 }
@@ -80,6 +79,11 @@ font-family: "Loving Rose", cursive;
 .wrapper {
 	width: 100%;
 	height: 100%;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.box:hover .wrapper {
 	overflow-y: auto;
 }
 
@@ -94,8 +98,8 @@ font-family: "Loving Rose", cursive;
 	height: 100px;
 	display: flex;
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	bottom: -40;
+	right: -40;
 }
 
 .box:first-child::before {
@@ -104,8 +108,8 @@ font-family: "Loving Rose", cursive;
 	height: 100px;
 	display: flex;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: -40;
+	left: -40;
 }
 
 /* General: Body/Main/Topbar/Scroll */
@@ -140,7 +144,7 @@ body {
 	scrollbar-width: thin !important;
 }
 
-.box {
+.wrapper {
 	scrollbar-color: rgba(var(--red)) rgba(var(--white)) !important;
 	scrollbar-width: thin !important;
 }
