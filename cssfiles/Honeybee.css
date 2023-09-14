@@ -57,21 +57,25 @@ font-family: "Loving Rose", cursive;
 .cont {
 	display: flex;
 	width: 100%;
-	padding: 10px;
+	height: 200px;
 	justify-content: space-evenly;
 	align-items: center;
+	gap: 10px;
 }
 
 .box {
-	background: rgba(var(--red));
+	background: rgba(var(--red), 0.2);
 	height: 60px;
-	width: 45%;
 	border-radius: 10px;
-	transition: 0.5s;
+	padding: 10px;
+	flex-grow: 1;
+	transition: 1.5s;
+	overflow: hidden;
 }
 
 .box:hover {
-	height: 200px;
+	height: 100%;
+	overflow-y: auto;
 }
 
 /* General: Body/Main/Topbar/Scroll */
