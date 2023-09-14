@@ -64,6 +64,7 @@ font-family: "Loving Rose", cursive;
 }
 
 .box {
+	position: relative;
 	background: rgba(var(--red), 0.2);
 	height: 80px;
 	border-radius: 10px;
