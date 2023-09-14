@@ -98,8 +98,8 @@ font-family: "Loving Rose", cursive;
 	height: 100px;
 	display: flex;
 	position: absolute;
-	bottom: -40;
-	right: -40;
+	bottom: -40px;
+	right: -40px;
 }
 
 .box:first-child::before {
@@ -108,8 +108,8 @@ font-family: "Loving Rose", cursive;
 	height: 100px;
 	display: flex;
 	position: absolute;
-	top: -40;
-	left: -40;
+	top: -40px;
+	left: -40px;
 }
 
 /* General: Body/Main/Topbar/Scroll */
