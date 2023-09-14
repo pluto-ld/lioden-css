@@ -83,7 +83,7 @@ font-family: "Loving Rose", cursive;
 	margin: 0;
 }
 
-.box:last-child::after {
+.cont::after {
 	content: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/31.png');
 	width: 100px;
 	height: 100px;
@@ -91,6 +91,16 @@ font-family: "Loving Rose", cursive;
 	position: absolute;
 	bottom: 0;
 	right: 0;
+}
+
+.cont::after {
+	content: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/31.png');
+	width: 100px;
+	height: 100px;
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 /* General: Body/Main/Topbar/Scroll */
