@@ -93,8 +93,8 @@ font-family: "Loving Rose", cursive;
 	right: 0;
 }
 
-.cont::after {
-	content: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/31.png');
+.cont::before {
+	content: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/17.png');
 	width: 100px;
 	height: 100px;
 	display: flex;
