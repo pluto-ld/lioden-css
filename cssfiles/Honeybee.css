@@ -512,7 +512,7 @@ div.cave-grid > img[src$="/cavedefault.jpg"] {
 }
 
 div.mound-grid > img[src$="/beetleunsorted.png"] {
-	background: url('') center center no-repeat !important;
+	background: url('HoneybeeMounds') center center no-repeat !important;
 	background-size: contain !important;
 	width: 130px;
 	height: 80px;
@@ -521,7 +521,7 @@ div.mound-grid > img[src$="/beetleunsorted.png"] {
 
 
 div.mound-grid > img[src$="/layout/beetlemound.png"] {
-	background: url('') center center no-repeat !important;
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/HoneybeeMounds.png') center center no-repeat !important;
 	background-size: contain !important;
 	width: 130px;
 	height: 80px;
