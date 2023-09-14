@@ -290,6 +290,10 @@ h1 {
 	color: rgba(var(--red), 0.7);
 }
 
+h1 small {
+	color: rgba(var(--white));
+}
+
 .sidebar h3, h3 {
 	color: rgba(var(--red));
 	transition: 275ms;
@@ -311,7 +315,7 @@ h1 {
 	text-shadow: 0px 0px 20px rgba(var(--gold));
 }
 
-a:link, a:visited, a:active {
+a:link, a:visited, a:active, .featured-lion a:link, .featured-lion a:active, .featured-lion a:visited {
 	color: rgba(var(--red));
 	transition: 275ms;
 }
@@ -604,6 +608,32 @@ div.mound-grid > img[src$="/addbeetlemound.png"] {
 	border-radius: 10px;
 }
 
+/* Currency Icons */
+
+a[href$="/spend-history.php?type=sb"] > img.icon {
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/silverbee.png') center no-repeat;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	padding-left: 20px;
+}
+
+a[href$="/spend-history.php?type=gb"] > img.icon {
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/goldbee.png') center no-repeat;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	padding-left: 20px;
+}
+
+a[href$="/event.php"] > img {
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/eventbee.png') center no-repeat;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	padding-left: 20px;
+}
+
 /* Centering lion PFP code below; made by ryouta (#276513)! */
 #about tr.right {
   display: flex;
@@ -613,6 +643,17 @@ div.mound-grid > img[src$="/addbeetlemound.png"] {
 
 #about tr.right td:not(.right):not([width="3"]) {
   width: unset !important;
+}
+
+/* Featured lion adjustments */
+
+.featured-lion {
+	border-radius: 15px;
+}
+
+.featured-lion > p {
+	margin: 0;
+	padding: 5px;
 }
 
 /* Mobile Changes */
