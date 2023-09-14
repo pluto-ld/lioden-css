@@ -398,6 +398,12 @@ input, button, select, textarea {
 	box-shadow: 0px 0px 3px rgba(var(--red));
 }
 
+input[type="button"].bad {
+	background: rgba(var(--red));
+	border-radius: 10px;
+	border: none;
+}
+
 .s-chat-sidebar #label_currentChannel {
 	background: rgba(var(--white));
 	border-radius: 15px;
@@ -469,6 +475,12 @@ input:checked + .slider {
 	border-radius: 50%;
 	overflow: hidden;
 	box-shadow: -3px 3px 4px rgba(var(--gold), 0.5);
+}
+
+#lion_image:after {
+	content: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/20.png');
+	height: 50px;
+	width: 50px;
 }
 
 div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
