@@ -541,6 +541,7 @@ input:checked + .slider {
 #lion_image:after {
 	content: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/20.png');
 	height: 100px;
+	width: 100px;
 	display: flex;
 	position: absolute;
 	bottom: 1em;
