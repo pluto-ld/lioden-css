@@ -654,12 +654,18 @@ a[href$="/event.php"] > img {
 }
 
 .featured-lion > p {
-	margin: 0;
+	margin-bottom: 0;
 	padding: 5px;
 }
 
 /* Mobile Changes */
 
 @media (max-width: 768px) {
-	
+	.featured-lion {
+		margin-bottom: 0;
+	}
+
+	.featured-lion p.center.b {
+		margin-top: -56px;
+	}
 }
