@@ -651,6 +651,7 @@ a[href$="/event.php"] > img {
 .featured-lion {
 	border-radius: 15px;
 	background: rgba(var(--red), 0.3);
+	overflow: hidden;
 }
 
 .featured-lion > p {
