@@ -519,6 +519,7 @@ input[type="button"].bad, button.button.bad {
 	background: rgba(var(--white));
 	border: none;
 	border-radius: 15px;
+	overflow: hidden;
 }
 
 .item-header {
@@ -667,10 +668,29 @@ a[href$="/event.php"] > img {
 }
 
 /* items in mound */
-.item.floatleft.small > .item-header {
+.hoard .item-header {
 	max-height: 21px;
 	word-break: break-all;
 	overflow: hidden;
+}
+
+.item-footer {
+	background: rgba(var(--red));
+}
+
+/* Mound and Cave Tables/sub menu */
+.sub_menu {
+	background: rgba(var(--red), 0.3);
+	border-radius: 15px;
+}
+
+.sub_menu_item_selected {
+	background: rgba(var(--red), 0.6);
+	color: rgba(var(--white));
+}
+
+.table#pride .right_odd, .table#beetles .right_odd {
+	box-shadow: none;
 }
 
 /* Mobile Changes */
