@@ -652,7 +652,8 @@ a[href$="/event.php"] > img {
   width: unset !important;
 }
 
-/* Featured lion adjustments */
+/* Cave/Mound specific adjustments */
+/* Featured lion */
 
 .featured-lion {
 	border-radius: 15px;
@@ -665,9 +666,35 @@ a[href$="/event.php"] > img {
 	padding: 5px;
 }
 
+/* items in mound */
+.item.floatleft.small > .item-header {
+	max-height: 21px;
+	word-break: break-all;
+	overflow: hidden;
+}
+
 /* Mobile Changes */
 
+/* Mobile Navbar */
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	background: rgba(var(--red));
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: rgba(var(--red), 0.2);
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: rgba(var(--red));
+}
+
 @media (max-width: 768px) {
+
+	.topbar, .main {
+		border-radius: 0px;
+	}
+	
 	.featured-lion {
 		margin-bottom: 0;
 	}
