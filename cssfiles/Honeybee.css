@@ -698,7 +698,7 @@ a[href$="/event.php"] > img {
 	box-shadow: none;
 }
 
-.table#beetles > tbody > tr:first-child .left {
+.table#beetles tr:first-child .left {
 	background: rgba(var(--red), 0.1);
 }
 
