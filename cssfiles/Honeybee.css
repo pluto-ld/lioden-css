@@ -348,6 +348,11 @@ a:hover {
 	text-shadow: 0px 0px 2px rgba(var(--gold));
 }
 
+/* Bottom of #about table */
+.table#about right_odd {
+	box-shadow: none;
+}
+
 .topbar a:link, .topbar a:visited, .topbar a:active {
 	color: rgba(var(--pink));
 }
@@ -691,6 +696,14 @@ a[href$="/event.php"] > img {
 
 .table#pride .right_odd, .table#beetles .right_odd {
 	box-shadow: none;
+}
+
+.table#beetles > tbody > tr:first-child .left {
+	background: rgba(var(--red), 0.1);
+}
+
+.table#pride .left {
+	background: rgba(var(--red), 0.1);
 }
 
 /* Mobile Changes */
