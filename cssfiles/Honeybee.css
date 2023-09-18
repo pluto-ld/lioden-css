@@ -196,7 +196,9 @@ body {
 	position: absolute;
 	right: -10px;
 	bottom: -20px;
-	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/Honeybee.jpeg') center center fixed no-repeat;
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/33.png') center no-repeat;
+	background-size: contain;
+	rotate: 90deg;
 }
 
 .table {
