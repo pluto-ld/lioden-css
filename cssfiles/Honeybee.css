@@ -675,7 +675,7 @@ div.floatleft > img[src$="/arrowgrayleft.png"] {
 	padding-left: 100%;
 	width: 48px;
 	height: 48px;
-	filter: grayscale(100%);
+	filter: grayscale(100%) brightness(200%);
 	transform: scaleX(-1);
 }
 
@@ -699,7 +699,7 @@ div.floatleft > img[src$="/arrowgrayright.png"] {
 	padding-left: 100%;
 	width: 48px;
 	height: 48px;
-	filter: grayscale(100%);
+	filter: grayscale(100%) brightness(200%);
 }
 
 /* Centering lion PFP code below; made by ryouta (#276513)! */
