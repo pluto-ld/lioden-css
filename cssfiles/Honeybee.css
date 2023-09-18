@@ -534,7 +534,7 @@ input:checked + .slider {
 	background: rgba(var(--green));
 }
 
-.select {
+select {
 	border-radius: 15px;
 	border: none;
 }
