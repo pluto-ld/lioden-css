@@ -662,7 +662,6 @@ a[href$="/event.php"] > img {
 
 .featured-lion {
 	border-radius: 15px;
-	background: rgba(var(--red), 0.3);
 	overflow: hidden;
 }
 
@@ -673,6 +672,10 @@ a[href$="/event.php"] > img {
 
 .lionImage img:first-child {
 	visibility: hidden;
+}
+
+.lionImage {
+	background: url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png') top center no-repeat, rgba(var(--red), 0.2);
 }
 
 .lionImage {
@@ -710,7 +713,7 @@ a[href$="/event.php"] > img {
 	background: rgba(var(--red), 0.1);
 }
 
-.table#beetles .left:only-of-type {
+.table#beetles tr > td:first-child {
 	background: none !important;
 }
 
