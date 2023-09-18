@@ -124,6 +124,12 @@ font-family: "Loving Rose", cursive;
 	border-radius: 0px 0px 15px 15px;
 }
 
+.topbar .welcomeback::after {
+	content: "▶ CSS by pluto (#52831)";
+	font-size: 10px;
+	padding-left: 7px;
+}
+
 body {
 	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/Honeybee.jpeg') center center fixed no-repeat, rgb(208, 81, 109);
 	color: rgba(var(--black));
