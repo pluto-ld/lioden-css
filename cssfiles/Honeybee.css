@@ -671,6 +671,15 @@ a[href$="/event.php"] > img {
 	padding: 5px;
 }
 
+.lionImage img:first-child {
+	visibility: hidden;
+}
+
+.lionImage {
+	background: url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png') center center no-repeat;
+	background-size: cover;
+}
+
 /* items in mound */
 .hoard .item-header {
 	max-height: 21px;
@@ -697,8 +706,12 @@ a[href$="/event.php"] > img {
 	box-shadow: none;
 }
 
-.table#beetles tr:first-child .left {
+.table#beetles .left {
 	background: rgba(var(--red), 0.1);
+}
+
+.table#beetles tr .left:only-of-type {
+	background: none;
 }
 
 .table#pride .left {
