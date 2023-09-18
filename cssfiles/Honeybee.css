@@ -719,6 +719,7 @@ div.floatleft > img[src$="/arrowgrayright.png"] {
 .featured-lion {
 	border-radius: 15px;
 	overflow: hidden;
+	background: rgba(var(--red), 0.2);
 }
 
 .featured-lion > p {
@@ -727,11 +728,7 @@ div.floatleft > img[src$="/arrowgrayright.png"] {
 }
 
 .lionImage img:first-child {
-	visibility: hidden;
-}
-
-.lionImage {
-	background: url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png') top center no-repeat, rgba(var(--red), 0.2);
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png');
 }
 
 /* items in mound */
