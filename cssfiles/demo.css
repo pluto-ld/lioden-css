@@ -3,7 +3,7 @@
 
 	-------------------------------------------------------
 
-	* This code was made for personal use ONLY. Nobody besides the creator may use this code..
+	* This code was made for personal use ONLY. Nobody besides the creator may use this code.
 	  If it's discovered that you have, I (pluto) will contact you and ask you to take it down. If it continues after the fact, it will result in a report to the mods.
 	* Any unauthorized commercial use of this code will result in a mod report without warning.
 		- This specifically pertains to copying any section of this code.
@@ -173,6 +173,14 @@ body {
 
 .table#player .right > .center.xlarge:first-child::after {
 	content: "#58766";
+}
+
+.table#player .right_odd {
+	background: none;
+}
+
+.table#player hr {
+	border-top-color: transparent;
 }
 
 .table#attack, .table#sparring, div .feature {
