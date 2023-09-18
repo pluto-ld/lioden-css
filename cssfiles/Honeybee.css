@@ -710,8 +710,8 @@ a[href$="/event.php"] > img {
 	background: rgba(var(--red), 0.1);
 }
 
-.table#beetles tr .left:only-of-type {
-	background: none;
+.table#beetles .left:only-of-type {
+	background: none !important;
 }
 
 .table#pride .left {
