@@ -362,7 +362,7 @@ a:hover {
 }
 
 /* Bottom of #player table */
-.table#player right_odd {
+.table#player .right_odd {
 	box-shadow: none;
 }
 
