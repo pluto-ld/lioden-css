@@ -669,6 +669,35 @@ a[href$="/event.php"] > img {
 	padding-left: 20px;
 }
 
+/* Cave Arrows */
+div.floatleft > img[src$="/arrowgrayleft.png"] {
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/HoneyArrow.png') center no-repeat !important;
+	padding-left: 100%;
+	width: 48px;
+	filter: grayscale(100%);
+	transform: scaleX(-1);
+}
+
+div.floatleft > a > img[src$="/arrowleft.png"] {
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/HoneyArrow.png') center no-repeat !important;
+	padding-left: 100%;
+	width: 48px;
+	transform: scaleX(-1);
+}
+
+div.floatright > a > img[src$="/arrow.png"] {
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/HoneyArrow.png') center no-repeat !important;
+	padding-left: 100%;
+	width: 48px;
+}
+
+div.floatleft > img[src$="/arrowgrayright.png"] {
+	background: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/honeybee_css/HoneyArrow.png') center no-repeat !important;
+	padding-left: 100%;
+	width: 48px;
+	filter: grayscale(100%);
+}
+
 /* Centering lion PFP code below; made by ryouta (#276513)! */
 #about tr.right {
   display: flex;
