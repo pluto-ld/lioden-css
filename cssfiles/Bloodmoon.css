@@ -145,12 +145,12 @@
 		background: rgba(var(--rust)) !important;
 		font-family: 'Raleway', sans-serif;
 		border-radius: 5px 5px 0px 0px;
+		padding-top: 1px;
 	}
 
 	.navbar li a {
 		color: rgba(var(--cream)) !important;
 		transition: 0.4s;
-		font-size: 19px;
 	}
 
 	.navbar li a:hover {
@@ -200,6 +200,10 @@
 		box-shadow: none;
 		border: none !important;
 		border-radius: 5px;
+	}
+
+	.col-md-9 {
+		background: none;
 	}
 
 /* TABLES */
@@ -266,6 +270,11 @@
 		transition: 1s;
 	}
 
+	.mound-grid {
+		padding: 0;
+		padding-bottom: 5px;
+	}
+
 	.cave-grid img,
 	.mound-grid img {
 		width: 100%;
@@ -284,112 +293,6 @@
 		border-radius: 5px;
 		color: rgba(var(--darkred));
 		box-shadow: none;
-	}
-
-/* CHAT */
-
-	/* Basics */
-	#chatMessageContainer {
-		border: 1px solid rgba(var(--darkred));
-		color: rgba(var(--darkred));
-	}
-
-	#txtChatContainer #lblCharacterCounter {
-		color: rgba(var(--cream));
-	}
-
-	/* Chat Error Screen */
-	.s-chat-error_screen {
-		background: rgba(var(--orange));
-		color: rgba(var(--darkred));
-	}
-
-	/* Links */
-
-	#chatMessageContainer a:link, 
-	#chatMessageContainer a:visited {
-		color: rgba(var(--darkred));		
-	}
-
-	#chatMessageContainer a:hover,
-	#chatMessageContainer a:focus,
-	#chatMessageContainer a:active {
-		color: rgba(var(--brightorange)) !important;
-	}
-
-	/* Channel Dropdown/Options */
-	.s-chat-sidebar #label_currentChannel {
-		background: rgba(var(--darkred));
-		border: 1px solid rgba(var(--rust));
-	}
-
-	.s-chat-sidebar #fraChatChannelMenu {
-		background: rgba(var(--cream));
-		border: 1px solid rgba(var(--rust));
-		opacity: 0.8;
-		box-shadow: none;
-	}
-
-	#fra_chatContainer .channelMenu .channelSwitcher {
-		color: rgba(var(--darkred));
-	}
-
-	#fra_chatContainer .channelMenu .channelSwitcher.active {
-		background: rgba(var(--darkred));
-		color: rgba(var(--cream));
-	}
-
-	#fra_chatContainer .channelMenu .channelSwitcher:hover {
-		background: rgba(var(--rust));
-		color: rgba(var(--cream));
-	}
-
-	#context-chatMenu {
-		background: rgba(var(--cream));
-		opacity: 0.8;
-		box-shadow: none;
-		border: none;
-	}
-
-	#context-chatMenu .chatMenu-option,
-	#fraChatSettingsMenu .chatMenu-option {
-		background: rgba(var(--cream));
-		color: rgba(var(--darkred));
-	}
-
-	/* Pinned Message */
-	#chatMessagePinned.s-chat-message__pinned {
-		background: rgba(var(--brightorange)) url(//static.lioden.com/images/layout/sticky.png) no-repeat 10px 6px;
-		border-bottom-color: rgba(var(--darkred)) !important;
-		color: rgba(var(--darkred));
-	}
-
-	/* Emote List */
-	.emoteList {
-		background: rgba(var(--cream));
-		opacity: 0.8;
-	}
-
-	/* Chat Input */
-	#fra_chatContainer #txtChatInput {
-		border: 1px solid rgba(var(--rust));
-		color: rgba(var(--cream));
-		background: rgba(var(--darkred));
-	}
-
-	/* Messages */
-	.s-chat-message:nth-child(even) {
-		background: rgba(var(--orange));
-	}
-
-	.s-chat-message:nth-child(odd) {
-		background: rgba(var(--darkorange));
-	}
-
-	.s-chat-message_timestamp {
-		color: rgba(var(--darkred));
-		opacity: 0.6;
-		font-style: italic;
 	}
 
 /*BUTTONS/OTHER INPUTS*/
