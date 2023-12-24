@@ -1,0 +1,338 @@
+/*
+	CSS by pluto (#52831) for personal use by Lynx only. Merry Christmas Lynx!! ♥♥
+	I'm a beginner at CSS, but I'm trying my best :) Venture forward into messy code at your own risk.
+	Ater (#206739) helped me figure out some of the code and I took a note from him when it came to organizing. :)
+	Ater made the Firefox-friendly logo replacement!
+	If you feel as though I need to credit someone else, just message me! A lot of the rest of this was done by looking at various guides and LD's code.
+
+*/
+
+/* SETUP */
+
+	@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Sree+Krushnadevaraya&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap');
+
+	:root {
+		--dpurple: 36, 6, 34; /* hex: #240622 */
+		--purple: 91, 23, 172; /* hex: #5b17ac */
+		--lilac: 189, 61, 235; /* hex: #bd3deb */
+		--black: 6, 4, 10; /* hex: #06040a */
+		--blue: 91, 23, 172; /* hex: #5b17ac */
+	}
+
+	/* Font Family Codes for easy access:
+
+	font-family: 'UnifrakturCook', cursive;
+	font-family: 'Nova Cut', cursive;
+	font-family: 'Sree Krushnadevaraya', serif;
+	font-family: 'Almendra Display', cursive; */
+
+/* DESCRIPTION DIVS */
+
+/* SCROLLBAR */
+
+/* BASICS */
+
+	body {
+		background: url('https://cutewallpaper.org/21/aesthetic-background-dark/Image-about-black-in-treasure-by-Sol-on-We-Heart-It.jpg') center center fixed no-repeat;
+		background-size: cover;
+		font-family: 'Sree Krushnadevaraya', serif;
+		color: white;
+	}
+
+	/* General Links */
+
+	a:link, a:visited {
+		color: white;
+		transition: 1s;
+	}
+
+	a:hover, a:focus, a:active {
+		color: rgba(var(--lilac));
+	}
+
+	/* Header Links */
+
+	.table .top a:link, .table .top a:visited {
+		color: rgba(var(--white)) !important;
+		transition: 1s;
+	}
+
+	.table .top a:hover, .table .top a:focus, .table .top a:active {
+		color: rgba(var(--lilac)) !important;
+	}
+
+	.table .bottom a:link, .table .bottom a:visited {
+		color: rgba(var(--white)) !important;
+		text-decoration: underline;
+		transition: 1s;
+	}
+
+	.table .bottom a:hover, .table .bottom a:focus, .table .bottom a:active {
+		text-decoration: underline;
+		color: rgba(var(--lilac)) !important;
+	}
+
+	/* Headers */
+
+	h1 {
+		text-align: center;
+		font-family: 'UnifrakturCook', cursive;
+		color: white;
+		font-size: 50px;
+	}
+
+	/* Credits */
+	.topbar .welcomeback::after {
+		content: "▶ CSS by pluto [#52831 / #58766]";
+		font-size: 10px;
+		padding-left: 7px;
+	}
+
+/* BARS */
+
+	/* Topbar */
+
+	.topbar {
+		background: rgba(var(--black), 0.6);
+		border: none !important;
+		color: white;
+		border-radius: 0px;
+	}
+
+	.topbar a:link, .topbar a:visited {
+		color: white;
+		transition: 1s;
+	}
+
+	.topbar a:hover, .topbar a:focus, .topbar a:active {
+		color: rgba(var(--purple));
+	}
+
+	/* Navbar */
+
+	.navbar {
+		background: rgba(var(--black), 0.6);
+		overflow: visible;
+		color: rgba(var(--white));
+		text-transform: capitalize;
+		margin: auto;
+	}
+
+	.navbar li a {
+		color: white !important;
+		font-family: 'Nova Cut', cursive;
+		font-size:21px;
+		transition: 1s;
+		margin: auto;
+	}
+
+	.navbar li a:hover {
+		background: none !important;
+		color: rgba(var(--lilac)) !important;
+	}
+
+	/* Breadcrumb */
+
+	.breadcrumb {
+		background: rgba(var(--dpurple), 0.4);
+		color: white;
+		border: 1px solid rgba(var(--black));
+		border-radius: 0px;
+	}
+
+	.breadcrumb > .active {
+		color: white;
+	}
+
+	/* Alerts */
+
+	.alert-success, .alert-danger {
+		background: rgba(var(--dpurple), 0.4);
+		color: white;
+		border-radius: 0px;
+		border: 1px solid rgba(var(--black));
+	}
+
+/* MAIN COLUMN */
+
+	.col-md-9 {
+		background: none;
+	}
+
+	div.container.main {
+		background: rgba(var(--black), 0.4);
+		box-shadow: none;
+		border: none !important;
+		opacity: 0.95;
+	}
+
+	/* Tables */
+
+	.table {
+		border: 1px solid rgba(var(--black));
+		background: rgba(var(--dpurple), 0.4);
+		border-collapse: separate;
+	}
+
+	.table#allies .left, .table#clans .left {
+		background: transparent;
+	}
+
+	/* Headers/Footers */
+
+	th, .top, .bottom {
+		background: rgba(var(--black), 0.6) !important;
+		text-align: center;
+		font-family: 'Nova Cut', cursive;
+	}
+
+	/* Inner Table */
+
+	.inner-table {
+		border-spacing: 0px;
+	}
+
+	.inner-table .right, .inner-table .left {
+		border: none;
+		border-radius: 0px;
+		background: none !important;
+		color: white;
+	}
+
+
+	div#lion_image {
+		clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+	}
+
+/* SIDEBAR */
+
+	/* Panels */
+
+	.col-md-3 .panel {
+		background: rgba(var(--dpurple), 0.4);
+		color: white;
+		border: 1px solid rgba(var(--black));
+		border-radius: 0px;
+		box-shadow: none;
+	}
+
+	/* Panel Links */
+
+	.col-md-3 .panel a:link, .col-md-3 .panel a:visited {
+		color: white;
+		transition: 1s;
+	}
+
+	.col-md-3 .panel a:hover, .col-md-3 .panel a:focus, .col-md-3 .panel a:active {
+		color: rgba(var(--lilac));
+	}
+
+/* GRIDS */
+
+	.cave-grid, .mound-grid, div .left {
+		background: rgba(var(--dpurple), 0.6);
+		border-radius: 0px;
+		border: 1px solid rgba(var(--black));
+		color: white;
+		transition: 1s;
+	}
+
+	.cave-grid:hover, .mound-grid:hover {
+		color: white;
+	}
+
+/* EDIT PANEL */
+
+	textarea, textarea:focus,
+	input[type="text"], input[type="text"]:focus,
+	input[type="password"], input[type="password"]:focus {
+		background: white;
+		border: 1px solid black;
+		color: black;
+	}
+
+	#editdetailspanel .table .left, #accountoptionspanel .table .left, #changepasswordpanel .table .left {
+		background: rgba(var(--black), 0.6);
+		color: white;
+	}
+
+/* BUTTONS */
+
+	.select-control,
+	button.button,
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"] {
+		background: rgba(var(--black));
+		border-radius: 0px ;
+		border: 1px solid white !important;
+		color: white !important;
+		font-family: 'Nova Cut', cursive;
+		text-align: center !important;
+		text-shadow: none !important;
+		box-shadow: none !important;
+		transition: 1s;
+	}
+
+	.select-control:hover, .select-control:focus, .select-control:active,
+	button.button:hover, button.button:focus, button.button:active,
+	input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active,
+	input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active,
+	input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:active {
+		background: rgba(var(--black));
+		color: rgba(var(--lilac)) !important;
+		border-radius: 0px;
+	}
+
+/*IMAGES*/
+
+	/*Gift Box*/
+	table#player img.floatleft {
+    		padding-left: 60px;
+		width: 60px;
+		height: 60px;
+    		background: url(https://tinyurl.com/y3vj3wq6) center no-repeat;
+    	}
+
+	/*Logo Replacement*/
+	
+	div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+		visibility: hidden;
+		position: relative;
+	}
+
+	div.container.main > div:nth-child(1) > nav > div.navbar-header > a::after {
+		content: url('https://tinyurl.com/y3a9jh5p');
+		position: absolute;
+		margin-left: -175px;
+		margin-top: -5px;
+	}
+
+/* EVENTS */
+
+	div .feature {
+		background: rgba(var(--black), 0.6);
+		border-radius: 0px;
+		border: 1px solid rgba(var(--black));
+		color: white;
+	}
+
+	/* Gifting Box (December) */
+
+	.table .table {
+		background: rgba(var(--black), 0.6);
+		border: 1px solid rgba(var(--black));
+	}
+
+/* CAVE-SPECIFIC CSS */
+
+	h1 small {
+		
+	}
+
+	.table .left {
+		
+	}

@@ -1,0 +1,1055 @@
+/*
+	CSS by pluto (#52831). This code was made for personal use ONLY, or for those that the coder allows.
+	Do NOT copy or repost this code.
+	Ater (#206739) helped me figure out some of the code and I took a note from him when it came to organizing. He wrote the Firefox-friendly logo replacement, and also helped with the CSS credit.
+	If you feel as though I need to credit someone else, just message me! A lot of this was done by looking at various guides and LD's code, as well as w3schools and stack exchange.
+
+*/
+
+/* ---------------- SETUP ---------------- */
+
+/* --- FONTS --- */
+
+	@import url('LINKHERE');
+
+/* Font Codes for easy access:
+*/
+
+/* --- COLORS --- */
+
+	:root {
+		--sand: 218, 164, 102; /* #eac79a */
+		--darksand: 122, 93, 71; /* #7a5d47 */
+		--brown: 90,54,35; /* #5a3623 */
+		--darkbrown: 49,31,27; /* #311f1b */
+	}
+
+/* ---------------- CURSORS ---------------- */
+
+	body:hover{cursor: url(LINKHERE), auto !important;}
+
+/* Switch to Pointer */
+
+	a:hover{cursor: url(LINKHERE), auto !important;}
+	select:hover{cursor: url(LINKHERE), auto !important;}
+	button:hover{cursor: url(LINKHERE), auto !important;}
+	div.slider.round:hover{cursor: url(LINKHERE), auto !important;}
+	input:hover{cursor: url(LINKHERE), auto !important;}
+	input[type="text"]:hover{cursor: url(LINKHERE), auto !important;}
+	input[type="password"]:hover{cursor: url(LINKHERE), auto !important;}
+	textarea:hover{cursor: url(LINKHERE), auto !important;}
+	::-webkit-scrollbar-thumb:hover{cursor: url(LINKHERE), auto !important;}
+
+/* ---------------- SCROLLBAR ---------------- */
+
+/* Chrome */
+
+	::-webkit-scrollbar {
+		width: ;
+	}
+
+	::-webkit-scrollbar-track {
+		background: ;
+		border-radius: ;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: ;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: !important;
+	}
+
+/* Firefox */
+
+	:root {
+		scrollbar-color: /* Put two colors here: First affects thumb, second is track. */ white !important;
+		scrollbar-width: thin !important;
+	}
+
+	.s-chat-sidebar #chatMessageList {
+		scrollbar-color: /* Put two colors here: First affects thumb, second is track. */ white !important;
+		scrollbar-width: thin !important;
+	}
+
+/* ---------------- GENERAL IMPORTANT THINGS ---------------- */
+
+	body {
+		background: url('https://upload.wikimedia.org/wikipedia/commons/e/ee/Akakus-Gebirge_-_Felsformationen%2C_Sand.jpg') center fixed no-repeat;
+		background-size: cover;
+		font-family: ;
+		color: ;
+	}
+
+/* Credits */
+	.topbar .welcomeback::after {
+		content: "▶ CSS by pluto [#52831 / #58766]";
+		font-size: 10px;
+		padding-left: 7px;
+	}
+
+/* ---------------- GENERAL TEXT STUFF ---------------- */
+
+	a:link, a:visited {
+		color: ;
+		transition: ;
+	}
+
+	a:hover, a:focus, a:active {
+		color: ;
+	}
+
+/* --- HEADERS --- */
+
+	h1 {
+		text-align: ;
+		font-family: ;
+		text-transform: ;
+		font-style: ;
+		color: ;
+		font-size: ;
+	}
+
+	h3 {
+		font-family: ;
+		color: white;
+	}
+
+/* ---------------- BARS ---------------- */
+
+/* --- TOPBAR --- */
+
+	.topbar {
+		background: rgba(var(--brown));
+		border: ;
+		border-top: none !important;
+		color: ;
+		border-radius: ;
+	}
+
+/* Topbar Links */
+
+	.topbar a:link, .topbar a:visited {
+		color: ;
+		transition: ;
+	}
+
+	.topbar a:hover, .topbar a:focus, .topbar a:active {
+		color: ;
+	}
+
+/* Welcome Back Link */
+
+	.welcomeback a:link, .welcomeback a:visited {
+		color: ;
+	}
+
+	.welcomeback a:hover, .welcomeback a:focus, .welcomeback a:active {
+		color: ;
+	}
+
+/* --- BREADCRUMB --- */
+
+	.breadcrumb {
+		background: ;
+		color: ;
+		border: ;
+		border-radius: ;
+	}
+
+	.breadcrumb > .active {
+		color: ;
+	}
+
+/* --- NAVBAR --- */
+
+	.navbar {
+		background: rgba(var(--brown));
+		overflow: visible;
+		color: ;
+		text-transform: ;
+		margin: auto;
+	}
+
+	.navbar li a {
+		color: ;
+		font-family: ;
+		transition: ;
+		margin: auto;
+	}
+
+	.navbar li a:hover {
+		background: !important;
+		color: !important;
+	}
+
+/* --- PROGRESS BARS --- */
+
+	.progress {
+		color: ;
+		background-color: ;
+	}
+
+	.progress-bar {
+		background: ;
+	}
+
+/* Account Standing */
+
+	th .progress {
+		color: ;
+		background: ;
+	}
+
+	th .progress-bar {
+		background: ;
+	}
+
+/* ---------------- MAIN COLUMN ---------------- */
+
+	.col-md-9 {
+		background: none;
+	}
+
+	div.container.main {
+		margin-top: 0px;
+		background: rgba(var(--sand), 0.9);
+		box-shadow: none;
+		border: !important;
+		opacity: ;
+	}
+
+	.footer {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top: 20px;
+		padding-bottom: 50px;
+		background: rgba(var(--sand), 0.9);
+	}
+
+/* ---------------- TABLES ---------------- */
+
+/* --- BACKGROUND/BORDERS --- */
+
+	.table {
+		border: ;
+		background: ;
+		border-collapse: separate;
+	}
+
+/* --- TABLE ROW SEPARATIONS --- */
+
+	.table#allies .left, .table#clans .left {
+		background: transparent;
+	}
+
+/* --- HEADERS AND FOOTERS --- */
+
+	th, .top {
+		background: !important;
+		text-align: ;
+		font-size: ;
+		font-family: ;
+	}
+
+	.bottom {
+		background: !important;
+		text-align: ;
+		font-size: ;
+		font-family: ;
+	}
+
+/* Header and Footer Links */
+
+	.table .top a:link, .table .top a:visited {
+		color: !important;
+		transition: ;
+	}
+
+	.table .top a:hover, .table .top a:focus, .table .top a:active {
+		color: !important;
+	}
+
+	.table .bottom a:link, .table .bottom a:visited {
+		color: ;
+		transition: ;
+	}
+
+	.table .bottom a:hover, .table .bottom a:focus, .table .bottom a:active {
+		text-decoration: underline;
+		color: ;
+	}
+
+/* --- INNER TABLE --- */
+
+/* For no space between stats:
+	.inner-table {
+		border-spacing: 0px;
+	}
+ */
+
+	.inner-table .right {
+		border: ;
+		border-radius: ;
+		background: !important;
+		color: ;
+	}
+
+	.inner-table .left {
+		border: ;
+		border-radius: ;
+		background: !important;
+		color: ;
+	}
+
+	div#lion_image {
+		/* For polygons, use clip-path. For circles, use border radius and overflow: hidden */	
+	}
+
+/* --- PRIDE TABLE --- */
+
+	.table .right_odd {
+		background: ;
+	}
+
+/* --- PLAYER ID SPECIFICS --- */
+
+/* Online/Offline Badge */
+
+	.member-online {
+		background: ;
+	}
+
+	.member-offline {
+		background: ;
+	}
+
+/* Profile Picture */
+
+	#player td.right img {
+		/* For polygons, use clip-path. For circles, use border radius and overflow: hidden */
+	}
+
+/* ---------------- GRIDS ---------------- */
+
+	.cave-grid, .mound-grid, div .left {
+		background: ;
+		border-radius: ;
+		border: ;
+		color: ;
+		transition: ;
+	}
+
+	.cave-grid:hover, .mound-grid:hover {
+		color: ;
+	}
+
+
+/* ---------------- SIDEBAR ---------------- */
+
+/* --- SIDEBAR HEADERS --- */
+
+.sidebar h3 {
+		font-family: ;
+		color: white;
+	}
+
+/* --- PANELS --- */
+
+	.col-md-3 .panel {
+		background: ;
+		color: ;
+		border: ;
+		border-radius: ;
+		box-shadow: none;
+	}
+
+/* Sidebar Panel Links */
+
+	.col-md-3 .panel a:link, .col-md-3 .panel a:visited {
+		color: ;
+		transition: ;
+	}
+
+	.col-md-3 .panel a:hover, .col-md-3 .panel a:focus, .col-md-3 .panel a:active {
+		color: ;
+	}
+
+/* ---------------- CHATBOX ---------------- */
+
+	#chatMessageContainer {
+		border: ;
+		border-radius: ;
+		color: ;
+	}
+
+/* --- MESSAGES --- */
+
+	.s-chat-message:nth-child(even) {
+		background: ;
+	}
+
+	.s-chat-message:nth-child(odd) {
+		background: ;
+	}
+
+	.s-chat-message.hasContext {
+		border-left-color: !important;
+		background-color: !important;
+	}
+
+/* Chat Links */
+
+	#chatMessageContainer a:link, #chatMessageContainer a:visited {
+		color: ;
+		font-weight: ;
+		transition: ;
+	}
+
+	#chatMessageContainer a:hover, #chatMessageContainer a:focus, #chatMessageContainer a:active {
+		color: !important;
+	}
+
+	a[href$="./chat.php"] {
+		color: ;
+	}
+
+	
+	a[href$="./chat.php"]:hover {
+		color: ;
+	}
+
+	a[href$="./code.php"] {
+		color: ;
+	}
+
+	a[href$="./code.php"]:hover {
+		color: ;
+	}
+
+/* --- PINNED MESSAGE --- */
+
+	#chatMessagePinned.s-chat-message__pinned {
+		background: /* Put background color here, do NOT touch sticky. */ url(//static.lioden.com/images/layout/sticky.png) no-repeat 10px 6px;
+		border-bottom-color: !important;
+		color: ;
+	}
+
+/* --- DISCONNECTED --- */
+	
+	.s-chat-error_screen {
+		background: ;
+		color: ;
+	}
+
+/* --- TEXT DETAILS --- */
+
+	#txtChatContainer #lblCharacterCounter {
+		color: ;
+	}
+
+	.s-chat-message_timestamp {
+		color: ;
+		opacity: ;
+	}
+
+/* --- CHANNEL SWITCHER --- */
+
+	.s-chat-sidebar #label_currentChannel {
+		border: ;
+		border-radius: ;
+		color: ;
+		font-family: ;
+	}
+
+	.s-chat-sidebar #fraChatChannelMenu {
+		border: ;
+		box-shadow: ;
+	}
+
+	#fra_chatContainer .channelMenu .channelSwitcher {
+		color: ;
+		border-radius: ;
+		transition: ;
+	}
+
+	#fra_chatContainer .channelMenu .channelSwitcher.active {
+		background: ;
+		color: ;
+	}
+
+	#fra_chatContainer .channelMenu .channelSwitcher:hover {
+		background: ;
+	}
+
+/* --- CHAT SETTINGS MENUS --- */
+
+	#fraChatSettingsMenu {
+		background: ;
+		border: ;
+		border-radius: ;
+		box-shadow: ;
+	}
+
+	#fra_chatContainer label {
+		color: ;
+	}
+
+	#context-chatMenu .chatMenu-option, #fraChatSettingsMenu .chatMenu-option {
+		background: ;
+		color: ;
+	}
+
+	hr {
+		border-top: ;
+	}
+
+	div#fraChatSettingsMenu::before {
+		border-bottom-color: !important;
+	}
+
+	div#fraChatSettingsMenu:after {
+		border-bottom-color: !important;
+	}
+
+	#context-chatMenu {
+		background: ;
+		border: ;
+		border-radius: ;
+		box-shadow: ;
+	}
+
+	#context-chatMenu .chatMenu-option:hover {
+		background: ;
+		border-radius: ;
+	}
+
+	div#context-chatMenu::before {
+		border-left-color: ;
+	}
+
+	div#context-chatMenu::after {
+		border-left-color: ;
+	}
+
+/* --- EMOTE MENU --- */
+
+	.emoteList {
+		border: ;
+	}
+
+	div.emoteList.active::before {
+		border-top-color: ;
+	}
+
+	div.emoteList.active::after {
+		border-top-color: ;
+	}
+
+
+/* --- INPUT BOX --- */
+
+	#fra_chatContainer #txtChatInput {
+		border: ;
+		border-radius: ;
+		color: ;
+	}
+
+/* ---------------- ALERTS ---------------- */
+
+	.alert-success {
+		background: ;
+		color: ;
+		border: ;
+		border-radius: ;
+	}
+
+	.alert-danger {
+		background: ;
+		color: ;
+		border: ;
+		border-radius: ;
+	}
+
+/* Alert Links */
+
+	.alert-success a:link, .alert-success a:visited {
+		color: ;
+		transition: ;
+	}
+
+	.alert-success a:hover, .alert-success a:focus, .alert-success a:active {
+		color: ;
+	}
+
+	.alert-danger a:link, .alert-danger a:visited {
+		color: ;
+		transition: ;
+	}
+
+	.alert-danger a:hover, .alert-danger a:focus, .alert-danger a:active {
+		color: ;
+	}
+/* ---------------- EDITING PANEL AND OPTIONS ---------------- */
+
+	textarea, textarea:focus,
+	input[type="text"], input[type="text"]:focus,
+	input[type="password"], input[type="password"]:focus {
+		background: white;
+		border: 1px solid black;
+		color: black;
+	}
+
+	#editdetailspanel .table .left, #accountoptionspanel .table .left, #changepasswordpanel .table .left {
+		background: ;
+		color: ;
+	}
+
+	#editdetailspanel .table .bottom, #accountoptionspanel .table .bottom, #changepasswordpanel .table .bottom {
+		background: !important;
+	}
+
+/* --- ACCOUNT OPTIONS --- */
+
+	.item {
+		background: ;
+		border-radius: ;
+		border: ;
+	}
+
+	.item-header {
+		background: ;
+		color: ;
+	}
+
+/* Sliders */
+
+	.slider {
+		background: ;
+	}
+
+	input:checked + .slider {
+		background-color: !important;
+	}
+
+/* ---------------- BUTTONS ---------------- */
+
+	.select-control, button.button, input[type="button"], input[type="submit"], input[type="reset"] {
+		background: !important;
+		color: !important;
+		border-radius: ;
+		border: !important;
+		text-align: center !important;
+		text-shadow: none !important;
+		box-shadow: none !important;
+		transition: ;
+	}
+
+	.select-control:hover, .select-control:focus, .select-control:active,
+	button.button:hover, button.button:focus, button.button:active,
+	input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active,
+	input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active,
+	input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:active {
+		background: !important;
+		border: !important;
+		border-radius: ;
+	}
+
+/* ---------------- EVENT BOXES/SPECIAL BOXES ---------------- */
+
+/* --- EVENT FEATURES AND FAPA --- */
+	div .feature {
+		color: ;
+		background: ;
+		border: ;
+		border-radius: ;
+	}
+
+/* --- DECEMBER GIFTING TABLE --- */
+
+	.table .table {
+		background: ;
+		border: ;
+	}
+
+/* --- FEBRUARY THOUGHTS --- */
+
+	.center.b {
+		color: !important;
+	}
+
+/* ---------------- CAVE SPECIFIC CSS ---------------- */
+
+/* --- HEADER --- */
+
+	h1 small {
+		color: ;
+	}
+
+	h1 small a:link, h1 small a:visited {
+		color: ;
+	}
+
+	h1 small a:hover, h1 small a:active, h1 small a:focus {
+		color: !important;
+	}
+
+	h1.center::before {
+		content: none;
+	}
+
+	h1.center::after {
+		content: none;
+	}
+
+
+/* Links */
+
+	.table th a:link, .table th a:visited, .featured-lion a:link, .featured-lion a:visited {
+		color: !important;
+	}
+
+	.table th a:hover, .table th a:active, .table th a:focus, .featured-lion a:hover, .featured-lion a:active, .featured-lion a:focus {
+		color:  !important;
+	}
+
+/* --- FEATURED LION BOX --- */
+
+	.featured-lion {
+		border: ;
+		border-radius: ;
+		font-family: ;
+		font-size: ;
+		overflow: hidden;
+	}
+
+	.featured-lion p.center.b {
+		background: ;
+		margin-bottom: 0px;
+		padding: 5px;
+	}
+	
+/* --- TABLE --- */
+
+	.table#pride .left {
+		background: ;
+	}
+
+/* --- TABLE DETAIL --- */
+
+	.badge {
+		background: ;
+		color: white;
+	}
+
+/* ---------------- MOUND SPECIFIC CSS ---------------- */
+
+/* Top Links */
+
+	.sub_menu {
+		background: !important;
+		border-radius: 10px;
+		border: none;
+	}
+
+	.sub_menu_item_selected {
+		background: ;
+	}
+
+/* ---------------- IMAGE REPLACEMENTS ---------------- */
+
+/* --- GIFT BOX --- */
+
+	table#player img.floatleft {
+    		padding-left: 60px;
+		width: 60px;
+		height: 60px;
+    		background: url('') center no-repeat;
+		margin-right: -10px;
+    	}
+
+/* --- LOGO --- */
+
+	div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+		visibility: hidden;
+		position: relative;
+	}
+
+	div.container.main > div:nth-child(1) > nav > div.navbar-header > a::after {
+		content: url('');
+		position: absolute;
+		margin-left: -165px;
+		margin-top: -45px;
+	}
+
+/* --- FEATURED LION BACKGROUND REPLACEMENT --- */
+
+	.lionImage img:first-child {
+		visibility: hidden;
+	}
+
+	.lionImage {
+		background: ;
+	}
+
+/* --- CAVE GRID IMAGES --- */
+
+/* Unsorted, Pregnant, and Overview */
+
+	div.cave-grid > img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+		background: url('') center center no-repeat !important;
+		background-size: 260px !important;
+		padding-left: 100%;
+		height: 60px;
+	}
+
+	div.cave-grid > img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+		background: url('') center center no-repeat !important;
+		background-size: 260px !important;
+		padding-left: 100%;
+		height: 60px;
+	}
+
+	div.cave-grid > img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+		background: url('') 0 / cover !important;
+		padding-left: 100%;
+		height: 60px;
+	}
+
+	div.cave-grid > img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
+		background: url('') center center no-repeat !important;
+		background-size: 260px !important;
+		padding-left: 100%;
+		height: 120px;
+	}
+
+/* BEETLE MOUNDS */
+
+
+	div.mound-grid > img[src$="//static.lioden.com/images/layout/beetleunsorted.png"] {
+		background: url('') center center no-repeat !important;
+		background-size: 130px 80px !important;
+		width: 130px;
+		height: 80px;
+		padding-left: 100%;
+	}
+
+
+	div.mound-grid > img[src$="//static.lioden.com/images/layout/beetlemound.png"] {
+		background: url('') center center no-repeat !important;
+		background-size: 130px 80px !important;
+		width: 130px;
+		height: 80px;
+		padding-left: 100%;
+	}
+
+
+	a[href$="create-mound.php"] > div.mound-grid > img {
+		background: url('') center center no-repeat !important;
+		background-size: 130px 80px !important;
+		width: 130px;
+		height: 80px;
+		padding-left: 100%;
+		filter: grayscale(100%);
+	}
+
+/* CAVE ARROWS */
+
+	div.floatleft > img[src$="//static.lioden.com/images/layout/arrowgrayleft.png"] {
+		background: url('') center center no-repeat !important;
+		padding-left: 100%;
+		height: 30px;
+		width: 50px;
+		filter: grayscale(100%);
+	}
+
+	div.floatleft > a > img[src$="//static.lioden.com/images/layout/arrowleft.png"] {
+		background: url('') center center no-repeat !important;
+		padding-left: 100%;
+		height: 30px;
+		width: 50px;
+	}
+
+	div.floatright > a > img[src$="//static.lioden.com/images/layout/arrow.png"] {
+		background: url('') center center no-repeat !important;
+		padding-left: 100%;
+		height: 30px;
+		width: 50px;
+	}
+
+	div.floatleft > img[src$="//static.lioden.com/images/layout/arrowgrayright.png"] {
+		background: url('') center center no-repeat !important;
+		padding-left: 100%;
+		height: 30px;
+		width: 50px;
+		filter: grayscale(100%);
+	}
+
+/* CLAN IMAGES */
+
+	table#clans td.right:nth-of-type(even) img {
+		padding-left: 100%;
+		background: url() center no-repeat;
+		background-size: auto;
+		height: 80px;
+		width: 150px;
+	}
+
+/* DYNASTY/ACHIEVEMENTS/SHOWCASE */
+
+	img[src$="//static.lioden.com/images/layout/ancestors.jpg"], img[src$="//static.lioden.com/images/layout/ancestorsfem.png"], img[src$="//static.lioden.com/images/layout/achievements.jpg"], img[src$="//static.lioden.com/images/showcase/banner.png"] {
+		padding-left: 100%;
+		background: url() center no-repeat !important;
+		height: 33px;
+	}
+
+/* SOCIAL MEDIA */
+
+	img[src$="//static.lioden.com/images/iconTwit.png"] {
+		background: url('') center center no-repeat;
+		background-size: 46px;
+		width: 46px;
+		height: 46px;
+		padding-left: 46px;
+	}
+
+/* CURRENCY ICONS */
+
+	a[href$="/spend-history.php?type=sb"] > img.icon {
+		background: url('') center no-repeat;
+		width: 20px;
+		height: 20px;
+		padding-left: 20px;
+	}
+
+	a[href$="/spend-history.php?type=gb"] > img.icon {
+		background: url('') center no-repeat;
+		width: 20px;
+		height: 20px;
+		padding-left: 20px;
+	}
+
+	a[href$="/event.php"] > img {
+		background: url('') center no-repeat;
+		width: 20px;
+		height: 20px;
+		padding-left: 20px;
+	}
+
+/* DAY AND SEASON ICONS */
+
+	img[src$="//static.lioden.com/img/layout/icon-time-night.png"] {
+		width: 20px;
+		height: 20px;
+		padding-left: 20px;
+		background: url('') center center no-repeat;
+		background-size: 20px;
+	}
+
+	img[src$="//static.lioden.com/img/layout/icon-time-day.png"] {
+		width: 20px;
+		height: 20px;
+		padding-left: 20px;
+		background: url('') center center no-repeat;
+		background-size: 20px;
+	}
+
+	img[src$="//static.lioden.com/img/layout/icon-season-dry.png"] {
+		width: 20px;
+		height: 20px;
+		padding-left: 20px;
+		background: url('') center center no-repeat;
+		background-size: 20px;
+	}
+
+	img[src$="//static.lioden.com/img/layout/icon-season-wet.png"] {
+		width: 20px;
+		height: 20px;
+		padding-left: 20px;
+		background: url('') center center no-repeat;
+		background-size: 20px;
+	}
+
+/* CHAT ICONS */
+
+	/* Gear */
+
+	#btnChatSettings {
+		background: url() center no-repeat;
+		background-size: 20px;
+	}
+
+	/* Ping Menu */
+
+	.s-chat-message_menu {
+		background: url() center no-repeat;
+		background-size: 20px;
+	}
+
+	/* Disconnected */	
+
+	img[src$="//static.lioden.com/images/layout/chat/ico-disconnected.png"] {
+		background: url('') center center no-repeat;
+		background-size: 124px;
+		width: 125px;
+		height: 80px;
+		padding-left: 125px;
+	}
+
+	/* Emote Menu */
+
+	button[class="emoteInput"] {
+		background: none !important;
+	}
+
+	button[class="emoteInput"]:hover {
+		background-image: none !important;
+	}
+
+	button[class="emoteInput"]::before {
+		content: "";
+		background: url() center no-repeat;
+		height: 20px;
+		width: 20px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: 0.75s;
+	}
+
+	button[class="emoteInput"]::after {
+		content: "";
+		background: url() center no-repeat;
+		height: 20px;
+		width: 20px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: 0.75s;
+	}
+
+	button[class="emoteInput"]:hover::before {
+		opacity: 0;
+	}
+
+	button[class="emoteInput"]:hover::after {
+		opacity: 1;
+	}
+
+
+/* ---------------- MOBILE NAVBAR ---------------- */
+
+	.navbar-default .navbar-toggle {
+		border-color: rgba(var(--black));
+		background: rgba(var(--brown)) !important;
+	}
+
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background-color: rgba(var(--darkbrown));
+	}
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: rgba(var(--black));
+	}

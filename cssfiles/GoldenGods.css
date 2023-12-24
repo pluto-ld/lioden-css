@@ -1,0 +1,775 @@
+/*
+	CSS by pluto (#52831) for personal use only.
+	I'm a beginner at CSS, but I'm trying my best :) Venture forward into messy code at your own risk.
+	Ater (#206739) helped me figure out some of the code and I took a note from him when it came to organizing. :)
+	If you feel as though I need to credit someone else, just message me! A lot of the rest of this was done by looking at various guides and LD's code.
+
+*/
+
+/* SETUP */
+
+	/*Fonts*/
+	@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+	/* Colors */
+
+	:root {
+		--gold: 230, 157, 30; /* hex: #e69d1e */
+		--brown: 96, 71, 64; /* hex: #604740 */
+		--darkbrown: 89, 66, 59; /* hex: #59423b */
+		--cream: 249, 226, 174; /* hex: #f9e2ae */
+		--darkcream: 245, 219, 159; /* hex: #f5db9f */
+	}
+
+	/* Cursor */
+
+	body:hover{cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur656.cur), default !important;}
+	a:hover{cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur653.cur), pointer !important;}
+	select:hover{cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur653.cur), pointer !important;}
+	button:hover{cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur653.cur), pointer !important;}
+	div.slider.round:hover{cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur653.cur), pointer !important;}
+	input:hover{cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur653.cur), pointer !important;}
+	input[type="text"]:hover{cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur647.cur), pointer !important;}
+	input[type="password"]:hover{cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur647.cur), pointer !important;}
+	textarea:hover{cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur647.cur), pointer !important;}
+	::-webkit-scrollbar-thumb:hover{cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur653.cur), pointer !important;}
+
+/* DESCRIPTION DIVS */
+
+	/* Containers */
+
+	.description {
+		width: 600px;
+		height: 400px;
+		background: white;
+	}
+
+	/* Text */
+
+	.descriptiontext {
+		width: 100%;
+		height: 100%;
+		clip-path: polygon(15% 0, 85% 0%, 100% 20%, 100% 80%, 85% 100%, 15% 100%, 0 80%, 0 20%);
+		padding: 20px 60px;
+		background: rgba(var(--cream));
+		color: rgba(var(--brown));
+		overflow-y: auto;
+	}
+
+	.descriptiontext h3 {
+		font-family: 'DM Serif Text', serif;
+		color: rgba(var(--brown));
+		font-style: italic;
+		text-transform: lowercase;
+		font-size: 30px;
+	}
+
+	.descriptiontext a:link, .descriptiontext a:visited {
+		color: rgba(var(--darkbrown));
+		transition: 1s;
+	}
+
+	.descriptiontext a:hover, .descriptiontext a:focus, .descriptiontext a:active {
+		color: rgba(var(--gold));
+	}
+
+/* SCROLLBAR */
+
+	/* Chrome */
+
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: white;
+		border-radius: 0px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: rgba(var(--gold));
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: rgba(209, 139, 17) !important;
+	}
+
+	/* Firefox */
+
+	:root {
+		scrollbar-color: rgba(var(--gold)) white !important;
+		scrollbar-width: thin !important;
+	}
+
+	div#chatMessageContainer {
+		scrollbar-color: rgba(var(--gold)) white !important;
+		scrollbar-width: thin !important;
+	}
+
+	.descriptiontext {
+		scrollbar-color: rgba(var(--gold)) white !important;
+		scrollbar-width: thin !important;
+	}
+
+/* BASICS */
+
+	body {
+		background: url('https://cdna.artstation.com/p/assets/images/images/019/622/494/large/-4137.jpg?1564323637') center center fixed no-repeat;
+		background-size: cover;
+		font-family: 'Philosopher', sans-serif;
+		color: white;
+	}
+
+	/* General Links */
+
+	a:link, a:visited {
+		color: rgba(var(--cream));
+		transition: 1s;
+	}
+
+	a:hover, a:focus, a:active {
+		color: white;
+	}
+
+	/* Headers */
+	h1 {
+		text-align: center;
+		font-family: 'Tangerine', cursive;
+		text-transform: capitalize;
+		font-style: bold;
+		color: white;
+		font-size: 80px;
+	}
+
+	h3, .sidebar h3 {
+		font-family: 'Playfair Display SC', serif;
+		color: white;
+	}
+
+	/* Header Links */
+
+	.table .top a:link, .table .top a:visited {
+		color: rgba(var(--cream)) !important;
+		transition: 1s;
+	}
+
+	.table .top a:hover, .table .top a:focus, .table .top a:active {
+		color: white !important;
+	}
+
+	.table .bottom a:link, .table .bottom a:visited {
+		color: white;
+		transition: 1s;
+	}
+
+	.table .bottom a:hover, .table .bottom a:focus, .table .bottom a:active {
+		text-decoration: underline;
+		color: rgba(var(--cream));
+	}
+
+	/* Credits */
+	.topbar .welcomeback::after {
+		content: "▶ CSS by pluto [#52831 / #58766]";
+		font-size: 10px;
+		padding-left: 7px;
+	}
+
+/* BARS */
+
+	/* Topbar */
+
+	.topbar {
+		background: rgba(var(--gold), 0.3);
+		border: 1px solid rgba(var(--gold));
+		border-top: none !important;
+		color: white;
+		border-radius: 0px;
+	}
+
+	.topbar a:link, .topbar a:visited {
+		color: rgba(var(--brown));
+		transition: 1s;
+	}
+
+	.topbar a:hover, .topbar a:focus, .topbar a:active {
+		color: rgba(var(--cream));
+	}
+
+	.welcomeback a:link, .welcomeback a:visited {
+		color: rgba(var(--cream));
+	}
+
+	.welcomeback a:hover, .welcomeback a:focus, .welcomeback a:active {
+		color: white;
+	}
+
+	/* Breadcrumb */
+
+	.breadcrumb {
+		background: rgba(var(--cream), 0.3);
+		color: white;
+		border: 1px solid rgba(var(--cream));
+		border-radius: 0px;
+	}
+
+	.breadcrumb > .active {
+		color: white;
+	}
+
+	/* Navbar */
+
+	.navbar {
+		background: rgba(var(--gold), 0.6);
+		overflow: visible;
+		color: rgba(var(--white));
+		text-transform: capitalize;
+		margin: auto;
+	}
+
+	.navbar li a {
+		color: rgba(var(--white)) !important;
+		font-family: 'Playfair Display SC', serif;
+		transition: 1s;
+		margin: auto;
+	}
+
+	.navbar li a:hover {
+		background: none !important;
+		color: rgba(var(--cream)) !important;
+	}
+
+	/* Progress Bar */
+
+	.progress {
+		color: rgba(var(--brown));
+		background-color: rgba(var(--cream));
+	}
+
+	.progress-bar {
+		background: rgba(var(--gold));
+	}
+
+	th .progress {
+		color: rgba(var(--brown));
+		background: white;
+	}
+
+	th .progress-bar {
+		background: rgba(var(--cream));
+	}
+
+/* MAIN COLUMN */
+
+	.col-md-9 {
+		background: none;
+	}
+
+	div.container.main {
+		background: rgba(var(--gold), 0.2);
+		box-shadow: none;
+		border: none !important;
+		opacity: 0.8;
+	}
+
+/* TABLES */
+
+	/* Background/Border */
+
+	.table {
+		border: 1px solid rgba(var(--gold));
+		background: rgba(var(--brown), 0.2);
+		border-collapse: separate;
+	}
+
+	.table#allies .left, .table#clans .left {
+		background: transparent;
+	}
+
+	/* Headers/Footers */
+
+	th, .top {
+		background: rgba(var(--gold), 0.6) !important;
+		text-align: center;
+		font-size: 16px;
+		font-family: 'Playfair Display SC', serif;
+	}
+
+	.bottom {
+		background: none !important;
+		text-align: center;
+		font-size: 14px;
+		font-family: 'Playfair Display SC', serif;
+	}
+
+
+
+	/* Inner Table */
+	.inner-table {
+		border-spacing: 0px;
+	}
+
+	.inner-table .right, .inner-table .left {
+		border: none;
+		border-radius: 0px;
+		background: none !important;
+		color: white;
+	}
+
+	div#lion_image {
+		clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	}
+
+	.table .right_odd {
+		background: rgba(var(--cream), 0.3);
+	}
+
+/* GRIDS */
+
+	.cave-grid, .mound-grid, div .left {
+		background: rgba(var(--brown), 0.3);
+		border-radius: 0px;
+		border: 1px solid rgba(var(--gold));
+		color: rgba(var(--cream));
+		transition: 1s;
+	}
+
+	.cave-grid:hover, .mound-grid:hover {
+		color: white;
+	}
+
+
+/* SIDEBAR */
+
+	/* Panels */
+
+	.col-md-3 .panel {
+		background: rgba(var(--cream), 0.3);
+		color: white;
+		border: 1px solid rgba(var(--cream));
+		border-radius: 0px;
+		box-shadow: none;
+	}
+
+	/* Panel Links */
+
+	.col-md-3 .panel a:link, .col-md-3 .panel a:visited {
+		color: white;
+		transition: 1s;
+	}
+
+	.col-md-3 .panel a:hover, .col-md-3 .panel a:focus, .col-md-3 .panel a:active {
+		color: rgba(var(--cream));
+	}
+
+/* CHATBOX */
+
+	/* Basics */
+
+	#chatMessageContainer {
+		border: 3px double rgba(var(--cream));
+		border-radius: 0px;
+		color: rgba(var(--brown));
+	}
+
+	.s-chat-message:nth-child(even) {
+		background: rgba(var(--cream));
+	}
+
+	.s-chat-message:nth-child(odd) {
+		background: rgba(var(--darkcream));
+	}
+
+	/* Disconnected */
+	
+	.s-chat-error_screen {
+		background: rgba(var(--cream), 0.6);
+		color: rgba(var(--brown));
+	}
+
+	/* Pinned Message */
+
+	#chatMessagePinned.s-chat-message__pinned {
+		background: rgba(var(--gold)) url(//static.lioden.com/images/layout/sticky.png) no-repeat 10px 6px;
+		border-bottom-color: rgba(var(--cream)) !important;
+		color: rgba(var(--brown));
+	}
+
+	/* Text Details */
+
+	#txtChatContainer #lblCharacterCounter {
+		color: rgba(var(--cream));
+	}
+
+	.s-chat-message_timestamp {
+		color: rgba(var(--brown));
+		opacity: 0.6;
+	}
+
+	/* Menus */
+
+	.s-chat-sidebar #label_currentChannel {
+		border: 1px solid rgba(var(--cream));
+		border-radius: 0px;
+		color: rgba(var(--brown));
+		font-family: 'Playfair Display SC', serif;
+	}
+
+	.s-chat-sidebar #fraChatChannelMenu {
+		border: 1px solid rgba(var(--cream));
+		box-shadow: none;
+	}
+
+	#fra_chatContainer .channelMenu .channelSwitcher.active {
+		background: rgba(var(--brown));
+		color: rgba(var(--white));
+	}
+
+	#fra_chatContainer .channelMenu .channelSwitcher:hover {
+		background: rgba(var(--gold));
+	}
+
+	.emoteList {
+		border: rgba(var(--gold));
+	}
+
+	/* Input Box */
+
+	#fra_chatContainer #txtChatInput {
+		border: 1px solid rgba(var(--cream));
+		border-radius: 0px;
+		color: rgba(var(--brown));
+	}
+
+	/* Links */
+
+	#chatMessageContainer a:link, 
+	#chatMessageContainer a:visited {
+		color: rgba(var(--brown));
+		font-weight: bold;
+		transition: 1s;
+	}
+
+	#chatMessageContainer a:hover,
+	#chatMessageContainer a:focus,
+	#chatMessageContainer a:active {
+		color: rgba(var(--darkbrown)) !important;
+	}
+
+
+/* ALERTS */
+
+	.alert-success, .alert-danger {
+		background: rgba(var(--cream), 0.6);
+		color: white;
+		border: 1px solid rgba(var(--cream));
+		border-radius: 0px;
+	}
+
+	/* Alert Links */
+
+	.alert-success a:link, .alert-success a:visited,
+	.alert-danger a:link, .alert-danger a:visited {
+		color: rgba(var(--brown));
+		transition: 1s;
+	}
+
+	.alert-success a:hover, .alert-success a:focus, .alert-success a:active,
+	.alert-danger a:hover, .alert-danger a:focus, .alert-danger a:active {
+		color: white;
+	}
+
+/* EDIT PANEL */
+
+	textarea, textarea:focus,
+	input[type="text"], input[type="text"]:focus,
+	input[type="password"], input[type="password"]:focus {
+		background: white;
+		border: 1px solid rgba(var(--gold));
+		color: rgba(var(--brown));
+	}
+
+	#editdetailspanel .table .left, #accountoptionspanel .table .left, #changepasswordpanel .table .left {
+		background: rgba(var(--cream), 0.2);
+		color: white;
+	}
+
+	#editdetailspanel .table .bottom, #accountoptionspanel .table .bottom, #changepasswordpanel .table .bottom {
+		background: rgba(var(--gold), 0.5) !important;
+	}
+
+	/* Account Options */
+
+	.item {
+		background: rgba(var(--cream), 0.6);
+		border-radius: 0px;
+		border: 1px solid rgba(var(--gold));
+	}
+
+	.item-header {
+		background: rgba(var(--gold) 0.6) !important;
+		color: rgba(var(--brown));
+	}
+
+	input:checked + .slider {
+		background-color: rgba(var(--gold)) !important;
+	}
+
+/* BUTTONS */
+
+	.select-control,
+	button.button,
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"] {
+		background: rgba(var(--cream), 0.6) !important;
+		color: rgba(var(--brown)) !important;
+		border-radius: 0px;
+		border: 1px solid rgba(var(--cream)) !important;
+		text-align: center !important;
+		text-shadow: none !important;
+		box-shadow: none !important;
+		transition: 1s;
+	}
+
+	.select-control:hover, .select-control:focus, .select-control:active,
+	button.button:hover, button.button:focus, button.button:active,
+	input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active,
+	input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active,
+	input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:active {
+		background: rgba(var(--darkcream)) !important;
+		border: 1px solid rgba(var(--darkcream)) !important;
+		border-radius: 0px;
+	}
+
+/* EVENT SPECIFICS */
+
+	/* Event Features and FAPA */
+	div .feature {
+		color: white;
+		background: rgba(var(--gold), 0.3);
+		border: 1px solid rgba(var(--gold));
+		border-radius: 0px;
+	}
+
+	/* December Gifting Table */
+
+	.table .table {
+		background: rgba(var(--gold), 0.6);
+		border: 1px solid rgba(var(--gold));
+	}
+
+/* CAVE-SPECIFIC CSS */
+
+	h1 small {
+		color: white;
+	}
+
+	/* Links */
+
+	.table th a:link, .table th a:visited, .featured-lion a:link, .featured-lion a:visited {
+		color: rgba(var(--cream)) !important;
+	}
+
+	.table th a:hover, .table th a:active, .table th a:focus, .featured-lion a:hover, .featured-lion a:active, .featured-lion a:focus {
+		color: white !important;
+	}
+
+	/* Featured Lion Box */
+
+	.featured-lion {
+		border: 1px solid rgba(var(--gold));
+		font-family: 'Playfair Display SC', serif;
+		font-size: 20px;
+		overflow: hidden;
+	}
+
+	.featured-lion p .center .b {
+		background: rgba(var(--gold), 0.6);
+	}
+
+	.featured-lion p::before {
+		content: "⤜";
+		padding-right: 3px;
+	}
+
+	.featured-lion p::after {
+		content: "⇾";
+		padding-left: 3px;
+	}
+
+	/* Lion Image Background Change */
+
+	.lionImage img:first-child {
+		visibility: hidden;
+	}
+
+	.lionImage {
+		background: url('//static.lioden.com/images/dynamic/backgrounds/drysunset.png') no-repeat, rgba(var(--gold), 0.6);
+	}
+	
+	/* Table */
+
+	.table#pride .left {
+		background: rgba(var(--gold), 0.6);
+	}
+
+	.table .left {
+		background: rgba(var(--cream), 0.3);
+	}
+
+	/* Details */
+
+	.badge {
+		background: rgba(var(--cream));
+		color: rgba(var(--brown));
+	}
+
+/* MOUND CSS */
+
+	/* Top Links */
+
+	.sub_menu {
+		background: rgba(var(--gold), 0.6);
+		border-radius: 0px;
+		border: 1px solid rgba(var(--gold));
+	}
+
+	.sub_menu_item_selected {
+		background: rgba(var(--gold), 0.8);
+	}
+
+	/* Table */
+
+	.table#beetles .left {
+		background: rgba(var(--gold), 0.6);
+	}
+
+/*IMAGES*/
+
+	/*Gift Box*/
+
+	table#player img.floatleft {
+    		padding-left: 60px;
+		width: 60px;
+		height: 60px;
+    		background: url(https://tinyurl.com/y6afxfdd) center no-repeat;
+    	}
+
+	/*Logo Replacement*/
+
+	div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+		visibility: hidden;
+		position: relative;
+	}
+
+	div.container.main > div:nth-child(1) > nav > div.navbar-header > a::after {
+		content: url('https://tinyurl.com/yyn6jnjt');
+		position: absolute;
+		margin-left: -150px;
+		margin-top: 15px;
+	}
+
+	/* Cave Arrows */
+
+	div.floatleft > img[src$="//static.lioden.com/images/layout/arrowgrayleft.png"] {
+		background: url('https://i.imgur.com/ucquBG4.png') center center no-repeat !important;
+		padding-left: 100%;
+		height: 30px;
+		width: 50px;
+		filter: grayscale(100%);
+	}
+
+	div.floatleft > a > img[src$="//static.lioden.com/images/layout/arrowleft.png"] {
+		background: url('https://i.imgur.com/ucquBG4.png') center center no-repeat !important;
+		padding-left: 100%;
+		height: 30px;
+		width: 50px;
+	}
+
+	div.floatright > a > img[src$="//static.lioden.com/images/layout/arrow.png"] {
+		background: url('https://i.imgur.com/RPNfHDy.png') center center no-repeat !important;
+		padding-left: 100%;
+		height: 30px;
+		width: 50px;
+	}
+
+	div.floatleft > img[src$="//static.lioden.com/images/layout/arrowgrayright.png"] {
+		background: url('https://i.imgur.com/RPNfHDy.png') center center no-repeat !important;
+		padding-left: 100%;
+		height: 30px;
+		width: 50px;
+		filter: grayscale(100%);
+	}
+
+	/* Cave Grid Images */
+
+	/* Unsorted, Pregnant, and Overview */
+
+	a[href$="unsorted.php?id=52831"] > div.cave-grid > img {
+		background: url('https://i.pinimg.com/564x/e2/0b/07/e20b07a34d1a1de1e78f691cf3da857e.jpg') center center no-repeat !important;
+		padding-left: 100%;
+		height: 60px;
+	}
+
+	div.cave-grid > img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+		background: url('https://i.pinimg.com/564x/ac/3c/33/ac3c33afb77327619bdc8ab2323bdedd.jpg') center center no-repeat !important;
+		padding-left: 100%;
+		height: 60px;
+	}
+
+	a[href$="lionoverview.php?id=52831"] > div.cave-grid > img {
+		background: url('https://i.pinimg.com/564x/2b/49/2f/2b492f4ae7ba006ffd5367e0e25a8d36.jpg') center center no-repeat !important;
+		padding-left: 100%;
+		height: 60px;
+	}
+
+	/* Beetle Mounds */
+
+	a[href$="unsorted-beetles.php?id=52831"] > div.mound-grid > img {
+		background: url('https://i.pinimg.com/564x/e2/f5/2f/e2f52f9d1cc3c44c57d94209f577baac.jpg') center center no-repeat !important;
+		background-size: 130px 80px;
+		width: 130px;
+		height: 80px;
+		padding-left: 100%;
+	}
+
+
+	a[href$="mound.php?id=78666"] > div.mound-grid > img {
+		background: url('https://i.pinimg.com/564x/5b/ac/b7/5bacb75bc42c8e75bb73a592276cb276.jpg') center center no-repeat !important;
+		background-size: 130px 80px;
+		width: 130px;
+		height: 80px;
+		padding-left: 100%;
+	}
+
+
+	a[href$="mound.php?id=77486"] > div.mound-grid > img {
+		background: url('https://i.pinimg.com/564x/bf/e2/a1/bfe2a1cc9c1589b3e04cb05baa0ef2e8.jpg') center center no-repeat !important;
+		background-size: 130px 80px;
+		width: 130px;
+		height: 80px;
+		padding-left: 100%;
+	}
+
+
+	a[href$="mound.php?id=8192"] > div.mound-grid > img {
+		background: url('https://i.pinimg.com/564x/5f/cf/01/5fcf013b95b8a4d9bfec8f3323fd1c4a.jpg') center center no-repeat !important;
+		background-size: 130px 80px;
+		width: 130px;
+		height: 80px;
+		padding-left: 100%;
+	}
+
+
+	a[href$="create-mound.php"] > div.mound-grid > img {
+		background: url('https://i.pinimg.com/564x/9a/c9/c5/9ac9c5ad2b6b89d9536123b63dc1ab4d.jpg') center center no-repeat !important;
+		background-size: 130px 80px;
+		width: 130px;
+		height: 80px;
+		padding-left: 100%;
+		filter: grayscale(100%);
+	}
