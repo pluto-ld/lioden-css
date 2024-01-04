@@ -185,7 +185,6 @@
 
 	div.container.main {
 		background: rgba(var(--darkblue)) !important;
-		color: rgba(var(--white)) !important;
 		box-shadow: none;
 		border: none !important;
 		border-radius: 5px;
@@ -270,7 +269,7 @@
 	}
 
 	.cave-grid:hover, .mound-grid:hover {
-		color: white;
+		color: rgba(var(--cream));
 	}
 
 /* SIDEBAR */
@@ -336,7 +335,7 @@
 
 	/* Event Features */
 	div .feature {
-		color: white;
+		color: rgba(var(--cream));
 		background: rgba(var(--rust));
 		border: none;
 		border-radius: 5px;
@@ -346,16 +345,10 @@
 
 	.table .table {
 		background: rgba(var(--darkred));
+		border-radius: 10px;
 	}
-/*IMAGES*/
 
-	/*Gift Box*/
-	table#player img.floatleft {
-    		padding-left: 60px;
-		width: 60px;
-		height: 60px;
-    		background: url(https://tinyurl.com/y6afxfdd) center no-repeat;
-    	}
+/*IMAGES*/
 
 	/*Logo Replacement*/
 
