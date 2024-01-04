@@ -75,6 +75,11 @@
 		color: #ffd2aa;
 		text-shadow: 0 0 1px rgba(var(--cream));
 	}
+
+	.table .bottom a:hover {
+		text-decoration: underline;
+		text-decoration-color: transparent;
+	}
 	
 	.alert-success a:link,
 	.alert-success a:visited {
@@ -85,6 +90,7 @@
 	.alert-success a:focus,
 	.alert-success a:active {
 		color: rgba(34, 70, 34) !important;
+		text-shadow: none;
 	}
 
 	.alert-danger a:link,
@@ -96,6 +102,7 @@
 	.alert-danger a:focus,
 	.alert-danger a:active {
 		color: rgba(140, 55, 53) !important;
+		text-shadow: none;
 	}
 
 /* SCROLLBAR */
@@ -137,10 +144,15 @@
 	.breadcrumb {
 		background: rgba(var(--rust)) !important;
 		color: rgba(var(--cream)) !important;
+		border-radius: 10px;
 	}
 
 	.breadcrumb>.active {
 		color: rgba (var(--cream));
+	}
+
+	.alert {
+		border-radius: 10px;
 	}
 
 	/* Navbar */
@@ -152,7 +164,7 @@
 
 	.navbar li a {
 		color: rgba(var(--cream)) !important;
-		transition: 0.4s;
+		transition: 0.25s;
 	}
 
 	.navbar li a:hover {
@@ -163,6 +175,7 @@
 	.progress {
 		overflow: hidden;
 		background-color: rgba(var(--cream));
+		border-radius: 10px;
 	}
 
 	.progress-bar {
@@ -181,13 +194,12 @@
 		text-align: center;
 		color: rgba(var(--brightorange));
 		font-size: 40px;
-		padding: 20px;
 	}
 
 	/* Small Headers */
 
 	h3, .sidebar h3 {
-		color: rgba(var(--brightorange));
+		color: rgba(var(--darkorange));
 	}
 
 /* MAIN COLUMN */
@@ -219,7 +231,7 @@
 	}
 
 	.commentTag {
-		border-radius: 50%;
+		border-radius: 50% !important;
 	}
 
 /* TABLES */
@@ -284,8 +296,12 @@
 	div .left {
 		background: rgba(var(--rust));
 		border: none;
-		color: rgba(var(--darkred));
-		transition: 1s;
+		color: #8c3220;
+		transition: 0.25s;
+	}
+
+	.cave-grid, .mound-grid {
+		border-radius: 10px;
 	}
 
 	.mound-grid {
@@ -299,7 +315,7 @@
 	}
 
 	.cave-grid:hover, .mound-grid:hover {
-		color: rgba(var(--cream));
+		color: rgba(var(--darkred));
 	}
 
 /* SIDEBAR */
@@ -328,7 +344,7 @@
 		text-align: center !important;
 		text-shadow: none !important;
 		box-shadow: 2px !important;
-		border-radius: 10px;
+		border-radius: 10px !important;
 		transition: 0.25s;
 	}
 
@@ -349,6 +365,8 @@
 	input[type="password"], input[type="password"]:focus {
 		background: rgba(var(--cream));
 		color: rgba(var(--darkblue));
+		border: none;
+		border-radius: 10px;
 	}
 
 	/* Select */
