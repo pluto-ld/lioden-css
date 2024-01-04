@@ -62,14 +62,16 @@
 	.breadcrumb a:link, .breadcrumb a:visited,
 	.topbar a:link, .topbar a:visited,
 	.table .top a:link, .table .top a:visited, 
-	.table .bottom a:link, .table .bottom a:visited {
+	.table .bottom a:link, .table .bottom a:visited,
+	.table th a:link, .table th a:visited {
 		color: rgba(var(--cream));
 	}
 
 	.breadcrumb a:hover,
 	.topbar a:hover,
 	.table .top a:hover,
-	.table .bottom a:hover {
+	.table .bottom a:hover,
+	.table th a:hover {
 		color: #ffd2aa;
 		text-shadow: 0 0 1px rgba(var(--cream));
 	}
