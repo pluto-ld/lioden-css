@@ -120,7 +120,7 @@
 	.topbar {
 		background: rgba(var(--rust)) !important;
 		color: rgba(var(--cream)) !important;
-		border-radius: 0px 0px 5px 5px;
+		border-radius: 0px 0px 10px 10px;
 	}
 
 	.breadcrumb {
@@ -135,7 +135,7 @@
 	/* Navbar */
 	.navbar {
 		background: rgba(var(--rust)) !important;
-		border-radius: 5px 5px 0px 0px;
+		border-radius: 10px 10px 0px 0px;
 		padding-top: 1px;
 	}
 
@@ -187,7 +187,7 @@
 		background: rgba(var(--darkblue)) !important;
 		box-shadow: none;
 		border: none !important;
-		border-radius: 5px;
+		border-radius: 10px;
 	}
 
 	.col-md-9 {
@@ -202,22 +202,20 @@
 		background: rgba(var(--darkred));
 		border: none;
 		border-collapse: separate;
-		border-radius:5px
+		border-radius: 10px
+		overflow: hidden;
 	}
 
 	/* Table Headers + Footers */
 
-	th,
-	.top {
+	th, .top {
+		text-align: left;
 		background: rgba(var(--rust)) !important;
-		text-align: center;
-		border-radius: 5px 5px 0px 0px;
 	}
 
 	.bottom {
 		background: rgba(var(--rust)) !important;
-		text-align: center;
-		border-radius: 0px 0px 5px 5px;
+		text-align: right !important;
 	}
 
 	.table .left {
@@ -234,6 +232,8 @@
 
 	.inner-table {
 		border-spacing: 0px;
+		overflow: hidden;
+		border-radius: 10px;
 	}
 
 	.inner-table .left {
@@ -278,7 +278,7 @@
 	.col-md-3 .panel {
 		background: rgba(var(--orange));
 		border: none;
-		border-radius: 5px;
+		border-radius: 10px;
 		color: rgba(var(--darkred));
 		box-shadow: none;
 	}
@@ -338,7 +338,7 @@
 		color: rgba(var(--cream));
 		background: rgba(var(--rust));
 		border: none;
-		border-radius: 5px;
+		border-radius: 10px;
 	}
 
 	/* December Gifting Table */
