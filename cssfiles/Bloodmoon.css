@@ -34,37 +34,6 @@
 	}
 
 	/* Links */
-	
-	a:link, a:visited,
-	.table .top a:link, .table .top a:visited,
-	.topbar a:link, .topbar a:visited {
-		color: rgba(var(--darkred));
-		transition: 0.4s;	
-	}
-
-	a:hover, a:focus, a:active {
-		color: rgba(var(--cream)) !important;
-	}
-
-	#player a:link, #player a:visited,
-	.sidebar h3 a:link, .sidebar h3 a:visited,
-	#allies a:link, #allies a:visited,
-	#clans a:link, #clans a:visited,
-	#txtChatContainer a:link, #txtChatContainer a:visited,
-	#editdetailspanel a:link, #editdetailspanel a:visited {
-		color: rgba(var(--cream));
-		transition: 0.4s;
-	}
-
-	#player a:hover, #player a:focus, #player a:active,
-	.sidebar h3 a:hover, .sidebar h3 a:focus, .sidebar h3 a:active,
-	#allies a:hover, #allies a:focus, #allies a:active,
-	#clans a:hover, #clans a:focus, #clans a:active
-	#txtChatContainer a:hover, #txtChatContainer a:focus, #txtChatContainer a:active,
-	#editdetailspanel a:hover, #editdetailspanel a:focus, #editdetailspanel a:active {
-		color:rgba(var(--brightorange)) !important;
-	}
-
 	.alert-success a:link,
 	.alert-success a:visited {
 		color: rgba(60, 118, 61);
@@ -202,7 +171,7 @@
 		background: rgba(var(--darkred));
 		border: none;
 		border-collapse: separate;
-		border-radius: 10px
+		border-radius: 10px;
 		overflow: hidden;
 	}
 
