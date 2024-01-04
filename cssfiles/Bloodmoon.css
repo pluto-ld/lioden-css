@@ -34,6 +34,27 @@
 	}
 
 	/* Links */
+	a:link, a:visited {
+		color: rgba(var(--orange));
+		transition: 0.25s;
+	}
+
+	a:hover {
+		color: #ffb778;
+		text-shadow: 0 0 2px rgba(var(--orange));
+	}
+
+	.panel a:link, .panel a:visited,
+	.inner-table a:link, .inner-table a:visited {
+		color: #8c3220;
+	}
+
+	.panel a:hover,
+	.inner-table a:hover {
+		color: rgba(var(--darkred));
+		text-shadow: 0 0 1px #8c3220;
+	}
+	
 	.alert-success a:link,
 	.alert-success a:visited {
 		color: rgba(60, 118, 61);
@@ -88,7 +109,7 @@
 
 	.topbar {
 		background: rgba(var(--rust)) !important;
-		color: rgba(var(--cream)) !important;
+		color: rgba(var(--darkred));
 		border-radius: 0px 0px 10px 10px;
 	}
 
@@ -180,6 +201,7 @@
 	th, .top {
 		text-align: left;
 		background: rgba(var(--rust)) !important;
+		color: rgba(var(--darkred)) !important;
 	}
 
 	.bottom {
@@ -213,6 +235,7 @@
 	.inner-table .right,
 	.table .right_odd {
 		background: rgba(var(--orange)) !important;
+		background: rgba(var(--darkred));
 		border-radius: 0px;
 	}
 
@@ -261,13 +284,14 @@
 	input[type="button"],
 	input[type="submit"],
 	input[type="reset"] {
-		background: rgba(var(--darkred)) !important;
-		color: rgba(var(--orange)) !important;
-		border: 1px solid rgba(var(--darkorange)) !important;
+		background: rgba(var(--orange)) !important;
+		color: rgba(var(--darkred)) !important;
+		border: 1px solid transparent !important;
 		text-align: center !important;
 		text-shadow: none !important;
 		box-shadow: 2px !important;
-		transition: 1s;
+		border-radius: 10px;
+		transition: 0.25s;
 	}
 
 	.select-control:hover, .select-control:focus, .select-control:active,
@@ -275,13 +299,9 @@
 	input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active,
 	input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active,
 	input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:active {
-		background: rgba(var(--brown)) !important;
-	}
-
-	h3 input[type="button"],
-	h3 input[type="submit"],
-	h3 input[type="reset"] {
-		margin-left: -6px !important;
+		background: rgba(var(--darkorange)) !important;
+		border: 1px solid rgba(var(--rust)) !important;
+		border-radius: 10px;
 	}
 
 	/* Text Areas */
