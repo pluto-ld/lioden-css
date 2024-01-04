@@ -9,8 +9,6 @@
 /* BASICS */
 
 	/*Fonts*/
-	@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
 	@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 	/* Colors */
@@ -117,11 +115,6 @@
 		scrollbar-width: thin !important;
 	}
 
-	div#chatMessageContainer {
-		scrollbar-color: rgba(var(--rust)) rgba(var(--darkblue)) !important;
-		scrollbar-width: thin !important;
-	}
-
 /* BARS */
 
 	.topbar {
@@ -131,7 +124,6 @@
 	}
 
 	.breadcrumb {
-		font-family: 'Raleway', sans-serif;
 		background: rgba(var(--rust)) !important;
 		color: rgba(var(--cream)) !important;
 	}
@@ -143,7 +135,6 @@
 	/* Navbar */
 	.navbar {
 		background: rgba(var(--rust)) !important;
-		font-family: 'Raleway', sans-serif;
 		border-radius: 5px 5px 0px 0px;
 		padding-top: 1px;
 	}
@@ -179,14 +170,12 @@
 		text-align: center;
 		color: rgba(var(--brightorange));
 		font-size: 40px;
-		font-family: 'Major Mono Display', monospace;
 		padding: 20px;
 	}
 
 	/* Small Headers */
 
 	h3, .sidebar h3 {
-		font-family: 'Major Mono Display', monospace;
 		color: rgba(var(--brightorange));
 	}
 
@@ -306,7 +295,6 @@
 	input[type="reset"] {
 		background: rgba(var(--darkred)) !important;
 		color: rgba(var(--orange)) !important;
-		font-family: 'Raleway', sans-serif;
 		border: 1px solid rgba(var(--darkorange)) !important;
 		text-align: center !important;
 		text-shadow: none !important;
