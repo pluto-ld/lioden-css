@@ -508,6 +508,10 @@
 		background: rgba(var(--darkred));
 	}
 
+	.s-chat-sidebar #chatMessageList {
+		scrollbar-width: thin;
+	}
+
 	.s-chat-message:nth-child(2n+1) {
 		background: none;
 	}
@@ -565,4 +569,8 @@
 	#context-chatMenu .chatMenu-option:hover, #fraChatSettingsMenu .chatMenu-option:hover, #fra_chatContainer .channelMenu .channelSwitcher:hover {
 		background: rgba(var(--orange), 0.25);
 		color: rgba(var(--darkorange));
+	}
+
+	#txtChatContainer #lblCharacterCounter {
+		color: rgba(var(--cream), 0.4);
 	}
