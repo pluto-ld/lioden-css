@@ -68,9 +68,12 @@
 	.table .top a:link, .table .top a:visited, 
 	.table .bottom a:link, .table .bottom a:visited,
 	.table th a:link, .table th a:visited,
-	a[href="/opt-out.php"]:link, a[href="/opt-out.php"]:visited, a[href="/marking-censor.php"]:link, a[href="/marking-censor.php"]:visited,
 	.sub_menu a:link, .sub_menu a:visited {
 		color: rgba(var(--cream));
+	}
+
+	a[href="/opt-out.php"]:link, a[href="/opt-out.php"]:visited, a[href="/marking-censor.php"]:link, a[href="/marking-censor.php"]:visited {
+		color: rgba(var(--cream)) !important;
 	}
 
 	.breadcrumb a:hover,
@@ -79,10 +82,13 @@
 	.table .bottom a:hover,
 	.table th a:hover,
 	h3 a:hover,
-	a[href="/opt-out.php"]:hover, a[href="/marking-censor.php"]:hover,
 	.sub_menu a:hover {
 		color: #ffd2aa;
 		text-shadow: 0 0 1px rgba(var(--cream));
+	}
+
+	a[href="/opt-out.php"]:hover, a[href="/marking-censor.php"]:hover {
+		color: rgba(var(--cream)) !important;
 	}
 
 	.table .bottom a:hover {
@@ -211,8 +217,9 @@
 	}
 
 	h3 {
-		color: rgba(var(--cream));
+		color: rgba(var(--darkred));
 	}
+
 /* MAIN COLUMN */
 
 	/* Background */
@@ -315,7 +322,7 @@
 		background: rgba(var(--rust));
 		border: none;
 		border-radius: 10px;
-		color: #8c3220;
+		color: rgba(var(--darkred));
 		transition: 0.25s;
 	}
 
@@ -330,7 +337,6 @@
 	}
 
 	.cave-grid:hover, .mound-grid:hover {
-		color: rgba(var(--darkred));
 		text-shadow: 0 0 2px #8c3220;
 	}
 
@@ -430,7 +436,7 @@
 
 	/* Event Features */
 	div .feature {
-		color: rgba(var(--cream));
+		color: rgba(var(--darkred));
 		background: rgba(var(--rust));
 		border: none;
 		border-radius: 10px;
