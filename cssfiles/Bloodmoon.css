@@ -511,15 +511,15 @@
 	#chatMessagePinned.s-chat-message__pinned {
 		background-color: rgba(var(--orange));
 		color: rgba(var(--darkred));
-		border-bottom-color: rgba(var(--rust));
+		border-bottom-color: rgba(var(--rust)) !important;
 	}
 
 	.s-chat-message.hasContext {
-		border-left-color: rgba(var(--brightorange));
-		background: rgba(var(--brightorange), 0.15);
+		border-left-color: rgba(var(--brightorange)) !important;
+		background: #663d32 !important;
 	}
 
-	#context-chatMenu, .s-chat-sidebar #fraChatChannelMenu {
+	#context-chatMenu, .s-chat-sidebar #fraChatChannelMenu, #fraChatSettingsMenu {
 		background: rgba(var(--cream));
 		border-radius: 10px;
 		border: none;
@@ -530,17 +530,30 @@
 		border-left-color: rgba(var(--cream));
 	}
 
+	#fraChatSettingsMenu::before, #fraChatSettingsMenu::after {
+		border-bottom-color: rgba(var(--cream));
+	}
+
 	.chatMenu-container {
 		border-radius: 10px;
 		overflow: hidden;
 	}
 
-	#context-chatMenu .chatMenu-option, #fraChatSettingsMenu .chatMenu-option {
+	#context-chatMenu .chatMenu-option, #fraChatSettingsMenu .chatMenu-option, #fra_chatContainer .channelMenu .channelSwitcher {
 		background: rgba(var(--cream));
 		color: rgba(var(--darkorange));
 		transition: 0.25s;
 	}
 
-	#context-chatMenu .chatMenu-option:hover, #fraChatSettingsMenu .chatMenu-option:hover {
+	#fra_chatContainer .channelMenu .channelSwitcher.active {
+		background: rgba(var(--darkred));
+		color: rgba(var(--cream));
+	}
+
+	#fra_chatContainer .channelMenu .channelSwitcher {
+		border-radius: 10px;
+	}
+
+	#context-chatMenu .chatMenu-option:hover, #fraChatSettingsMenu .chatMenu-option:hover, #fra_chatContainer .channelMenu .channelSwitcher:hover {
 		background: rgba(var(--orange), 0.25);
 	}
