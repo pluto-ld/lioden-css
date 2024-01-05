@@ -76,7 +76,7 @@
 	.table th a:hover,
 	h3 a:hover,
 	div .left a:hover,
-	a[href="/opt-out.php"]:hover, a[href="/marking-censor.php"],
+	a[href="/opt-out.php"]:hover, a[href="/marking-censor.php"]:hover,
 	.sub_menu a:hover {
 		color: #ffd2aa;
 		text-shadow: 0 0 1px rgba(var(--cream));
@@ -300,11 +300,6 @@
 		background: rgba(0,0,0,0.1) !important;
 	}
 
-	.badge {
-		background: rgba(var(--brightorange));
-		color: rgba(var(--darkred));
-	}
-
 	/* Grids */
 
 	div .left {
@@ -381,7 +376,8 @@
 
 	textarea, textarea:focus,
 	input[type="text"], input[type="text"]:focus,
-	input[type="password"], input[type="password"]:focus {
+	input[type="password"], input[type="password"]:focus,
+	#fra_chatContainer #txtChatInput {
 		background: rgba(var(--cream));
 		color: rgba(var(--darkblue));
 		border: none;
@@ -390,7 +386,7 @@
 
 	/* Select */
 
-	select, select:focus {
+	select, select:focus, .s-chat-sidebar #label_currentChannel {
 		background: rgba(var(--cream));
 		color:rgba(var(--darkblue));
 		border: none;
@@ -481,3 +477,33 @@
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+
+/* Other Details */
+	.badge {
+		background: rgba(var(--brightorange));
+		color: rgba(var(--darkred));
+	}
+
+	#player hr {
+		border-top: none;
+	}
+
+	hr {
+		border-top: 1px solid rgba(var(--darkorange));
+	}
+
+/* Chat */
+	#chatMessageContainer {
+		border: none;
+		border-radius: 10px;
+		background: rgba(var(--darkred));
+	}
+
+	.s-chat-message:nth-child(2n+1) {
+		background: none;
+	}
+
+	.s-chat-message:nth-child(2n) {
+		background: rgba(0,0,0,0.1);
+	}
+	
