@@ -271,7 +271,7 @@
 		color: rgba(var(--darkred)) !important;
 	}
 
-	.bottom {
+	#about .bottom, #allies .bottom, #clans .bottom {
 		background: rgba(var(--rust)) !important;
 		text-align: right !important;
 	}
