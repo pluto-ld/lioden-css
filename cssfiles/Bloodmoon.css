@@ -68,7 +68,7 @@
 	.table .top a:link, .table .top a:visited, 
 	.table .bottom a:link, .table .bottom a:visited,
 	.table th a:link, .table th a:visited,
-	a[href="/opt-out.php"], a[href="/marking-censor.php"],
+	a[href="/opt-out.php"]:link, a[href="/opt-out.php"]:visited, a[href="/marking-censor.php"]:link, a[href="/marking-censor.php"]:visited,
 	.sub_menu a:link, .sub_menu a:visited {
 		color: rgba(var(--cream));
 	}
@@ -315,7 +315,7 @@
 		background: rgba(var(--rust));
 		border: none;
 		border-radius: 10px;
-		color: rgba(var(--darkred));
+		color: #8c3220;
 		transition: 0.25s;
 	}
 
@@ -330,8 +330,8 @@
 	}
 
 	.cave-grid:hover, .mound-grid:hover {
-		color: color: #ffd2aa;
-		text-shadow: 0 0 2px rgba(var(--cream));
+		color: rgba(var(--darkred));
+		text-shadow: 0 0 2px #8c3220;
 	}
 
 
