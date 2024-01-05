@@ -48,12 +48,14 @@
 
 	/* dark */
 	.panel a:link, .panel a:visited,
-	.inner-table a:link, .inner-table a:visited {
+	.inner-table a:link, .inner-table a:visited,
+	#chatMessagePinned a:link, #chatMessagePinned a:visited{
 		color: #8c3220;
 	}
 
 	.panel a:hover,
-	.inner-table a:hover {
+	.inner-table a:hover,
+	#chatMessagePinned a:hover{
 		color: rgba(var(--darkred));
 		text-shadow: 0 0 1px #8c3220;
 	}
@@ -134,7 +136,7 @@
 	/* Firefox */
 
 	:root {
-		scrollbar-color: rgba(var(--rust)) rgba(var(--darkblue)) !important;
+		scrollbar-color: rgba(var(--rust)) rgba(var(--brown)) !important;
 		scrollbar-width: thin !important;
 	}
 
@@ -229,12 +231,11 @@
 	#commentBox {
 		border: none !important;
 		background: rgba(var(--darkred));
-		scrollbar-color: rgba(var(--rust)) rgba(var(--brown)) !important;
 		scrollbar-width: thin !important;
 		
 	}
 
-	.text-muted {
+	.text-muted, .s-chat-message_timestamp {
 		color: rgba(var(--cream), 0.4);
 	}
 
@@ -506,4 +507,40 @@
 	.s-chat-message:nth-child(2n) {
 		background: rgba(0,0,0,0.1);
 	}
-	
+
+	#chatMessagePinned.s-chat-message__pinned {
+		background-color: rgba(var(--orange));
+		color: rgba(var(--darkred));
+		border-bottom-color: rgba(var(--rust));
+	}
+
+	.s-chat-message.hasContext {
+		border-left-color: rgba(var(--brightorange));
+		background: rgba(var(--brightorange), 0.15);
+	}
+
+	#context-chatMenu, .s-chat-sidebar #fraChatChannelMenu {
+		background: rgba(var(--cream));
+		border-radius: 10px;
+		border: none;
+		box-shadow: 1px 1px 2px rgba(var(--darkblue));
+	}
+
+	#context-chatMenu::before, #context-chatMenu::after {
+		border-left-color: rgba(var(--cream));
+	}
+
+	.chatMenu-container {
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	#context-chatMenu .chatMenu-option, #fraChatSettingsMenu .chatMenu-option {
+		background: rgba(var(--cream));
+		color: rgba(var(--darkorange));
+		transition: 0.25s;
+	}
+
+	#context-chatMenu .chatMenu-option:hover, #fraChatSettingsMenu .chatMenu-option:hover {
+		background: rgba(var(--orange), 0.25);
+	}
