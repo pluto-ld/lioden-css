@@ -88,7 +88,8 @@
 	}
 
 	a[href="/opt-out.php"]:hover, a[href="/marking-censor.php"]:hover {
-		color: rgba(var(--cream)) !important;
+		color: #ffd2aa !important;
+		text-shadow: 0 0 1px rgba(var(--cream));
 	}
 
 	.table .bottom a:hover {
@@ -502,6 +503,10 @@
 
 	hr {
 		border-top: 1px solid rgba(var(--darkorange));
+	}
+
+	.white {
+		color: rgba(var(--cream));
 	}
 
 /* Chat */
