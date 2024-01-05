@@ -198,10 +198,13 @@
 
 	/* Small Headers */
 
-	h3, .sidebar h3 {
+	.sidebar h3 {
 		color: rgba(var(--darkorange));
 	}
 
+	h3 {
+		color: rgba(var(--cream));
+	}
 /* MAIN COLUMN */
 
 	/* Background */
@@ -278,7 +281,7 @@
 	}
 
 	.inner-table .left {
-		background: rgba(var(--rust)) !important;
+		color: rgba(var(--darkred)) !important;
 		border-radius: 0px;
 	}
 
@@ -291,17 +294,18 @@
 
 	/* Grids */
 
-	.cave-grid,
-	.mound-grid,
 	div .left {
 		background: rgba(var(--rust));
 		border: none;
-		color: #8c3220;
-		transition: 0.25s;
+		color: rgba(var(--cream));
 	}
 
 	.cave-grid, .mound-grid {
+		background: rgba(var(--rust));
+		border: none;
 		border-radius: 10px;
+		color: rgba(var(--cream));
+		transition: 0.25s;
 	}
 
 	.mound-grid {
@@ -374,6 +378,16 @@
 	select, select:focus {
 		background: rgba(var(--cream));
 		color:rgba(var(--darkblue));
+		border: none;
+		border-radius: 10px;
+	}
+
+	/* Account options */
+	.item {
+		overflow: hidden;
+		border: none;
+		background: rgba(var(--cream));
+		border-radius: 10px;
 	}
 
 /* EVENT SPECIFICS */
