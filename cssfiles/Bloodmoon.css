@@ -295,7 +295,12 @@
 	}
 
 	.table .right_odd {
-		background: rgba(var(--orange)) !important;
+		background: rgba(0,0,0,0.1) !important;
+	}
+
+	.badge {
+		background: rgba(var(--brightorange));
+		color: rgba(var(--darkred));
 	}
 
 	/* Grids */
