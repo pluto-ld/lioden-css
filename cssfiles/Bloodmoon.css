@@ -379,11 +379,6 @@
 		padding-bottom: 5px;
 	}
 
-	.cave-grid img,
-	.mound-grid img {
-		width: 100%;
-	}
-
 	.cave-grid:hover, .mound-grid:hover {
 		text-shadow: 0 0 2px #8c3220;
 	}
@@ -542,16 +537,16 @@
 	}
 	
 	div.mound-grid > img[src$="//static.lioden.com/images/layout/beetleunsorted.png"] {
-		background: url('//static.lioden.com/images/dynamic/backgrounds/ruby_speckled_cave.png') center center no-repeat !important;
+		background: url('//static.lioden.com/images/beetles/harmoniaaxyridis/female/left/blushing.png') center center no-repeat !important;
 		background-size: contain !important;
-		width: 182px;
-		height: 112px;
+		width: 130px;
+		height: 80px;
 		padding-left: 100%;
 	}
 	
 	
 	div.mound-grid > img[src$="//static.lioden.com/images/layout/beetlemound.png"] {
-		background: url('https://static.lioden.com/images/beetles/scarabaeusaureus/male/left/glowing.png') center center no-repeat !important;
+		background: url('//static.lioden.com/images/beetles/harmoniaaxyridis/female/left/blushing.png') center center no-repeat !important;
 		background-size: contain !important;
 		width: 130px;
 		height: 80px;
