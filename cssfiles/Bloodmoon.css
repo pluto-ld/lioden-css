@@ -151,6 +151,11 @@
 
 	.table#about .top a {
 		font-family: 'RedSky';
+		font-size: 30px;
+	}
+
+	.table#about .top {
+		padding: 0px 15px;
 	}
 
 /* SCROLLBAR */
@@ -263,7 +268,7 @@
 	/* Background */
 
 	div.container.main {
-		background: rgba(var(--darkblue)) !important;
+		background: rgba(var(--darkblue), 0.9) !important;
 		box-shadow: none;
 		border: none !important;
 		border-radius: 10px;
@@ -287,6 +292,7 @@
 
 	.commentTag {
 		border-radius: 50% !important;
+		box-shadow: 0 0 5px rgba(var(--darkorange));
 	}
 
 /* TABLES */
@@ -326,6 +332,7 @@
 
 	div#lion_image {
 		border-radius: 50% !important;
+		box-shadow: 0 0 10px rgba(var(--darkorange));
 		overflow: hidden;
 	}
 
