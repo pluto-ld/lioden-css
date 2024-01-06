@@ -530,7 +530,7 @@
 	
 	
 	div.cave-grid > img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
-		background: url('//static.lioden.com/images/dynamic/backgrounds/rhodonitecanyon.png') center center no-repeat !important;
+		background: url('https://static.lioden.com/images/dynamic/backgrounds/rhodonitecave.png') center center no-repeat !important;
 		background-size: cover !important;
 		padding-left: 100%;
 		height: 120px;
@@ -666,4 +666,12 @@
 
 	#txtChatContainer #lblCharacterCounter {
 		color: rgba(var(--cream), 0.4);
+	}
+
+	#chatMessageList[data-pings="enabled"] .s-chat-message_mention {
+		background-color: rgba(var(--brightorange), 0.7) !important;
+	}
+
+	#chatMessageList[data-pings="enabled"] .s-chat-message_mention {
+		border-left: 6px solid rgba(var(--brightorange));
 	}
