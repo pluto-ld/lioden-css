@@ -1,15 +1,43 @@
 /*
-	CSS by pluto (#52831) for personal use only.
-	I'm a beginner at CSS, but I'm trying my best :) Venture forward into messy code at your own risk.
-	Ater (#206739) helped me figure out some of the code and I took a note from him when it came to organizing. :)
-	If you feel as though I need to credit someone else, just message me! A lot of the rest of this was done by looking at various guides and LD's code.
+	CSS by pluto (#52831).
 
+	-------------------------------------------------------
+
+	* This code was made for personal use ONLY.
+	* You are allowed to edit my code, as long as you leave the credit intact.
+	* Any unauthorized commercial use of this code will result in a mod report without warning.
+		- This specifically pertains to copying any section of this code.
+	* Anyone is allowed to reference my code in the making of their own.
+	* All of the above terms also apply to HTML used in this code.
+
+	-------------------------------------------------------
+
+	Ater (#206739) helped me figure out some of the code and I took a note from him when it came to organizing.
+	He wrote the Firefox-friendly logo replacement, and also helped with the CSS credit.
+	If you feel as though I need to credit someone else, just message me.
+	A lot of this was done by looking at various guides and LD's code, as well as w3schools and stackexchange.
+
+	-------------------------------------------------------
+
+	This code was created using VSCode and hosted on Github.
 */
+
 
 /* BASICS */
 
 	/*Fonts*/
 	@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+	@font-face {
+    		font-family: 'RedSky';
+    		src: url('https://github.com/pluto-ld/lioden-css/raw/main/graphics/fonts/RedSky.eot'); /* IE9 Compat Modes */
+    		src: url('https://github.com/pluto-ld/lioden-css/raw/main/graphics/fonts/RedSky.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         	url('https://github.com/pluto-ld/lioden-css/raw/main/graphics/fonts/RedSky.woff') format('woff'), /* Modern Browsers */
+         	url('https://github.com/pluto-ld/lioden-css/raw/main/graphics/fonts/RedSky.ttf') format('truetype'); /* Safari, Android, iOS */
+             	font-style: normal;
+    		font-weight: normal;
+   		text-rendering: optimizeLegibility;
+	}
 
 	/* Colors */
 
@@ -29,7 +57,7 @@
 	body {
 		background: url('https://i.imgur.com/YAJxFSm.png') no-repeat center top fixed;
 		background-size: cover;
-		font-family: 'PT Sans', sans-serif;
+		font-family: 'PT Sans', 'Trebuchet MS', sans-serif;
 		color: rgba(var(--cream));
 	}
 
@@ -206,6 +234,7 @@
 	/* Main Header */
 
 	h1 {
+		font-family: 'RedSky', ;
 		text-align: center;
 		color: rgba(var(--brightorange));
 		font-size: 40px;
