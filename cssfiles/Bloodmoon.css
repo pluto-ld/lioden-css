@@ -594,6 +594,10 @@
 		color: rgba(var(--cream));
 	}
 
+	.welcomeback::after {
+		content: "☾ CSS by Pluto [#52831]";
+	}
+
 /* Chat */
 	#chatMessageContainer {
 		border: none;
