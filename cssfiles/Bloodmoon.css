@@ -27,6 +27,7 @@
 
 	/*Fonts*/
 	@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
 
 	@font-face {
     		font-family: 'RedSky';
@@ -148,6 +149,10 @@
 		text-shadow: none;
 	}
 
+	.table#about .top a {
+		font-family: 'RedSky';
+	}
+
 /* SCROLLBAR */
 
 	/* Chrome */
@@ -206,6 +211,7 @@
 	}
 
 	.navbar li a {
+		font-family: 'Overlock SC';
 		color: rgba(var(--cream)) !important;
 		transition: 0.25s;
 	}
@@ -237,7 +243,8 @@
 		font-family: 'RedSky';
 		text-align: center;
 		color: rgba(var(--brightorange));
-		font-size: 40px;
+		font-size: 80px;
+		text-shadow: 1px 1px 2px rgba(var(--darkorange));
 	}
 
 	/* Small Headers */
@@ -247,6 +254,7 @@
 	}
 
 	h3 {
+		font-family: 'Overlock SC';
 		color: rgba(var(--darkred));
 	}
 
