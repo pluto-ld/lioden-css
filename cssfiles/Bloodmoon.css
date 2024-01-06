@@ -234,7 +234,7 @@
 	/* Main Header */
 
 	h1 {
-		font-family: 'RedSky', ;
+		font-family: 'RedSky';
 		text-align: center;
 		color: rgba(var(--brightorange));
 		font-size: 40px;
