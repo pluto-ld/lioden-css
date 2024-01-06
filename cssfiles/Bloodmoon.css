@@ -512,6 +512,52 @@
 		margin-left: -170px;
 	}
 
+	/* Cave/Mound */
+	div.cave-grid > img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+		background: url('https://github.com/pluto-ld/lioden-css/blob/main/graphics/pallas_css/unsorted.png?raw=true') center center no-repeat !important;
+		background-size: cover !important;
+		padding-left: 100%;
+		height: 60px;
+	}
+	
+	div.cave-grid > img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+		background: url('https://github.com/pluto-ld/lioden-css/blob/main/graphics/pallas_css/nesting.png?raw=true') center center no-repeat !important;
+		background-size: cover !important;
+		padding-left: 100%;
+		height: 60px;
+	}
+	
+	div.cave-grid > img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+		background: url('https://github.com/pluto-ld/lioden-css/blob/main/graphics/pallas_css/prideoverview.png?raw=true') center center no-repeat !important;
+		padding-left: 100%;
+		height: 60px;
+	}
+	
+	
+	div.cave-grid > img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
+		background: url('//static.lioden.com/images/dynamic/backgrounds/rhodonitecanyon.png') center center no-repeat !important;
+		background-size: cover !important;
+		padding-left: 100%;
+		height: 120px;
+	}
+	
+	div.mound-grid > img[src$="//static.lioden.com/images/layout/beetleunsorted.png"] {
+		background: url('//static.lioden.com/images/dynamic/backgrounds/ruby_speckled_cave.png') center center no-repeat !important;
+		background-size: contain !important;
+		width: 182px;
+		height: 112px;
+		padding-left: 100%;
+	}
+	
+	
+	div.mound-grid > img[src$="//static.lioden.com/images/layout/beetlemound.png"] {
+		background: url('https://static.lioden.com/images/beetles/scarabaeusaureus/male/left/glowing.png') center center no-repeat !important;
+		background-size: contain !important;
+		width: 130px;
+		height: 80px;
+		padding-left: 100%;
+	}
+
 /* Cave/Mound Specifics */
 	.featured-lion {
 		background-color: rgba(var(--darkred));
