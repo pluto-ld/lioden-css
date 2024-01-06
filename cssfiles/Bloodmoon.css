@@ -675,3 +675,7 @@
 	#chatMessageList[data-pings="enabled"] .s-chat-message_mention {
 		border-left: 6px solid rgba(var(--brightorange));
 	}
+
+	#fra_chatContainer .modMessage, .s-chat-message__mod .s-chat-message_timestamp {
+		color: #737373;
+	}
