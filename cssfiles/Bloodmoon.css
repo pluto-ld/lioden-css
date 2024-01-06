@@ -30,10 +30,10 @@
 
 	@font-face {
     		font-family: 'RedSky';
-    		src: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/blob/main/graphics/fonts/RedSky.eot'); /* IE9 Compat Modes */
-    		src: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/blob/main/graphics/fonts/RedSky.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         	url('https://raw.githubusercontent.com/pluto-ld/lioden-css/blob/main/graphics/fonts/RedSky.woff') format('woff'), /* Modern Browsers */
-         	url('https://raw.githubusercontent.com/pluto-ld/lioden-css/blob/main/graphics/fonts/RedSky.ttf') format('truetype'); /* Safari, Android, iOS */
+    		src: url('https://pluto-ld.github.io/lioden-css/graphics/fonts/RedSky.eot'); /* IE9 Compat Modes */
+    		src: url('https://pluto-ld.github.io/lioden-css/graphics/fonts/RedSky.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         	url('https://pluto-ld.github.io/lioden-css/graphics/fonts/RedSky.woff') format('woff'), /* Modern Browsers */
+         	url('https://pluto-ld.github.io/lioden-css/graphics/fonts/RedSky.ttf') format('truetype'); /* Safari, Android, iOS */
              	font-style: normal;
     		font-weight: normal;
    		text-rendering: optimizeLegibility;
