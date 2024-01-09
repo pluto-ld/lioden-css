@@ -263,6 +263,10 @@
 		color: rgba(var(--darkred));
 	}
 
+	h1 small {
+		color: rgba(var(--darkorange));
+	}
+
 /* MAIN COLUMN */
 
 	/* Background */
