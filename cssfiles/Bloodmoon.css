@@ -506,9 +506,10 @@
 	}
 
 	div.container.main > div:nth-child(1) > nav > div.navbar-header > a::after {
-		content: url('https://tinyurl.com/y3bzhcya');
+		content: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/bloodmoon_css/bloodmoonlogo.png');
 		position: absolute;
-		margin-left: -170px;
+		margin-left: -220px;
+		margin-top: 0px;
 	}
 
 	/* Cave/Mound */
