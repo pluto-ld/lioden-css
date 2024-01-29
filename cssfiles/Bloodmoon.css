@@ -508,7 +508,7 @@
 	div.container.main > div:nth-child(1) > nav > div.navbar-header > a::after {
 		content: url('https://raw.githubusercontent.com/pluto-ld/lioden-css/main/graphics/bloodmoon_css/bloodmoonlogo.png');
 		position: absolute;
-		margin-left: -192px;
+		margin-left: -194px;
 		margin-top: 0px;
 	}
 
